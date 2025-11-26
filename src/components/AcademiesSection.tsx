@@ -42,7 +42,6 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
 
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
-  // 🟦 RESPONSIVE CARDS PER VIEW
   useEffect(() => {
     const updateCards = () => {
       if (window.innerWidth < 480) setCardsPerView(1);
@@ -55,13 +54,12 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
     return () => window.removeEventListener("resize", updateCards);
   }, []);
 
-  // 🟩 Detect actual card width (for perfect sliding)
   useEffect(() => {
     if (sliderRef.current) {
       const firstCard = sliderRef.current.querySelector(".card-item") as HTMLElement;
       if (firstCard) {
         const style = window.getComputedStyle(firstCard);
-        const gap = 24; // gap-6 = 24px
+        const gap = 24;
         const width = firstCard.offsetWidth + gap;
         setCardWidth(width);
       }
@@ -87,7 +85,6 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
     <div className="w-full py-[60px] px-4">
       <div className="container mx-auto">
 
-        {/* TITLE */}
         <h1 className="font text-center mb-[13px]">
           {currentCategory?.title?.normalStart}{" "}
           <span className="text-primary">{currentCategory?.title?.highlight}</span>{" "}
@@ -98,7 +95,6 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
           {currentCategory?.subtitle}
         </p>
 
-        {/* TABS */}
         <div className="flex flex-col sm:flex-row rounded-t-[10px] justify-between w-full gap-8">
           {data.map((category) => (
             <button
@@ -119,7 +115,6 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
           ))}
         </div>
 
-        {/* SLIDER WRAPPER */}
         <div
           className="relative md:p-12 bg-cover bg-center"
           style={{
@@ -127,23 +122,20 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
             minHeight: "425px",
           }}
         >
-          {/* PREV */}
           <button
             onClick={handlePrev}
-            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 text-white p-2 md:p-3 cursor-pointer"
+            className="absolute left-[-9px] md:left-4 top-1/2 -translate-y-1/2 z-10 text-white p-2 md:p-3 cursor-pointer"
           >
             <ChevronLeft size={28} />
           </button>
 
-          {/* NEXT */}
           <button
             onClick={handleNext}
-            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 text-white p-2 md:p-3 cursor-pointer"
+            className="absolute right-[-9px] md:right-4 top-1/2 -translate-y-1/2 z-10 text-white p-2 md:p-3 cursor-pointer"
           >
             <ChevronRight size={28} />
           </button>
 
-          {/* SLIDER */}
           <div className="relative mx-4 md:mx-16">
             <div className="overflow-hidden">
               <div
@@ -156,7 +148,7 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
                 {currentCategory?.academies.map((academy) => (
                   <div
                     key={academy.id}
-                    className="card-item shrink-0 px-2 
+                    className="card-item shrink-0 px-2 md:mt-0 mt-[60px] 
                       w-full sm:w-[280px] md:w-[320px] lg:w-[339.33px]
                       h-[298px]"
                   >

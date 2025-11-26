@@ -103,7 +103,6 @@ const WhatsNewCards = ({ content, data, showHeader = true }: Props) => {
                       {item.desc}
                     </p>
 
-                    {/* READ MORE only if no header */}
                     {!showHeader && (
                       <Link
                         href={item.link}

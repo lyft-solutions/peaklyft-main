@@ -41,7 +41,6 @@ const BrandSlider: React.FC<BrandSliderProps> = ({ title, brands }) => {
     };
   }, [handleResize]);
 
-  // ---- INFINITE LOOP LOGIC ----
   useEffect(() => {
     if (currentIndex === brands.length) {
       timeoutRef.current = window.setTimeout(() => {
@@ -55,7 +54,6 @@ const BrandSlider: React.FC<BrandSliderProps> = ({ title, brands }) => {
     };
   }, [currentIndex, brands.length]);
 
-  // ---- BRAND BOX ----
   const renderBrand = (brand: Brand, key: number | string) => (
     <div
       key={key}
@@ -93,7 +91,9 @@ const BrandSlider: React.FC<BrandSliderProps> = ({ title, brands }) => {
           <div className="overflow-hidden bg-main">
             <div
               className={`flex gap-4 md:gap-6 ${
-                isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
+                isTransitioning
+                  ? "transition-transform duration-700 ease-in-out"
+                  : ""
               }`}
               style={{
                 transform: `translateX(-${offset}px)`,

@@ -110,22 +110,22 @@ export default function OnboardingSection({
       <div className="md:w-1/2 flex flex-col justify-center">
         <p className="text-blue-600 font-medium text-lg">{subtitle}</p>
 
-        <h2 className="text-[28px] font-merriweather leading-[42px] font-bold mt-2">{title}</h2>
+        <h2 className="text-[28px] font-merriweather leading-[42px] font-bold mt-2">
+          {title}
+        </h2>
 
         <div className="flex gap-3 mt-6 flex-wrap">
           {taglines.map((item) => (
             <div
               key={item}
-              className="border-[1.5px] border-blue-600 text-[12px] px-4 py-2 rounded-lg font-medium bg-white shadow-sm"
+              className="border-[1.5px] border-secondary text-[12px] px-4 py-2 rounded-lg font-medium bg-white shadow-sm"
             >
               {item}
             </div>
           ))}
         </div>
 
-        <p className="mt-6 text-xl leading-relaxed">
-        {desc}
-        </p>
+        <p className="mt-6 text-xl leading-relaxed">{desc}</p>
       </div>
     </section>
   );

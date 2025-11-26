@@ -7,20 +7,23 @@ const methodologyData = [
     icon: "spider.svg",
     title: "Assess",
     heading: "Assessment & Analysis",
-    description: "We begin by thoroughly understanding your organization's current state, challenges, and goals through comprehensive assessment and analysis."
+    description:
+      "We begin by thoroughly understanding your organization's current state, challenges, and goals through comprehensive assessment and analysis.",
   },
   {
     icon: "claude.svg",
     title: "Plan",
     heading: "Strategic Planning",
-    description: "Based on our assessment, we develop a customized strategic plan that aligns with your business objectives and drives measurable outcomes."
+    description:
+      "Based on our assessment, we develop a customized strategic plan that aligns with your business objectives and drives measurable outcomes.",
   },
   {
     icon: "darkrender.svg",
     title: "Execute",
     heading: "Implementation & Execution",
-    description: "We work alongside your team to execute the plan, ensuring smooth implementation and continuous optimization for maximum impact."
-  }
+    description:
+      "We work alongside your team to execute the plan, ensuring smooth implementation and continuous optimization for maximum impact.",
+  },
 ];
 
 export default function Methodology() {
@@ -39,14 +42,28 @@ export default function Methodology() {
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-14">
         AntWalk <span className="text-primary">Methodology</span>
       </h2>
-      
-      <div className="text-center flex flex-col items-center justify-center rounded-[25px] py-8 md:py-12 px-4 md:px-6" style={{background:"radial-gradient(at center center, #4E5FF5 0%, #101D96 100%)"}}>
 
-        {/* Desktop Layout - Hidden on mobile/tablet */}
+      <div
+        className="text-center flex flex-col items-center justify-center rounded-[25px] py-8 md:py-12 px-4 md:px-6"
+        style={{
+          background:
+            "radial-gradient(at center center, #0a4891 0%, #101D96 100%)",
+        }}
+      >
         <div className="hidden lg:flex items-center justify-center gap-0 mb-14 w-full max-w-5xl">
           <div className="flex flex-col items-center text-white/80">
-            <svg className="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            <svg
+              className="w-10 h-10 mb-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              />
             </svg>
             <span className="text-sm">People</span>
           </div>
@@ -58,12 +75,22 @@ export default function Methodology() {
 
           <div
             className={`relative flex flex-col bg-[#FFFFFF08] rounded-[24px] h-[130px] w-[130px] items-center p-4 cursor-pointer transition-all
-              ${active === 0 ? "border-2 border-white rounded-[24px] shadow-lg bg-[#FFFFFF08] h-[130px] w-[130px]" : ""}
+              ${
+                active === 0
+                  ? "border-2 border-white rounded-[24px] shadow-lg bg-[#FFFFFF08] h-[130px] w-[130px]"
+                  : ""
+              }
             `}
             onClick={() => setActive(0)}
           >
-            <img src={methodologyData[0].icon} className="w-10 h-10 mb-2" alt="" />
-            <p className="text-sm font-medium text-white">{methodologyData[0].title}</p>
+            <img
+              src={methodologyData[0].icon}
+              className="w-10 h-10 mb-2"
+              alt=""
+            />
+            <p className="text-sm font-medium text-white">
+              {methodologyData[0].title}
+            </p>
             {active === 0 && (
               <div className="absolute -bottom-4 w-0 h-0 border-l-12 border-r-12 border-t-12 border-transparent border-t-white"></div>
             )}
@@ -76,12 +103,22 @@ export default function Methodology() {
 
           <div
             className={`relative flex flex-col bg-[#FFFFFF08] rounded-[24px] h-[130px] w-[130px] items-center p-4 cursor-pointer transition-all
-              ${active === 1 ? "bg-white/10 border-2 border-white shadow-lg" : ""}
+              ${
+                active === 1
+                  ? "bg-white/10 border-2 border-white shadow-lg"
+                  : ""
+              }
             `}
             onClick={() => setActive(1)}
           >
-            <img src={methodologyData[1].icon} className="w-12 h-12 mb-2" alt="" />
-            <p className="text-base font-medium text-white">{methodologyData[1].title}</p>
+            <img
+              src={methodologyData[1].icon}
+              className="w-12 h-12 mb-2"
+              alt=""
+            />
+            <p className="text-base font-medium text-white">
+              {methodologyData[1].title}
+            </p>
             {active === 1 && (
               <div className="absolute -bottom-4 w-0 h-0 border-l-12 border-r-12 border-t-12 border-transparent border-t-white"></div>
             )}
@@ -94,12 +131,22 @@ export default function Methodology() {
 
           <div
             className={`relative flex flex-col bg-[#FFFFFF08] rounded-[24px] h-[130px] w-[130px] items-center p-4 cursor-pointer transition-all
-              ${active === 2 ? "border-2 border-white rounded-[24px] shadow-lg" : ""}
+              ${
+                active === 2
+                  ? "border-2 border-white rounded-[24px] shadow-lg"
+                  : ""
+              }
             `}
             onClick={() => setActive(2)}
           >
-            <img src={methodologyData[2].icon} className="w-10 h-10 mb-2" alt="" />
-            <p className="text-sm font-medium text-white">{methodologyData[2].title}</p>
+            <img
+              src={methodologyData[2].icon}
+              className="w-10 h-10 mb-2"
+              alt=""
+            />
+            <p className="text-sm font-medium text-white">
+              {methodologyData[2].title}
+            </p>
             {active === 2 && (
               <div className="absolute -bottom-4 w-0 h-0 border-l-12 border-r-12 border-t-12 border-transparent border-t-white"></div>
             )}
@@ -111,8 +158,18 @@ export default function Methodology() {
           </div>
 
           <div className="flex flex-col items-center text-white/80">
-            <svg className="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            <svg
+              className="w-10 h-10 mb-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              />
             </svg>
             <span className="text-sm">Business Growth</span>
           </div>
@@ -122,79 +179,112 @@ export default function Methodology() {
         <div className="lg:hidden mb-8 md:mb-14 w-full flex flex-col items-center">
           {/* People Icon */}
           <div className="flex flex-col items-center text-white/80 mb-4">
-            <svg className="w-8 h-8 md:w-10 md:h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            <svg
+              className="w-8 h-8 md:w-10 md:h-10 mb-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              />
             </svg>
             <span className="text-xs md:text-sm">People</span>
           </div>
 
-          {/* Vertical Arrow */}
           <div className="flex flex-col items-center my-2">
             <div className="w-0 h-6 md:h-8 border-l-2 border-dashed border-white"></div>
             <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-8 border-t-white"></div>
           </div>
 
-          {/* Methodology Box 1 */}
           <div
             className={`relative flex flex-col bg-[#FFFFFF08] rounded-[24px] h-[110px] w-[110px] md:h-[130px] md:w-[130px] items-center p-3 md:p-4 cursor-pointer transition-all
               ${active === 0 ? "border-2 border-white shadow-lg" : ""}
             `}
             onClick={() => setActive(0)}
           >
-            <img src={methodologyData[0].icon} className="w-8 h-8 md:w-10 md:h-10 mb-2" alt="" />
-            <p className="text-xs md:text-sm font-medium text-white text-center">{methodologyData[0].title}</p>
+            <img
+              src={methodologyData[0].icon}
+              className="w-8 h-8 md:w-10 md:h-10 mb-2"
+              alt=""
+            />
+            <p className="text-xs md:text-sm font-medium text-white text-center">
+              {methodologyData[0].title}
+            </p>
           </div>
 
-          {/* Vertical Arrow */}
           <div className="flex flex-col items-center my-2">
             <div className="w-0 h-6 md:h-8 border-l-2 border-dashed border-white"></div>
             <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-8 border-t-white"></div>
           </div>
 
-          {/* Methodology Box 2 */}
           <div
             className={`relative flex flex-col bg-[#FFFFFF08] rounded-[24px] h-[110px] w-[110px] md:h-[130px] md:w-[130px] items-center p-3 md:p-4 cursor-pointer transition-all
-              ${active === 1 ? "bg-white/10 border-2 border-white shadow-lg" : ""}
+              ${
+                active === 1
+                  ? "bg-white/10 border-2 border-white shadow-lg"
+                  : ""
+              }
             `}
             onClick={() => setActive(1)}
           >
-            <img src={methodologyData[1].icon} className="w-10 h-10 md:w-12 md:h-12 mb-2" alt="" />
-            <p className="text-sm md:text-base font-medium text-white text-center">{methodologyData[1].title}</p>
+            <img
+              src={methodologyData[1].icon}
+              className="w-10 h-10 md:w-12 md:h-12 mb-2"
+              alt=""
+            />
+            <p className="text-sm md:text-base font-medium text-white text-center">
+              {methodologyData[1].title}
+            </p>
           </div>
 
-          {/* Vertical Arrow */}
           <div className="flex flex-col items-center my-2">
             <div className="w-0 h-6 md:h-8 border-l-2 border-dashed border-white"></div>
             <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-8 border-t-white"></div>
           </div>
 
-          {/* Methodology Box 3 */}
           <div
             className={`relative flex flex-col bg-[#FFFFFF08] rounded-[24px] h-[110px] w-[110px] md:h-[130px] md:w-[130px] items-center p-3 md:p-4 cursor-pointer transition-all
               ${active === 2 ? "border-2 border-white shadow-lg" : ""}
             `}
             onClick={() => setActive(2)}
           >
-            <img src={methodologyData[2].icon} className="w-8 h-8 md:w-10 md:h-10 mb-2" alt="" />
-            <p className="text-xs md:text-sm font-medium text-white text-center">{methodologyData[2].title}</p>
+            <img
+              src={methodologyData[2].icon}
+              className="w-8 h-8 md:w-10 md:h-10 mb-2"
+              alt=""
+            />
+            <p className="text-xs md:text-sm font-medium text-white text-center">
+              {methodologyData[2].title}
+            </p>
           </div>
 
-          {/* Vertical Arrow */}
           <div className="flex flex-col items-center my-2">
             <div className="w-0 h-6 md:h-8 border-l-2 border-dashed border-white"></div>
             <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-8 border-t-white"></div>
           </div>
 
-          {/* Business Growth Icon */}
           <div className="flex flex-col items-center text-white/80 mt-4">
-            <svg className="w-8 h-8 md:w-10 md:h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            <svg
+              className="w-8 h-8 md:w-10 md:h-10 mb-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              />
             </svg>
             <span className="text-xs md:text-sm">Business Growth</span>
           </div>
         </div>
 
-        {/* Description Box */}
         <div className="max-w-3xl mx-auto p-6 md:p-8 bg-[#FFFFFF08] rounded-lg">
           <h3 className="text-lg md:text-[20px] font-semibold mb-3 md:mb-4 text-white font-inter">
             {methodologyData[active].heading}

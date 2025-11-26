@@ -99,7 +99,8 @@ const Footer = () => {
     <footer
       className="text-white"
       style={{
-        background: "linear-gradient(180deg, #4E5FF5 0%, #2E378F 100%)",
+        background:
+          "radial-gradient(at center center, #0a4891 0%, #101D96 100%)",
       }}
     >
       <div className="w-full max-w-[1440px] mx-auto">
@@ -149,9 +150,7 @@ const Footer = () => {
               ))}
 
               <div className="flex gap-2.5 items-center">
-                <p className="text-[#FAA843] font-medium">
-                  Let's connect:
-                </p>
+                <p className="text-[#FAA843] font-medium">Let's connect:</p>
                 <div className="flex gap-2.5 py-2.5 pl-2.5">
                   <Link
                     href="#"

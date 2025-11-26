@@ -19,15 +19,13 @@ export default function Header() {
     const handleScroll = () => {
       const current = window.scrollY;
 
-      // header fixed + bg white
       if (current > 20) setIsFixed(true);
       else setIsFixed(false);
 
-      // hide navbar on scroll down / show on scroll up
       if (current > lastScroll) {
-        setShowNavbar(false); // scrolling down
+        setShowNavbar(false);
       } else {
-        setShowNavbar(true); // scrolling up
+        setShowNavbar(true);
       }
 
       lastScroll = current <= 0 ? 0 : current;
@@ -39,7 +37,6 @@ export default function Header() {
 
   return (
     <>
-      {/* NAVBAR — hide/show on scroll */}
       <div
         className={`transition-all duration-300 ${
           showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
@@ -48,7 +45,6 @@ export default function Header() {
         <Navbar />
       </div>
 
-      {/* HEADER — becomes fixed & white on scroll */}
       <header
         className={`w-full lg:p-0 p-2.5 transition-all duration-300 ${
           isFixed
@@ -60,7 +56,7 @@ export default function Header() {
           <div className="flex items-center gap-2.5">
             <Link href="/">
               <Image
-                src="/peaklyft.svg"
+                src="/peaklyft1.svg"
                 alt="Logo"
                 className="lg:w-[200px] w-[106.48px]"
                 width={190}
