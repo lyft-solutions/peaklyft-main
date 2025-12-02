@@ -8,12 +8,12 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-poppins: "Poppins", sans-serif;
   --font-merriweather: "Merriweather", serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter);
-  --font-merriweather: var(--font-merriweather);
-  --font-sans: var(--font-poppins);
+
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -53,8 +53,8 @@
 
 :root {
   --font-poppins: "Poppins", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --font-merriweather: "Merriweather", sans-serif;
+  --font-inter: var(--font-inter);
+  --font-merriweather: "Merriweather", serif;
   --main: oklch(100% 0.00011 271.152);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -139,5 +139,13 @@
   }
   .font{
     @apply text-[32px] leading-12 font-semibold text-center;
+  }
+
+  .merri {
+    font-family: "Merriweather", serif !important;
+  }
+
+  .merri-sans {
+    font-family: "Merriweather", "Poppins", sans-serif !important;
   }
 }

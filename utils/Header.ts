@@ -62,6 +62,14 @@ export const headerMenu = [
         description: "Success stories from global teams.",
         href: "/why/stories",
       },
+
+    {
+       title:"About Us",
+       description:"Learn more about our mission to empower workforces through innovative learning experiences",
+       href :"/why/about-us",
+
+    }
+  
     ],
   },
 

@@ -6,57 +6,56 @@ import Hero from "@/src/components/Hero/Hero";
 import { salesAcademyTabs } from "@/utils/academyTabsData";
 import { expertsData } from "@/utils/expertsData";
 import { brandSections, heroSections } from "@/utils/Hero";
-import { onboardingSection, onboardingSectionData } from "@/utils/salesSections";
+import {
+  onboardingSection,
+  onboardingSectionData,
+} from "@/utils/salesSections";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-
 
 export default function SalesAcademyPage() {
   return (
     <>
-    <div className="px-2.5">
-    <Hero
-      heroData={heroSections["sales-academy"]}
-      brandData={brandSections.default}
-    />
-      <AcademyTabs
-      title="Explore Sales Academy Offerings"
-      tabs={salesAcademyTabs}
-      image="/explore.png"
-    />
-         <OnboardingSection
-      title={onboardingSectionData.title}
-      subtitle={onboardingSectionData.subtitle}
-      taglines={onboardingSectionData.taglines}
-      desc={onboardingSectionData.desc}
-      cards={onboardingSectionData.cards}
-      buttonText={onboardingSectionData.buttonText}
-      variant="left"
-    />
-      <OnboardingSection
-      title={onboardingSection.title}
-      subtitle={onboardingSection.subtitle}
-      taglines={onboardingSection.taglines}
-      desc={onboardingSection.desc}
-      cards={onboardingSection.cards}
-      buttonText={onboardingSection.buttonText}
-      variant="right"
-    />
-      <OnboardingSection
-      title={onboardingSectionData.title}
-      subtitle={onboardingSectionData.subtitle}
-      taglines={onboardingSectionData.taglines}
-      desc={onboardingSectionData.desc}
-      cards={onboardingSectionData.cards}
-      buttonText={onboardingSectionData.buttonText}
-      variant="left"
-    />
-    <ExpertsGrid data={expertsData}/>
+      <div className="px-2.5">  
+        <Hero
+          heroData={heroSections["sales-academy"]}
+          brandData={brandSections.default}
+        />
+        <AcademyTabs
+          title="Explore Sales Academy Offerings"
+          tabs={salesAcademyTabs}
+          image="/explore.png"
+        />
+        <OnboardingSection
+          title={onboardingSectionData.title}
+          subtitle={onboardingSectionData.subtitle}
+          taglines={onboardingSectionData.taglines}
+          desc={onboardingSectionData.desc}
+          cards={onboardingSectionData.cards}
+          buttonText={onboardingSectionData.buttonText}
+          variant="left"
+        />
+        <OnboardingSection
+          title={onboardingSection.title}
+          subtitle={onboardingSection.subtitle}
+          taglines={onboardingSection.taglines}
+          desc={onboardingSection.desc}
+          cards={onboardingSection.cards}
+          buttonText={onboardingSection.buttonText}
+          variant="right"
+        />
+        <OnboardingSection
+          title={onboardingSectionData.title}
+          subtitle={onboardingSectionData.subtitle}
+          taglines={onboardingSectionData.taglines}
+          desc={onboardingSectionData.desc}
+          cards={onboardingSectionData.cards}
+          buttonText={onboardingSectionData.buttonText}
+          variant="left"
+        />
+        <ExpertsGrid data={expertsData} />
 
-    <WhatsNewCards 
-    data={whatsNewDefaultData2}
-    showHeader={false}
-    />
-</div>
+        <WhatsNewCards data={whatsNewDefaultData2} showHeader={false} />
+      </div>
     </>
-    )
+  );
 }

@@ -57,7 +57,7 @@ const Hero: React.FC<HeroProps> = ({ heroData, brandData }) => {
               {heroData.badge}
             </p>
           )}
-
+          
           {heroData.type === "complex" && (
             <p className="text-[#4A4848] font-poppins sm:text-[14px] text-[12px] font-medium italic underline sm:leading-5">
               {heroData.topTagline}
