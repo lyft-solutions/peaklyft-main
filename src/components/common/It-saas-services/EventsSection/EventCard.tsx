@@ -14,7 +14,6 @@ const EventCard: React.FC<Props> = ({ tag, image, title, description, dateText, 
   <div className="bg-white rounded-xl shadow-lg overflow-hidden relative
                   w-[380px] max-w-full h-[580px] mx-auto sm:w-[350px]">
 
-    {/* Tag */}
     <div className="absolute right-0 top-0 bg-[#D7EEFF] px-3 py-2 text-sm font-semibold
                     uppercase tracking-wide text-gray-700 shadow-md">
       {tag}

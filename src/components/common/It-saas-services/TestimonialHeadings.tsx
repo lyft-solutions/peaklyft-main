@@ -1,4 +1,3 @@
-// src/components/common/It-saas-services/TestimonialHeadings.tsx
 import React from "react";
 
 interface Props {
