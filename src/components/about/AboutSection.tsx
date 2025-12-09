@@ -1,27 +1,9 @@
-"use client";
-
-import Image from "next/image";
-import type { AboutData } from "@/utils/about"; 
-
-interface AboutSectionProps {
-  about: AboutData;
-}
-
-export default function AboutSection({ about }: AboutSectionProps) {
-  return (
-    <section className="py-16 md:py-24 px-6 md:px-20">
-      <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-
-        {/* LEFT IMAGE */}
-        <div className="w-full md:w-1/2">
-          <Image
-            src={about.image}
-            alt={about.title}
-            width={600}
-            height={500}
-            className="w-full rounded-[20px] shadow-xl border border-gray-200 object-cover"
-          />
-        </div>
+export default function AboutSection({ about }: { about: any }) {
+return (
+<section className="py-24 px-6 md:px-20 flex flex-col md:flex-row items-center gap-20">
+<div className="md:w-1/2">
+<img src={about.image} className="w-full rounded-[20px] shadow-xl border border-gray-200" />
+</div>
 
         {/* RIGHT TEXT */}
         <div className="w-full md:w-1/2">
@@ -38,7 +20,6 @@ export default function AboutSection({ about }: AboutSectionProps) {
           </p>
         </div>
 
-      </div>
     </section>
   );
 }

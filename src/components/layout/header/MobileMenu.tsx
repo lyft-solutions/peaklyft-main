@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { X, ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
-import { headerMenu, MenuItemType, MegaSectionType, MegaItem } from "@/utils/header";
+import { headerMenu, MenuItemType, MegaSectionType, MegaItem } from "@/utils/Header"; 
 import Image from "next/image";
 import Link from "next/link";
 

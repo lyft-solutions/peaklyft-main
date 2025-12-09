@@ -6,10 +6,12 @@
 // import CardsSection from "../CardsSection"; 
 // import EndSection from "../EndSection"; 
 
+import { useState } from "react";
 
-// export default function AboutDesign({ hero, about, cards, teams, leadership, investors, endSectionData }) {
-// const tabs = ["Our Team", "Our Leadership", "Our Investors"];
-// const [activeTab, setActiveTab] = useState("Our Team");
+
+export default function AboutDesign({ hero, about, cards, teams, leadership, investors, endSectionData }: { hero: any, about: any, cards: any, teams: any, leadership: any, investors: any, endSectionData: any }) {
+const tabs = ["Our Team", "Our Leadership", "Our Investors"];
+const [activeTab, setActiveTab] = useState("Our Team");
 
 
 // const getMembers = () => {
@@ -57,3 +59,4 @@
 // </div>
 // );
 // }
+}

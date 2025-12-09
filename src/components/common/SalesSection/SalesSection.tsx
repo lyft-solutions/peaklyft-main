@@ -64,7 +64,15 @@ export default function OnboardingSection({
           className="flex"
         >
           {cards.map((card) => (
-            <div key={card.id} className="w-full md:w-1/2 shrink-0 p-4">
+            <div
+              key={card.id}
+              className="
+          w-full
+          md:w-1/2
+          shrink-0 
+          p-4
+        "
+            >
               <div className="w-[285px] h-[300px] bg-white rounded-[20px] shadow-md border-2 border-secondary p-5 mx-auto">
                 <Image
                   src={card.image}

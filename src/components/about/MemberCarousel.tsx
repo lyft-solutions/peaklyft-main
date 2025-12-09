@@ -10,8 +10,8 @@ interface MemberCarouselProps {
 }
 
 export default function MemberCarousel({ members }: MemberCarouselProps) {
-  const [cardsPerView, setCardsPerView] = useState(3);
   const [index, setIndex] = useState(0);
+  const [cardsPerView, setCardsPerView] = useState(3); // Default to 3 for desktop
 
   // 🔥 Auto detect mobile / desktop
   useEffect(() => {
@@ -37,24 +37,10 @@ export default function MemberCarousel({ members }: MemberCarouselProps) {
         }}
       >
         {members.map((p, i) => (
-          <div
-            key={i}
-            className="px-4 shrink-0"
-            style={{
-              width: `${100 / cardsPerView}%`,
-            }}
-          >
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
-              
-              {/* Blue Top */}
-              <div className="bg-[#2858D3] h-[260px] flex justify-center items-center">
-                <Image
-                  src={p.img}
-                  alt={p.name}
-                  width={220}
-                  height={220}
-                  className="h-[220px] object-contain"
-                />
+          <div key={i} className="w-1/3 px-5 shrink-0" style={{ minWidth: "33.33%" }}>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="bg-secondary/90 h-[230px] flex justify-center items-center">
+                <img src={p.img} className="h-[200px] object-contain" />
               </div>
 
               {/* Content */}
@@ -75,7 +61,7 @@ export default function MemberCarousel({ members }: MemberCarouselProps) {
 
       {/* DOTS */}
       <div className="flex justify-center mt-6 space-x-3">
-        {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+        {Array.from({ length: maxIndex + 1 }).map((_, i: any) => (
           <div
             key={i}
             onClick={() => setIndex(i)}

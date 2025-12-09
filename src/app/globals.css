@@ -135,7 +135,7 @@
 }
 @layer utilities {
   .container {
-    @apply max-w-[1320px] mx-auto;
+    @apply xl:max-w-[1320px] mx-auto sm:max-w-[1200px];
   }
   .font{
     @apply text-[32px] leading-12 font-semibold text-center;

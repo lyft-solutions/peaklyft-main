@@ -1,6 +1,6 @@
 import MegaSection from "./MegaSection";
 import Image from "next/image";
-import { MegaSectionType } from "@/utils/header";
+import { MegaSectionType } from "@/utils/Header";
 
 const MegaDropdown = ({
   sections,

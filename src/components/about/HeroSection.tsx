@@ -1,20 +1,4 @@
-"use client";
-
-import React from "react";
-
-interface HeroData {
-  title: string;
-  subtitle: string;
-  description: string;
-  buttonText: string;
-  backgroundImage: string;
-}
-
-interface HeroSectionProps {
-  hero: HeroData;
-}
-
-export default function HeroSection({ hero }: HeroSectionProps) {
+export default function HeroSection({ hero }: { hero: any }) {
   return (
     <section
       className="
