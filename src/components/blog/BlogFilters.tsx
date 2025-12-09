@@ -17,10 +17,10 @@ export default function BlogFilters() {
 
   return (
     <div className="w-full px-10 py-10 flex items-center gap-6">
-      {/* FILTER LABEL */}
+      
       <p className="font-semibold text-[22px] pl-70 whitespace-nowrap">Filter By:</p>
 
-      {/* INDUSTRIES */}
+   
       <div className={selectBox}>
         <select
           className="bg-transparent outline-none w-full appearance-none cursor-pointer"
@@ -36,7 +36,7 @@ export default function BlogFilters() {
         <ChevronDown className="ml-2" size={20} />
       </div>
 
-      {/* SOLUTIONS */}
+   
       <div className={selectBox}>
         <select
           className="bg-transparent outline-none w-full appearance-none cursor-pointer"
@@ -50,7 +50,7 @@ export default function BlogFilters() {
         <ChevronDown className="ml-2" size={20} />
       </div>
 
-      {/* FUNCTIONS */}
+ 
       <div className={selectBox}>
         <select
           className="bg-transparent outline-none w-full appearance-none cursor-pointer"

@@ -22,7 +22,7 @@ export default function BlogCard({
       w-full 
       hover:shadow-lg transition-all duration-200
     ">
-      {/* IMAGE */}
+      
       <div className="w-full h-[200px] sm:h-[230px] md:h-[260px] overflow-hidden">
         <Image
           src={image}
@@ -33,9 +33,8 @@ export default function BlogCard({
         />
       </div>
 
-      {/* CONTENT */}
       <div className="p-5">
-        {/* CATEGORY */}
+       
         <span className="
           text-[13px] bg-gray-200 
           px-3 py-[4px] rounded-md 
@@ -44,7 +43,6 @@ export default function BlogCard({
           {category}
         </span>
 
-        {/* TITLE */}
         <h2 className="
           text-[18px] sm:text-[20px] md:text-[22px] 
           font-bold text-black mt-3 leading-snug
@@ -52,15 +50,15 @@ export default function BlogCard({
           {title}
         </h2>
 
-        {/* DATE */}
+   
         <p className="text-gray-600 text-[14px] mt-3">{date}</p>
 
-        {/* EXCERPT */}
+  
         <p className="text-gray-600 text-[15px] mt-2 leading-relaxed line-clamp-3">
           {excerpt}
         </p>
 
-        {/* READ MORE */}
+     
         <button className="
           text-[#FF802C] font-semibold flex items-center 
           gap-1 mt-4 hover:gap-2 transition-all

@@ -12,7 +12,7 @@ export default function BlogHero() {
         justify-between
       "
     >
-      {/* Left Text Section */}
+   
       <div className="max-w-xl sm:text-left text-center">
         <p className="text-[20px] sm:text-[24px] text-primary font-merriweather font-bold italic">
           Blog
@@ -24,7 +24,6 @@ export default function BlogHero() {
         </h1>
       </div>
 
-      {/* Right Image Section */}
       <img
         src="/images/blog/typewriter.png"
         alt="Blog Hero"
