@@ -5,7 +5,7 @@ import { Mail, Clock } from "lucide-react";
 const ContactPage = () => {
   return (
     <section className="w-full">
-      <div className="w-full py-8 h-[300px] flex" style={{background: "url('/contact.png') no-repeat center center/cover"}}>
+      <div className="w-full py-7 h-[300px] flex" style={{background: "url('/contact.png') no-repeat center center/cover"}}>
         <div className="container flex justify-center text-center items-center">
           <h1 className="text-4xl font-bold text-main font-serif">
             Contact Us
