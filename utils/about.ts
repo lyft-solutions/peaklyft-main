@@ -247,8 +247,8 @@ export const aboutData: AboutData = {
   image: "/aboutus.png",
   title: "About Peaklyft",
   description1:
-    "Peaklyft envisions a future where individuals are evaluated based on their ability to perform, fostering equality and meritocracy...",
-  description2:
-    "Peaklyft draws inspiration from the remarkable communication and collaboration of ants...",
+  "AntWalk envisions a future where individuals are evaluated based on their ability to perform, fostering equality and meritocracy. We believe in recognizing and nurturing talent purely based on performance and capability. By choosing AntWalk, you are committing to building an organization that values people for their true potential and their contributions to achieving business goals."
+ , description2:
+    "AntWalk draws inspiration from the remarkable communication and collaboration of ants as they walk. Like these tiny creatures, we believe in the power of collective intelligence and social learning. Founded by McKinsey alumni and backed by marquee investors like GSV, Y Combinator, and Matrix Partners, AntWalk exists to help humans succeed in the age of AI.",
 };
 

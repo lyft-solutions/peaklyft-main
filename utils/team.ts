@@ -24,4 +24,16 @@ export const teamSection: Member[] = [
     role: "Co-Founder",
     exp: "McKinsey | Jio | Broadcom | ISB",
   },
+  {
+    img: "/teammember.png",
+    name: "Sumit Gupta",
+    role: "Co-Founder",
+    exp: "Adani Capital | ICICI | CFA L3",
+  },
+  {
+    img: "/Sudhanshu-Shekhar.png",
+    name: "Sriramkumar S",
+    role: "Co-Founder",
+    exp: "McKinsey | Jio | Broadcom | ISB",
+  },
 ];

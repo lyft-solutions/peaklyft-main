@@ -1,30 +1,36 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import MemberCarousel from "../MemberCarousel";
 import type { Member } from "@/utils/team";
+
+interface InvestorLogo {
+  name: string;
+  img: string;
+}
 
 interface TeamTabsProps {
   teams: Member[];
   leadership: Member[];
-  investors: Member[];
+  investors: InvestorLogo[];
 }
 
 export default function TeamTabsSection({ teams, leadership, investors }: TeamTabsProps) {
   const tabs = ["Our Team", "Our Leadership", "Our Investors"];
-  const [activeTab, setActiveTab] = useState("Our Team");
+  const [activeTab, setActiveTab] = useState<string>("Our Team");
 
   const getMembers = () => {
     if (activeTab === "Our Team") return teams;
     if (activeTab === "Our Leadership") return leadership;
-    return investors;
+    return []; // Investors use custom UI → no carousel
   };
 
   return (
     <section className="px-6 md:px-16 pb-20">
       <h1 className="text-center text-4xl font-bold my-10">Peaklyft</h1>
 
-      {/* ================= MOBILE ================= */}
+      {/* MOBILE TAB SELECTOR */}
       <div className="md:hidden mb-10">
         <button className="w-full bg-[#3158D3] text-white py-4 rounded-2xl font-semibold text-lg shadow-md">
           {activeTab}
@@ -45,9 +51,9 @@ export default function TeamTabsSection({ teams, leadership, investors }: TeamTa
         </div>
       </div>
 
-      {/* ================= DESKTOP LAYOUT LIKE ANTWALK ================= */}
+      {/* DESKTOP LAYOUT */}
       <div className="hidden md:flex gap-10">
-        {/* LEFT — VERTICAL TABS */}
+        {/* LEFT SIDE TABS */}
         <div className="w-1/4 flex flex-col gap-4">
           {tabs.map((tab) => (
             <button
@@ -64,15 +70,45 @@ export default function TeamTabsSection({ teams, leadership, investors }: TeamTa
           ))}
         </div>
 
-        {/* RIGHT — SLIDER */}
+        {/* RIGHT SIDE CONTENT */}
         <div className="w-3/4">
-          <MemberCarousel members={getMembers()} />
+          {activeTab === "Our Investors" ? (
+            <div className="flex items-center justify-between gap-10">
+              {investors.map((inv, i) => (
+                <Image
+                  key={i}
+                  src={inv.img}
+                  alt={inv.name}
+                  width={160}
+                  height={60}
+                  className="object-contain"
+                />
+              ))}
+            </div>
+          ) : (
+            <MemberCarousel members={getMembers()} />
+          )}
         </div>
       </div>
 
-      {/* MOBILE SLIDER */}
+      {/* MOBILE SLIDER SECTION */}
       <div className="md:hidden">
-        <MemberCarousel members={getMembers()} />
+        {activeTab === "Our Investors" ? (
+          <div className="flex flex-col items-center gap-10">
+            {investors.map((inv, i) => (
+              <Image
+                key={i}
+                src={inv.img}
+                alt={inv.name}
+                width={140}
+                height={60}
+                className="object-contain"
+              />
+            ))}
+          </div>
+        ) : (
+          <MemberCarousel members={getMembers()} />
+        )}
       </div>
     </section>
   );

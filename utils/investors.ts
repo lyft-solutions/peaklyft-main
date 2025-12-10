@@ -1,22 +1,18 @@
-import { Member } from "./team";
-
-export const investors: Member[] = [
+export const investors = [
   {
-    name: "Sequoia Capital",
-    role: "Lead Investor",
-    exp: "Backed 500+ startups globally",
-    img: "/teammember.png",
+    name: "GSV Ventures",
+    img: "/icons/gsv.png",
   },
   {
-    name: "Accel Partners",
-    role: "Investor",
-    exp: "Invested in global unicorn companies",
-    img: "/teammember.png",
+    name: "Y Combinator",
+    img: "/icons/ycombinator.png",
   },
   {
-    name: "Tiger Global",
-    role: "Investor",
-    exp: "Leading global growth equity investor",
-    img: "/teammember.png",
+    name: "Matrix Partners India",
+    img: "/icons/matrixx.png",
+  },
+  {
+    name: "Better Capital",
+    img: "/icons/betterr.png",
   },
 ];

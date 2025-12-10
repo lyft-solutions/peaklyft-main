@@ -38,13 +38,13 @@ export const headerMenu: MenuItemType[] = [
       {
         title: "Initiatives",
         items: [
-          {
-            title: "Succession Planning",
-            description:
-              "Prepare future leaders with a structured pathway to fill critical roles.",
-            href: "/initiatives/succession-planning",
-            icon: "succession",
-          },
+          // {
+          //   title: "Succession Planning",
+          //   description:
+          //     "Prepare future leaders with a structured pathway to fill critical roles.",
+          //   href: "/initiatives/succession-planning",
+          //   icon: "succession",
+          // },
         ],
       },
     ],
@@ -75,18 +75,18 @@ export const headerMenu: MenuItemType[] = [
     sections: [
       {
         items: [
-          {
-            title: "Our Process",
-            description: "Discover how Peaklyft powers capability building.",
-            href: "/why/process",
-            icon: "process",
-          },
-          {
-            title: "Impact Stories",
-            description: "Success stories from global teams.",
-            href: "/why/stories",
-            icon: "stories",
-          },
+          // {
+          //   title: "Our Process",
+          //   description: "Discover how Peaklyft powers capability building.",
+          //   href: "/why/process",
+          //   icon: "process",
+          // },
+          // {
+          //   title: "Impact Stories",
+          //   description: "Success stories from global teams.",
+          //   href: "/why/stories",
+          //   icon: "stories",
+          // },
           {
             title: "About Us",
             description:
@@ -109,6 +109,12 @@ export const headerMenu: MenuItemType[] = [
             title: "Blog",
             description: "Success stories from global teams.",
             href: "/research-center/blog",
+            icon: "blog",
+          },
+          {
+            title: "Contact us",
+            description: "Get in touch with our team and discuss your specific needs",
+            href: "contact",
             icon: "blog",
           },
         ],

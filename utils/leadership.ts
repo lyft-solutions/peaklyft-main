@@ -8,6 +8,18 @@ export const leadership: Member[] = [
     img: "/Sudhanshu-Shekhar.png",
   },
   {
+    name: "Vikas Verma",
+    role: "Chief Technology Officer",
+    exp: "18+ years building scalable tech systems",
+    img: "/Sudhanshu-Shekhar.png",
+  },
+  {
+    name: "Shruti Bhandari",
+    role: "Chief People Officer",
+    exp: "10+ years HR & organizational development",
+    img: "/Sudhanshu-Shekhar.png",
+  },
+  {
     name: "Rhea Malhotra",
     role: "Chief Operating Officer",
     exp: "12+ years managing operations",
