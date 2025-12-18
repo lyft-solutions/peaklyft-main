@@ -14,7 +14,7 @@ export const heroSections = {
     description:
       " Peaklyft <b>Business Capability Platform</b> empowers your workforce to achieve your business goals by driving organization-wide capability building through end-to-end Capability Academy​",
     button: { label: "Schedule a Demo!" },
-    heroImage: "/hero.png",
+    heroImage: "/Hero.png",
   } as const,
 
   growth: {
