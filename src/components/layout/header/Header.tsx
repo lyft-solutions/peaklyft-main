@@ -53,7 +53,7 @@ export default function Header() {
   }`}
 >
   <div className="container flex items-center justify-between py-2 sm:py-[6px]">
-    {/* Logo */}
+    
     <div className="flex items-center gap-3">
       <Link href="/">
         <Image
@@ -69,12 +69,12 @@ export default function Header() {
     {/* Desktop Menu */}
     <DesktopMenu />
 
-    {/* CTA Button */}
-    <Button className="hidden sm:block bg-[#FF802C00] text-[14px] font-medium text-secondary border border-secondary hover:bg-primary hover:text-white hover:border-primary rounded-[4px] py-[8px] px-5">
+   <Link href="/schedule-demo" className="hidden sm:block bg-[#FF802C00] text-[14px] font-medium text-secondary border border-secondary rounded-lg hover:bg-primary hover:text-white hover:border-primary rounded-[4px] py-[8px] px-5">
+    <Button className="hidden sm:block bg-[#FF802C00] text-[14px] font-medium text-secondary hover:bg-primary hover:text-white hover:border-primary rounded-[4px] py-[8px] px-5">
       Schedule a Demo
     </Button>
+    </Link>
 
-    {/* Mobile Menu Button */}
     <button onClick={() => setOpen(true)} className="sm:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import { X, ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
-import { headerMenu, MenuItemType, MegaSectionType, MegaItem } from "@/utils/Header"; 
+import { headerMenu } from "@/utils/Header";
 import Image from "next/image";
 import Link from "next/link";
+import {  MegaSectionType, MenuItemType } from "./menu.types";
 
 const MobileMenu = ({
   open,
@@ -53,7 +54,7 @@ const MobileMenu = ({
                   (isMainOpen ? <ChevronUp size={12} /> : <ChevronDown size={12} />)}
               </div>
 
-              {item.sections && (
+              {item.type === "mega" && (
                 <div
                   className={`overflow-hidden transition-all ml-2 ${
                     isMainOpen ? "max-h-[800px] opacity-100 mt-2" : "max-h-0 opacity-0"
@@ -77,7 +78,7 @@ const MobileMenu = ({
                             isSubOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
                           }`}
                         >
-                          {section.items.map((i: MegaItem) => (
+                          {section.items.map((i: any) => (
                             <Link
                               key={i.href}
                               href={i.href}

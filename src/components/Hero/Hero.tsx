@@ -43,7 +43,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ heroData, brandData, variant = "default" }) => {
   return (
     <section
-      className="w-full px-4"
+      className="w-full"
       style={{
         background:
           variant === "blog"
@@ -74,13 +74,7 @@ const Hero: React.FC<HeroProps> = ({ heroData, brandData, variant = "default" })
 
           {/* RIGHT IMAGE */}
 <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-  <Image
-    src={heroData.image}
-    alt="blog hero"
-    width={450}
-    height={350}
-    className="w-[240px] sm:w-[330px] md:w-[450px] h-auto object-contain"
-  />
+
 </div>
 
         </div>

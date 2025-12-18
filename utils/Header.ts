@@ -1,6 +1,5 @@
-import { MenuItemType } from "../src/components/layout/header/MenuItem";
 
-export const headerMenu: MenuItemType[] = [
+export const headerMenu: any[] = [
   {
     label: "Solution",
     type: "mega",
@@ -18,8 +17,8 @@ export const headerMenu: MenuItemType[] = [
           {
             title: "Mobile App Development",
             description:
-              "Create seamless Android, iOS, or cross–platform apps. ",
-            href: "/solutions/mobile-app-development",
+              "Create seamless Android, iOS, or cross–platform apps.",
+            href: "/solutions/mobile-app",
             icon: "mobile",
           },
           {
@@ -45,7 +44,6 @@ export const headerMenu: MenuItemType[] = [
           },
         ],
       },
-
       {
         title: "Emerging Tech",
         items: [
@@ -72,7 +70,6 @@ export const headerMenu: MenuItemType[] = [
           },
         ],
       },
-
       {
         title: "Scale With PeakLyft",
         items: [
@@ -109,60 +106,57 @@ export const headerMenu: MenuItemType[] = [
             description:
               "Get long-term maintenance and continuous product support.",
             href: "/solutions/maintenance-support",
-            icon: "maintain"
-            ,
+            icon: "maintain",
           },
         ],
       },
     ],
   },
 
-  
- {
-  label: "Industries",
-  type: "mega",
-  image: "/icons/ebook.png",
-  sections: [
-    {
-      title: "Industries",
-      items: [
-        {
-          title: "FinTech & Financial Services",
-          description: "Digital banking, payment solutions & secure finance platforms.",
-          href: "/industries/saas-it-services",
-          icon: "fintech",
-        },
-        {
-          title: "E-Commerce & Retail",
-          description: "Custom e-commerce platforms, multi-vendor solutions & CRM systems.",
-          href: "/industries/ecommerce-retail",
-          icon: "ecommerce",
-        },
-        {
-          title: "SaaS & Technology",
-          description: "Scalable SaaS products, automation systems & cloud architecture.",
-          href: "/industries/saas-technology",
-          icon: "saas",
-        },
-      ],
-    },
-  ],
-},
+  {
+    label: "Industries",
+    type: "mega",
+    image: "/icons/ebook.png",
+    sections: [
+      {
+        items: [
+          {
+            title: "FinTech & Financial Services",
+            description:
+              "Digital banking, payment solutions & secure finance platforms.",
+            href: "/industries/saas-it-services",
+            icon: "fintech",
+          },
+          {
+            title: "E-Commerce & Retail",
+            description:
+              "Custom e-commerce platforms, multi-vendor solutions & CRM systems.",
+            href: "/industries/ecommerce-retail",
+            icon: "ecommerce",
+          },
+          {
+            title: "SaaS & Technology",
+            description:
+              "Scalable SaaS products, automation systems & cloud architecture.",
+            href: "/industries/saas-technology",
+            icon: "saas",
+          },
+        ],
+      },
+    ],
+  },
 
-
- 
   {
     label: "Why Peaklyft?",
     type: "mega",
     image: "/icons/ebook.png",
     sections: [
       {
-        title: "Company",
         items: [
           {
             title: "About Us",
             description:
-              "Learn more about our mission to empower workforces through innovative learning experiences.",
+              "Learn more about our mission to empower workforces",
             href: "/why/about-us",
             icon: "about",
           },
@@ -171,19 +165,17 @@ export const headerMenu: MenuItemType[] = [
     ],
   },
 
-  
   {
     label: "Research Center",
     type: "mega",
     image: "/icons/ebook.png",
     sections: [
       {
-        title: "Resources",
         items: [
           {
             title: "Blog",
             description: "Success stories from global teams.",
-            href: "/research-center/blog",
+            href: "/research",
             icon: "blog",
           },
           {
@@ -197,7 +189,4 @@ export const headerMenu: MenuItemType[] = [
       },
     ],
   },
-]
-
-
- 
+];

@@ -1,33 +1,40 @@
 "use client";
 import React from "react";
-import Image from "next/image"; 
-import { trustedBrands } from "@/utils/brandData";
+import Image from "next/image";
+
+interface Brand {
+  image: string;
+  alt: string;
+}
 
 interface BrandSectionProps {
   title: string;
+  logos: Brand[];
 }
 
-const BrandSection: React.FC<BrandSectionProps> = ({ title }) => {
+const BrandSection: React.FC<BrandSectionProps> = ({ title, logos }) => {
   return (
-    <section className="w-full py-16 flex justify-center">
-      <div className="bg-white rounded-2xl shadow-lg w-[95%] max-w-7xl p-10">
-        
-        <h2 className="text-center text-[32px] font-merriweather font-bold mb-10">
+    <section className="w-full py-16 flex justify-center bg-gray-100">
+      <div className="w-full max-w-7xl bg-white rounded-2xl shadow-md px-8 py-12">
+
+        {/* TITLE */}
+        <h2 className="text-center text-3xl font-bold mb-12">
           {title}
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
-          {trustedBrands.logos.map((brand, index) => (
+        {/* LOGOS - HORIZONTAL */}
+        <div className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 place-items-center">
+          {logos.map((brand, index) => (
             <div
               key={index}
-              className="bg-[#F7F7F7] rounded-xl shadow-md flex justify-center items-center h-[120px] p-6 hover:scale-105 transition-transform"
+              className="h-[70px] w-[150px] flex items-center justify-center"
             >
               <Image
                 src={brand.image}
                 alt={brand.alt}
-                width={200}     
-                height={120}    
-                className="h-full object-contain"
+                width={150}
+                height={70}
+                className="object-contain grayscale hover:grayscale-0 transition"
               />
             </div>
           ))}
@@ -39,3 +46,4 @@ const BrandSection: React.FC<BrandSectionProps> = ({ title }) => {
 };
 
 export default BrandSection;
+  

@@ -29,7 +29,7 @@ interface Props {
 
 const WhatsNewCards = ({ content, data, showHeader = true }: Props) => {
   return (
-    <section className="w-full pb-12 sm:pb-16 md:pb-20">
+    <section className="pb-20">
       {showHeader && (
         <div
           className="w-full h-[180px] sm:h-[200px] md:h-[200px] lg:h-[220px] bg-cover bg-center relative"

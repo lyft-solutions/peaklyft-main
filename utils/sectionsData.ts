@@ -16,7 +16,7 @@ export interface OnboardingSectionContent1 {
   variant?: "left" | "right"; 
 }
 
-export const onboardingLeft: OnboardingSectionContent1 = {
+export const  onboardingLeft: OnboardingSectionContent1 = {
   title: "Improve Resource Utilization",
   subtitle: "Boost your team efficiency",
   taglines: ["Data Engineers", "Project Managers"],

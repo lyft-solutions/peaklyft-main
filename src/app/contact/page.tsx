@@ -89,11 +89,11 @@ const ContactPage = () => {
               <h3 className="font-semibold text-[#1B2A4E]">Corporate Office</h3>
             </div>
 
-            <p className="text-gray-700 mt-2 leading-6">
+            {/* <p className="text-gray-700 mt-2 leading-6">
               ©  Peaklyft Inc. <br />
               1521 Concord Pike Ste 301 #250 <br />
               Wilmington, DE 19803
-            </p>
+            </p> */}
           </div>
 
           <div className="mt-8">
@@ -131,14 +131,14 @@ const ContactPage = () => {
               <h3 className="font-semibold text-[#1B2A4E]">Corporate Office</h3>
             </div>
 
-            <p className="text-gray-700 mt-2 leading-6">
+            {/* <p className="text-gray-700 mt-2 leading-6">
               3rd Floor, Building No. 380, <br />
               23rd Cross, 9th Main Rd, Sector 7,
               <br />
               HSR Layout, Bengaluru,
               <br />
               Karnataka 560102
-            </p>
+            </p> */}
           </div>
         </div>
 

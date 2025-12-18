@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef, useCallback } from "react";
-import { usePathname } from "next/navigation";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
 
 interface Brand {
@@ -14,13 +13,15 @@ interface BrandSliderProps {
   brands: Brand[];
 }
 
+const LOGO_WIDTH_DESKTOP = 160;
+const LOGO_WIDTH_MOBILE = 120;
+const GAP = 48;
+const SPEED = 0.5; // speed control (px per frame)
+
 const BrandSlider: React.FC<BrandSliderProps> = ({ title, brands }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
-  const [windowWidth, setWindowWidth] = useState(768);
-  const timeoutRef = useRef<number | null>(null);
-  const pathname = usePathname();
-  const isHome = pathname === "/";
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [windowWidth, setWindowWidth] = useState(1024);
+  const xRef = useRef(0);
 
   const handleResize = useCallback(() => {
     setWindowWidth(window.innerWidth);
@@ -29,87 +30,70 @@ const BrandSlider: React.FC<BrandSliderProps> = ({ title, brands }) => {
   useEffect(() => {
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    const interval = setInterval(() => {
-      setIsTransitioning(true);
-      setCurrentIndex((prev) => prev + 1);
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, [handleResize]);
 
-  useEffect(() => {
-    if (currentIndex === brands.length) {
-      timeoutRef.current = window.setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentIndex(0);
-      }, 700);
-    }
+  const logoWidth =
+    windowWidth < 768 ? LOGO_WIDTH_MOBILE : LOGO_WIDTH_DESKTOP;
 
-    return () => {
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  const totalWidth =
+    brands.length * (logoWidth + GAP);
+
+  useEffect(() => {
+    let rafId: number;
+
+    const animate = () => {
+      xRef.current += SPEED;
+
+      if (xRef.current >= totalWidth) {
+        xRef.current = 0;
+      }
+
+      if (containerRef.current) {
+        containerRef.current.style.transform = `translateX(-${xRef.current}px)`;
+      }
+
+      rafId = requestAnimationFrame(animate);
     };
-  }, [currentIndex, brands.length]);
+
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
+  }, [totalWidth]);
 
   const renderBrand = (brand: Brand, key: number | string) => (
     <div
       key={key}
-      className="shrink md:w-[220px] w-full h-[60px] border-l border-black flex items-center justify-center bg-card px-2.5"
+      className="flex items-center justify-center h-[60px]"
+      style={{ width: logoWidth }}
     >
       <Image
         src={brand.logo}
         alt={brand.name}
-        width={201}
-        height={58}
-        className="w-[201px] h-[58.53px] object-contain"
-        onError={(e) => {
-          e.currentTarget.style.display = "none";
-          e.currentTarget.parentElement!.innerHTML = `<span class='text-card-foreground font-bold text-xl'>${brand.name}</span>`;
-        }}
+        width={95}
+        height={40}
+        className="object-contain"
       />
     </div>
   );
 
-  const offset = currentIndex * (windowWidth < 768 ? 164 : 244);
-
   return (
-    <div
-      className={`w-full max-w-[1188px] mx-auto bg-main shadow-[0px_13.35px_40.04px_0px_rgba(0,0,0,0.16)]
-        pt-[30px] pb-[25px] px-5 md:px-10 overflow-hidden rounded-[14px] mt-[30px]
-        ${isHome ? "h-auto" : "h-[249px]"}
-      `}
-    >
-      <div className="max-w-[1188px] mx-auto">
-        <h2 className="text-[20px] md:text-[28px] leading-[1.5em] font-bold text-center text-foreground mb-5">
+    <section className="w-full mt-13 flex justify-center mx-auto ">
+      <div className="w-full bg-white rounded-t-xl shadow-md px-12 py-10 overflow-hidden">
+        <h2 className="text-center text-[24px] md:text-[28px] font-bold mb-8">
           {title}
         </h2>
 
-        <div className="relative">
-          <div className="overflow-hidden bg-main">
-            <div
-              className={`flex gap-4 md:gap-6 ${
-                isTransitioning
-                  ? "transition-transform duration-700 ease-in-out"
-                  : ""
-              }`}
-              style={{
-                transform: `translateX(-${offset}px)`,
-                width: "max-content",
-              }}
-            >
-              {brands.map((b, i) => renderBrand(b, i))}
-              {brands.map((b, i) => renderBrand(b, `dup-${i}`))}
-            </div>
+        <div className="overflow-hidden">
+          <div
+            ref={containerRef}
+            className="flex gap-12 w-max will-change-transform"
+          >
+            {brands.map((b, i) => renderBrand(b, i))}
+            {brands.map((b, i) => renderBrand(b, `dup-${i}`))}
           </div>
-
-          <div className="absolute top-0 left-0 w-16 md:w-32 h-full pointer-events-none"></div>
-          <div className="absolute top-0 right-0 w-16 md:w-32 h-full pointer-events-none"></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,24 +4,26 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-export interface MenuSectionItem {
+export type MenuSectionItem = {
   title: string;
-  description: string;
+  description?: string;
   href: string;
-  icon: string;
-}
+  icon?: string;
+};
 
-export interface MenuSection {
+export type MenuSection = {
   title?: string;
   items: MenuSectionItem[];
-}
+};
 
-export interface MenuItemType {
+export type MenuItemType = {
   label: string;
-  type: string;
+  type: "mega" | "link";
+  href?: string;
   image?: string;
   sections: MenuSection[];
-}
+};
+
 
 const MenuItem = ({ item }: { item: MenuItemType }) => {
   const [open, setOpen] = useState(false);
@@ -48,7 +50,10 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
             grid grid-cols-3 gap-15
             animate-fadeIn border-t-6 border-secondary
           "
-          style={{ width: 1050 }}
+           style={{
+            width: isSolution ? 1150 : 900, 
+            // height:isSolution? 750:500
+          }}
         >
         
           {isSolution ? (
@@ -56,7 +61,7 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
               {item.sections.map((section, index) => (
                 <div key={index} className="space-y-5">
                   {section.title && (
-                    <h3 className="text-[20px] font-semibold text-secondary">
+                    <h3 className="text-[20px] font-semibold text-secondary ">
                       {section.title}
                     </h3>
                   )}
@@ -77,7 +82,7 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
                           />
 
                           <div>
-                            <h4 className="text-[16px] text-black ">
+                            <h4 className="text-[16px] text-black  ">
                               {menu.title}
                             </h4>
                             <p className="text-[13px] text-black-900 leading-snug top-2">
@@ -100,7 +105,7 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
                 {item.sections.map((section, index) => (
                   <div key={index}>
                     {section.title && (
-                      <h3 className="text-[20px] font-semibold text-secondary mb-">
+                      <h3 className="text-[20px] font-semibold text-secondary mb-4">
                         {section.title}
                       </h3>
                     )}

@@ -5,86 +5,76 @@ import Link from "next/link";
 
 const footerData = {
   offices: [
-    {
-      flag: "/us.svg",
-      title: "Corporate Headquarters",
-      lines: [
-        "©  Peaklyft Inc.",
-        "1521 Concord Pike Ste 301 #250 Wilmington, DE",
-        "19803",
-      ],
-    },
+   
     {
       flag: "/india.svg",
       title: "India Corporate Office",
       lines: [
-        "3rd Floor, Building No. 380, 23rd Cross, 9th Main Rd,",
-        "Sector 7, HSR Layout, Bengaluru, Karnataka 560102",
+        " C210B, Phase 8B, Industrial Area, Sector 74, ",
+        "Sahibzada Ajit Singh Nagar, Punjab 140307",
       ],
     },
   ],
-  columns: [
+  columns:[
+   {
+      title: "Build With Peaklyft",
+      links: [
+        { name: "Web Development", href: "/solutions/sales-academy" },
+        { name: "Mobile App Development", href: "/solutions/mobile-app" },
+        { name: "Customer Software Development", href: "/solutions/custom-software" },
+        { name: "UI/UX Design", href: "/solutions/ui-ux-design" },
+        { name: "Cloud Engineering", href: "/solutions/cloud-engineering" },
+        
+      ],
+    },
+    
+   
+    {
+      title:"Emerging Tech",
+      links: [
+        { name: "Web Development", href: "E:/solutions/mobile-app" },
+        { name: "Blochain", href: "/solutions/ui-ux-design" },
+        { name: "Chatbot Development", href: "/solutions/cloud-engineering" },
+        
+      ],
+    },
+    {
+     title:"Scale With Peaklyft",
+      links: [
+        { name: "Product Engineering", href: "/solutions/ui-ux-design" },
+        { name: "MVP->Product Scaling", href: "/solutions/cloud-engineering" },
+        { name: "DevOps & Automation", href: "/solutions/ui-ux-design" },
+        { name: "QA & Testing", href: "/solutions/mobile-app" },
+        { name: "Maintenance & Support", href: "/solutions/sales-academy" },
+        { name: "Product Engineering", href: "/solutions/ui-ux-design" },
+        { name: "MVP->Product Scaling", href: "/solutions/cloud-engineering" },
+       
+      
+    
+
+  ]},
+  {
+  
+      title: "Industries",
+      links: [
+        { name: " FinTech & Financial Services", href: "/industries/saas-it-services" },
+        { name: "E-Commerce & Retail", href: "/industries/saas-it-services" },
+        { name: "Saas & Technology", href: "/industries/saas-it-services" },
+      ],
+    },
     {
       title: "Why Peaklyft?",
       links: [
-        { name: "Why  Peaklyft-  Peaklyft Difference", href: "#" },
-        { name: "Why Capability Academy?", href: "#" },
-        { name: "Choose the right Assessment for team", href: "#" },
-        { name: "Success Stories", href: "#" },
-        { name: "About us", href: "#" },
-        { name: "Careers at  Peaklyft", href: "#" },
+        { name: "About us", href: "/solutions/cloud-engineering" },
+        { name: "Technology/ IT Services", href: "/solutions/cloud-engineering" },
+       
       ],
     },
-    {
-      title: "Industries",
-      links: [
-        { name: "Financial Services", href: "#" },
-        { name: "Technology", href: "#" },
-        { name: "Manufacturing", href: "#" },
-      ],
-    },
-    {
-      title: "Academies",
-      links: [
-        { name: "Sales Academy", href: "#" },
-        { name: "Customer Success Academy", href: "#" },
-        { name: "Finance Academy", href: "#" },
-        { name: "Leadership & EI Academy", href: "#" },
-        { name: "Human Resource Academy", href: "#" },
-        { name: "PowerSkills Academy", href: "#" },
-        { name: "Data and AI Academy", href: "#" },
-        { name: "Cybersecurity Academy", href: "#" },
-        { name: "Software Engineering Academy", href: "#" },
-        { name: "Cloud & Infrastructure Academy", href: "#" },
-        { name: "Product & Design Academy", href: "#" },
-        { name: "Gen AI Academy", href: "#" },
-      ],
-    },
-    {
-      title: "Initiatives",
-      links: [
-        { name: "Financial Services", href: "#" },
-        { name: "Technology/ IT Services", href: "#" },
-        { name: "Manufacturing", href: "#" },
-      ],
-    },
-    {
-      title: "Partners",
-      links: [
-        { name: "Knowledge Partners", href: "#" },
-        { name: "Content Partners", href: "#" },
-        { name: "Integration Partners", href: "#" },
-      ],
-    },
+    
     {
       title: "Resources",
       links: [
         { name: "Blogs", href: "#" },
-        { name: "eBook", href: "#" },
-        { name: "Podcasts", href: "#" },
-        { name: "Newsletters", href: "#" },
-        { name: "Events", href: "#" },
-        { name: "Case Studies", href: "#" },
       ],
       bottomLinks: [
         { name: "Terms and conditions", href: "#" },
@@ -97,14 +87,15 @@ const footerData = {
 const Footer = () => {
   return (
     <footer
-      className="text-white"
-      style={{
-        background:
-          "radial-gradient(at center center, #0a4891 0%, #101D96 100%)",
-      }}
-    >
+  className="text-white min-h-[450px] lg:min-h-[550px]"
+  style={{
+    background:
+      "radial-gradient(at center center, #04438bff 0%, #252b5eff 100%)",
+  }}
+>
+
       <div className="w-full max-w-[1440px] mx-auto">
-        <div className="flex justify-end px-4 pt-11 pb-11 border-b border-[#11ABEE40]">
+        <div className="flex justify-end px-10 pt-10 pb-8 border-b border-[#11ABEE40]">
           <Button
             variant="default"
             className="py-2 bg-transparent hover:bg-transparent rounded-md font-medium flex items-center gap-2 transition-colors"
@@ -117,7 +108,7 @@ const Footer = () => {
                 alt="contact"
                 className="w-6 h-6"
               />
-              <span className="text-[18px] font-medium">Contact Us</span>
+              <span className="text-[16px] font-medium">Contact Us</span>
             </Link>
           </Button>
         </div>
@@ -126,7 +117,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
             <div className="lg:pr-8 lg:border-r lg:border-white/20">
               {footerData.offices.map((office, i) => (
-                <div key={i} className="mb-5">
+                <div key={i} className="mb-8">
                   <h3 className="text-[#FAA843] text-base font-medium mb-[5px] leading-[25px] flex items-center gap-2.5">
                     <Image
                       width={35}
@@ -172,7 +163,7 @@ const Footer = () => {
                   </Link>
                   <Link
                     href="#"
-                    className="border border-[#FFFFFF25] flex justify-center items-center p-2 rounded-full w-[30px] h-[30px]"
+                    className="border border-[#FFFFFF25] flex justify-center items-center p-2 rounded-full w-[40px] h-[30px]"
                   >
                     <Image src="/in.svg" alt="in" width={15} height={15} />
                   </Link>
@@ -200,7 +191,7 @@ const Footer = () => {
                 <h3 className="text-[#FAA843] font-semibold mb-4">
                   {footerData.columns[0].title}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-4">
                   {footerData.columns[0].links.map((link, idx) => (
                     <li key={idx} className="m-0">
                       <Link
@@ -216,7 +207,7 @@ const Footer = () => {
                 <h3 className="text-[#FAA843] font-semibold mb-2 mt-5">
                   {footerData.columns[1].title}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-4">
                   {footerData.columns[1].links.map((link, idx) => (
                     <li key={idx} className="m-0 h-[20.5px]">
                       <Link

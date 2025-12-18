@@ -1,6 +1,6 @@
-// import BlogHero from "@/src/components/blog/BlogHero";
-// import BlogFilters from "@/src/components/blog/BlogFilters";
-// import BlogList from "@/src/components/blog/BlogList";
+// import BlogHero from "@/src/components/common/expert/blog/BlogList";
+// import BlogFilters from "@/src/components/common/expert/blog/BlogFilters";
+// import BlogList from "@/src/components/common/expert/blog/BlogCard";
 // import Hero from "@/src/components/Hero/Hero";
 // import { blogBrandData, blogHeroData, heroData } from "@/utils/about";
 
@@ -17,3 +17,11 @@
 //     </main>
 //   );
 // }
+
+export default function BlogPage() {
+  return (
+    <div>
+      <h1>Blog Page</h1>
+    </div>
+  );
+}
