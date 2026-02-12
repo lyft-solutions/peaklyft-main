@@ -12,8 +12,7 @@ export const heroSections = {
       line2End: "",
     },
     description:
-      " Peaklyft <b>Business Capability Platform</b> empowers your workforce to achieve your business goals by driving organization-wide capability building through end-to-end Capability Academy​",
-    button: { label: "Schedule a Demo!" },
+        "Peaklyft Solutions <b>Digital Product Engineering Platform</b> empowers businesses to achieve their goals by delivering scalable, secure, and high-performance software solutions through end-to-end product development.",    button: { label: "Schedule a Demo!" },
     heroImage: "/hero.png",
   } as const,
 
@@ -51,7 +50,7 @@ export const heroSections = {
 
   "sales-academy": {
     type: "simple",
-    badge: " Peaklyft Sales Academy",
+    badge: " Peaklyft Sales Academyd",
     simpleTitle: "Close More Deals, Faster!",
     description:
       "Transform your salesforce with a dedicated Sales Capability Academy that builds skills, drives consistency, and accelerates revenue growth.",
@@ -73,7 +72,7 @@ export const heroSections = {
 //////////////////////////////////////////
 export const brandSections = {
   default: {
-    title: "Top-rated on Clutch and Google ",
+    title: "Modern Technologies Powering Peaklyft Solutions",
     brands: [
       { name: "HTML", logo: "/icons/Java-Script.svg" },
       { name: "fastapi", logo: "/icons/FastAPI.svg" },

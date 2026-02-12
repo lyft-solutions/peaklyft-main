@@ -66,7 +66,7 @@ const Hero: React.FC<HeroProps> = ({
           <div className="w-full sm:w-[52%] text-left">
             {heroData.type === "complex" && (
               <p className="text-[#3D3D3D] underline text-[15px] mb-3">
-                {heroData.topTagline}
+                Product Engineering for Modern Businesses
               </p>
             )}
 
@@ -75,12 +75,11 @@ const Hero: React.FC<HeroProps> = ({
                 <h1 className="font-poppins text-black font-bold text-[32px] sm:text-[42px] leading-[42px] sm:leading-[52px] max-w-[590px]">
                   Build{" "}
                   <span className="text-secondary">
-                    Capability Academies
+                    Scalable
                   </span>
                   <br />
-                  to achieve{" "}
                   <span className="text-secondary">
-                    Strategic Objectives
+                   Digital Products with Peaklyft Solutions
                   </span>
                 </h1>
 

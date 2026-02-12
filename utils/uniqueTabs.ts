@@ -1,42 +1,42 @@
 export const uniqueTabs = [
   {
     id: 1,
-    title: "Consulting-led Success Profiles",
+    title: "Architecture-First Engineering",
     image: "/success.png",
-    heading: "Consulting-led Success Profiles",
+    heading: "Architecture-First Engineering",
     description:
-      "Develop tailored competency frameworks that align directly with your organization’s strategic goals.",
+      "Design robust system architectures aligned with business objectives, ensuring scalability, maintainability, and long-term product stability.",
   },
   {
     id: 2,
-    title: "Multifaceted Assessments",
+    title: "Performance & Security Focus",
     image: "/candidate.png",
-    heading: "Multifaceted Assessments",
+    heading: "Performance & Security Focus",
     description:
-      "Evaluate learners using multi-dimensional skill assessments for deep performance insights.",
+      "Build high-performance applications with optimized code, secure APIs, and hardened infrastructure designed for real-world usage.",
   },
   {
     id: 3,
-    title: "Comprehensive Learning Interventions",
+    title: "End-to-End Product Development",
     image: "/learn.png",
-    heading: "Comprehensive Learning Interventions",
+    heading: "End-to-End Product Development",
     description:
-      "Deliver curated learning journeys designed to build scalable capabilities across teams.",
+      "Deliver complete product lifecycles from discovery and UI/UX design to development, deployment, and continuous improvement.",
   },
   {
     id: 4,
-    title: "Integrated Analytics Dashboard",
+    title: "Scalable Cloud Infrastructure",
     image: "/dashboard.png",
-    heading: "Integrated Analytics Dashboard",
+    heading: "Scalable Cloud Infrastructure",
     description:
-      "Monitor performance and connect learning outcomes to business results with advanced analytics.",
+      "Deploy cloud-native applications with automated CI/CD pipelines, monitoring systems, and infrastructure built for growth.",
   },
   {
     id: 5,
-    title: "World Class Customer Success",
+    title: "Long-Term Technical Partnership",
     image: "/customer.png",
-    heading: "World Class Customer Success",
+    heading: "Long-Term Technical Partnership",
     description:
-      "Ensure smooth implementation, ongoing engagement, and maximum ROI with dedicated support.",
+      "Ensure smooth launches, proactive system monitoring, and continuous optimization with dedicated engineering support.",
   },
 ];

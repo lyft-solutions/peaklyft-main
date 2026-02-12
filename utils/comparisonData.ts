@@ -1,42 +1,52 @@
-
 export const comparisonData = {
-  headings: ["Strategic Consultants", "Training Consultants", "LXP/LMS", "MOOCS", " Peaklyft"],
+  headings: [
+    "Freelancers",
+    "Traditional IT Firms",
+    "Offshore Agencies",
+    "No-Code Platforms",
+    "Peaklyft"
+  ],
+
   features: [
     {
-      name: "Strategic Advisory",
-      values: [true, false, true, false, true]
-    },
-    {
-      name: "Customised Success Profiles",
+      name: "Architecture-First Engineering Approach",
       values: [false, true, false, false, true]
     },
     {
-      name: "Skill Assessments",
-      values: [false, false, false, true, true ]
+      name: "Scalable Cloud & Microservices Infrastructure",
+      values: [false, true, true, false, true]
     },
     {
-      name: "Self-Paced Learning",
-      values: [false, false, true, true, true]
-    },
-    {
-      name: "Live-Customised Learning",
+      name: "Senior-Level Engineering Team",
       values: [false, true, false, false, true]
     },
     {
-      name: "Integrated Analytics and KPI Dashboard",
-      values: [false, false, true, true, true]
+      name: "AI-Augmented Development Workflow",
+      values: [false, false, false, false, true]
     },
     {
-      name: "Scalability",
-      values: [false, false, true, true, true]
+      name: "Founder-Led Technical Oversight",
+      values: [false, false, false, false, true]
     },
     {
-      name: "Industry Expertise",
-      values: [true, true, true, false, true]
+      name: "End-to-End Product Ownership",
+      values: [false, true, false, false, true]
     },
     {
-      name: "End-to-End Execution",
-      values: [false, false, true, false, true]
+      name: "Automated DevOps & CI/CD Pipelines",
+      values: [false, true, false, false, true]
+    },
+    {
+      name: "Enterprise-Grade Security Standards",
+      values: [false, true, false, false, true]
+    },
+    {
+      name: "Performance Optimization & Monitoring",
+      values: [false, true, false, false, true]
+    },
+    {
+      name: "Long-Term Technical Partnership",
+      values: [false, false, false, false, true]
     }
   ]
 };

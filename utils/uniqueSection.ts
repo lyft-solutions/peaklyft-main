@@ -1,9 +1,9 @@
 export const uniqueSectionContent = {
   title: {
-    normalStart: "What Makes an",
-    highlight: " Peaklyft",
-    normalEnd: "Academy Unique?",
+    normalStart: "The",
+    highlight: "Peaklyft",
+    normalEnd: "Engineering Advantage",
   },
   subtitle:
-    " Peaklyft Academies are end-to-end capability-building solutions that go beyond traditional training.",
+    "We design, develop, and scale secure digital products using modern architecture, cloud-native infrastructure, and performance-driven engineering practices.",
 };

@@ -22,57 +22,58 @@ interface Category {
 export const academiesData: Category[] = [
   {
     id: "growth",
-    name: "Growth Acceleration",
+    name: "Product Engineering",
 
     title: {
-      normalStart: "Achieve Your",
-      highlight: "Business Strategies",
-      normalEnd: "with Targeted Academies",
+      normalStart: "Build Scalable",
+      highlight: "Digital Products",
+      normalEnd: "with Modern Engineering",
     },
 
-    subtitle: "Empower your workforce with future-ready skills",
+    subtitle:
+      "Design, develop, and scale secure, high-performance digital solutions aligned with evolving business goals.",
 
     academies: [
       {
         id: "sales",
-        title: "Sales Academy",
+        title: "Web Application Development",
         description:
-          "Equip your sales team to close deals faster and drive revenue growth.",
+          "Develop scalable, secure, and high-performance web applications using modern frontend and backend technologies tailored to business needs.",
         icon: "wrench",
       },
       {
         id: "customer-success",
-        title: "Customer Success Academy",
+        title: "Mobile App Development",
         description:
-          "Enable your team to build lasting relationships and turn customer success into business growth.",
+          "Build seamless and performance-optimized mobile applications for iOS and Android platforms with intuitive user experiences.",
         icon: "wrench",
       },
       {
         id: "finance",
-        title: "Finance Academy",
+        title: "Custom Software Solutions",
         description:
-          "Equip account managers to grow key accounts and deliver consistent, measurable value.",
+          "Create tailored software systems that streamline operations, improve efficiency, and support long-term scalability.",
         icon: "wrench",
       },
       {
         id: "marketing",
-        title: "Marketing Academy",
+        title: "UI/UX Design & Prototyping",
         description:
-          "Transform your marketing team into growth drivers with data-driven strategies and campaigns.",
+          "Design intuitive and user-centric interfaces that enhance engagement and ensure exceptional digital experiences.",
         icon: "wrench",
       },
       {
         id: "business-dev",
-        title: "Business Development Academy",
+        title: "API & Backend Architecture",
         description:
-          "Expand market reach and identify new opportunities for sustainable business growth.",
+          "Develop secure APIs and scalable backend systems using optimized database structures and modular architecture patterns.",
         icon: "wrench",
       },
       {
         id: "revenue-ops",
-        title: "Revenue Operations Academy",
+        title: "Quality Assurance & Testing",
         description:
-          "Optimize revenue generation through streamlined operations and strategic alignment.",
+          "Ensure product reliability and performance through comprehensive testing strategies and continuous quality monitoring.",
         icon: "wrench",
       },
     ],
@@ -80,58 +81,58 @@ export const academiesData: Category[] = [
 
   {
     id: "people",
-    name: "People Transformation",
+    name: "AI & Emerging Technologies",
 
     title: {
-      normalStart: "Transform Your",
-      highlight: "People Function",
-      normalEnd: "with Expert-Led Academies",
+      normalStart: "Innovate with",
+      highlight: "AI & Emerging Tech",
+      normalEnd: "for Competitive Advantage",
     },
 
     subtitle:
-      "Develop leaders, nurture talent, and build a thriving organizational culture.",
+      "Leverage intelligent systems and next-generation technologies to automate workflows and unlock new opportunities.",
 
     academies: [
       {
         id: "leadership",
-        title: "Leadership Academy",
+        title: "AI Development",
         description:
-          "Develop strong leaders who inspire teams and drive organizational excellence.",
+          "Design and implement AI-powered applications including machine learning models and intelligent automation systems.",
         icon: "wrench",
       },
       {
         id: "hr",
-        title: "HR Excellence Academy",
+        title: "Chatbot & Automation Solutions",
         description:
-          "Transform your HR function into a strategic business partner.",
+          "Enhance customer engagement and operational efficiency with AI-driven chatbots and workflow automation tools.",
         icon: "wrench",
       },
       {
         id: "talent",
-        title: "Talent Development Academy",
+        title: "Blockchain Development",
         description:
-          "Build a culture of continuous learning and employee growth.",
+          "Build decentralized applications, secure smart contracts, and scalable blockchain infrastructures.",
         icon: "wrench",
       },
       {
         id: "culture",
-        title: "Culture & Engagement Academy",
+        title: "Data Engineering & Analytics",
         description:
-          "Foster a positive workplace culture that drives engagement and retention.",
+          "Transform raw data into actionable insights through advanced analytics dashboards and optimized data pipelines.",
         icon: "wrench",
       },
       {
         id: "diversity",
-        title: "Diversity & Inclusion Academy",
+        title: "Business Process Automation",
         description:
-          "Build inclusive teams that leverage diverse perspectives for innovation.",
+          "Automate repetitive processes and integrate systems to improve efficiency and reduce operational overhead.",
         icon: "wrench",
       },
       {
         id: "change-management",
-        title: "Change Management Academy",
+        title: "Technology Strategy & Innovation",
         description:
-          "Lead organizational transformations with confidence and strategic planning.",
+          "Identify and implement forward-thinking technology strategies aligned with long-term business growth.",
         icon: "wrench",
       },
     ],
@@ -139,58 +140,58 @@ export const academiesData: Category[] = [
 
   {
     id: "technology",
-    name: "Technology Transformation",
+    name: "Cloud & DevOps Engineering",
 
     title: {
-      normalStart: "Upgrade Your",
-      highlight: "Technology Teams",
-      normalEnd: "for the Future of Work",
+      normalStart: "Scale with",
+      highlight: "Cloud & DevOps",
+      normalEnd: "Infrastructure",
     },
 
     subtitle:
-      "Build excellence in cloud, AI/ML, agile, data, and cybersecurity.",
+      "Deploy, manage, and optimize cloud-native applications using secure and automated infrastructure systems.",
 
     academies: [
       {
         id: "digital",
-        title: "Digital Innovation Academy",
+        title: "Cloud Architecture & Migration",
         description:
-          "Drive digital transformation and stay ahead in the technology landscape.",
+          "Design and migrate systems to scalable cloud environments using modern infrastructure best practices.",
         icon: "wrench",
       },
       {
         id: "data",
-        title: "Data Analytics Academy",
+        title: "DevOps & CI/CD Implementation",
         description:
-          "Leverage data-driven insights to make informed business decisions.",
+          "Implement automated deployment pipelines and monitoring systems for faster, reliable product releases.",
         icon: "wrench",
       },
       {
         id: "agile",
-        title: "Agile Delivery Academy",
+        title: "Containerization & Orchestration",
         description:
-          "Master agile methodologies to accelerate product delivery and innovation.",
+          "Utilize Docker and orchestration tools to build efficient, portable, and scalable application environments.",
         icon: "wrench",
       },
       {
         id: "cloud",
-        title: "Cloud Engineering Academy",
+        title: "Cloud Security & Compliance",
         description:
-          "Build scalable cloud infrastructure and modern application architectures.",
+          "Strengthen infrastructure security with proactive monitoring, threat detection, and compliance strategies.",
         icon: "wrench",
       },
       {
         id: "cybersecurity",
-        title: "Cybersecurity Academy",
+        title: "Performance Optimization",
         description:
-          "Protect your organization with advanced security practices and threat management.",
+          "Enhance system performance through infrastructure tuning, caching strategies, and scalable architecture design.",
         icon: "wrench",
       },
       {
         id: "ai-ml",
-        title: "AI & Machine Learning Academy",
+        title: "Maintenance & Long-Term Support",
         description:
-          "Harness the power of artificial intelligence to innovate and automate.",
+          "Provide ongoing monitoring, updates, and proactive support to ensure stability and continuous improvement.",
         icon: "wrench",
       },
     ],

@@ -11,6 +11,7 @@ import { uniqueSectionContent } from "@/utils/uniqueSection";
 import { uniqueTabs } from "@/utils/uniqueTabs";
 import { comparisonData } from "@/utils/comparisonData";
 import { whatsNewDefaultContent, whatsNewDefaultData } from "@/utils/utils";
+import Testimonials from "../components/Testimonials";
 
 export default function HomePage() {
   return (
@@ -28,7 +29,8 @@ export default function HomePage() {
       <Methodology />
       <ComparisonTable data={comparisonData} />
       <Trust />
-      <WhatsNew content={whatsNewDefaultContent} data={whatsNewDefaultData} showHeader={true} />
+       <Testimonials />
+      {/* <WhatsNew content={whatsNewDefaultContent} data={whatsNewDefaultData} showHeader={true} /> */}
     </div>
   );
 }

@@ -5,24 +5,24 @@ import { useState, useEffect } from "react";
 const methodologyData = [
   {
     icon: "spider.svg",
-    title: "Assess",
-    heading: "Assessment & Analysis",
+    title: "Discover",
+    heading: "Product Discovery & Technical Analysis",
     description:
-      "We begin by thoroughly understanding your organization's current state, challenges, and goals through comprehensive assessment and analysis.",
+      "We begin by understanding your business objectives, user requirements, and technical constraints to define a scalable and future-ready product foundation.",
   },
   {
     icon: "claude.svg",
-    title: "Plan",
-    heading: "Strategic Planning",
+    title: "Architect",
+    heading: "System Architecture & Strategic Planning",
     description:
-      "Based on our assessment, we develop a customized strategic plan that aligns with your business objectives and drives measurable outcomes.",
+      "We design secure system architecture, select the right technology stack, and create a structured development roadmap aligned with performance and scalability goals.",
   },
   {
     icon: "darkrender.svg",
-    title: "Execute",
-    heading: "Implementation & Execution",
+    title: "Build & Scale",
+    heading: "Agile Development & Continuous Optimization",
     description:
-      "We work alongside your team to execute the plan, ensuring smooth implementation and continuous optimization for maximum impact.",
+      "We develop, deploy, and continuously optimize your product using agile methodologies, cloud-native infrastructure, and performance-driven engineering practices.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function Methodology() {
   return (
     <section className="container mx-auto px-4 py-12 md:py-20 text-black rounded-[25px]">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-8 md:mb-14">
-        Peaklyft<span className="text-primary">Methodology</span>
+        Peaklyft<span className="text-primary"> Methodology</span>
       </h2>
 
       <div
