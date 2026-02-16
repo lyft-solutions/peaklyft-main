@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const footerData = {
   offices: [
-   
     {
       flag: "/india.svg",
       title: "India Corporate Office",
@@ -15,31 +14,31 @@ const footerData = {
       ],
     },
   ],
-  columns:[
-   {
+  columns: [
+    {
       title: "Build With Peaklyft",
       links: [
         { name: "Web Development", href: "/solutions/sales-academy" },
         { name: "Mobile App Development", href: "/solutions/mobile-app" },
-        { name: "Customer Software Development", href: "/solutions/custom-software" },
+        {
+          name: "Customer Software Development",
+          href: "/solutions/custom-software",
+        },
         { name: "UI/UX Design", href: "/solutions/ui-ux-design" },
         { name: "Cloud Engineering", href: "/solutions/cloud-engineering" },
-        
       ],
     },
-    
-   
+
     {
-      title:"Emerging Tech",
+      title: "Emerging Tech",
       links: [
         { name: "Web Development", href: "E:/solutions/mobile-app" },
         { name: "Blochain", href: "/solutions/ui-ux-design" },
         { name: "Chatbot Development", href: "/solutions/cloud-engineering" },
-        
       ],
     },
     {
-     title:"Scale With Peaklyft",
+      title: "Scale With Peaklyft",
       links: [
         { name: "Product Engineering", href: "/solutions/ui-ux-design" },
         { name: "MVP->Product Scaling", href: "/solutions/cloud-engineering" },
@@ -48,16 +47,15 @@ const footerData = {
         { name: "Maintenance & Support", href: "/solutions/sales-academy" },
         { name: "Product Engineering", href: "/solutions/ui-ux-design" },
         { name: "MVP->Product Scaling", href: "/solutions/cloud-engineering" },
-       
-      
-    
-
-  ]},
-  {
-  
+      ],
+    },
+    {
       title: "Industries",
       links: [
-        { name: " FinTech & Financial Services", href: "/industries/saas-it-services" },
+        {
+          name: " FinTech & Financial Services",
+          href: "/industries/saas-it-services",
+        },
         { name: "E-Commerce & Retail", href: "/industries/saas-it-services" },
         { name: "Saas & Technology", href: "/industries/saas-it-services" },
       ],
@@ -66,16 +64,16 @@ const footerData = {
       title: "Why Peaklyft?",
       links: [
         { name: "About us", href: "/solutions/cloud-engineering" },
-        { name: "Technology/ IT Services", href: "/solutions/cloud-engineering" },
-       
+        {
+          name: "Technology/ IT Services",
+          href: "/solutions/cloud-engineering",
+        },
       ],
     },
-    
+
     {
       title: "Resources",
-      links: [
-        { name: "Blogs", href: "#" },
-      ],
+      links: [{ name: "Blogs", href: "#" }],
       bottomLinks: [
         { name: "Terms and conditions", href: "#" },
         { name: "FAQs", href: "#" },
@@ -87,15 +85,14 @@ const footerData = {
 const Footer = () => {
   return (
     <footer
-  className="text-white min-h-[450px] lg:min-h-[550px]"
-  style={{
-    background:
-      "radial-gradient(at center center, #04438bff 0%, #252b5eff 100%)",
-  }}
->
-
+      className="text-white min-h-[450px] lg:min-h-[550px]"
+      style={{
+        background:
+          "radial-gradient(at center center, #04438bff 0%, #252b5eff 100%)",
+      }}
+    >
       <div className="w-full max-w-[1440px] mx-auto">
-        <div className="flex justify-end px-10 pt-10 pb-8 border-b border-[#11ABEE40]">
+        <div className="flex relative right-2 justify-end px-10 pt-10 pb-8 border-b border-[#11ABEE40]">
           <Button
             variant="default"
             className="py-2 bg-transparent hover:bg-transparent rounded-md font-medium flex items-center gap-2 transition-colors"
@@ -182,7 +179,7 @@ const Footer = () => {
               </div>
 
               <p className="text-[15px] font-medium text-white">
-                ©  Peaklyft Inc. All rights reserved
+                © Peaklyft Inc. All rights reserved
               </p>
             </div>
 

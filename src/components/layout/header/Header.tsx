@@ -46,53 +46,54 @@ export default function Header() {
       </div>
 
       <header
-  className={`w-full transition-all duration-300 ${
-    isFixed
-      ? "fixed top-0 left-0 bg-white shadow-md z-50"
-      : "relative bg-transparent"
-  }`}
->
-  <div className="container flex items-center justify-between py-2 sm:py-[6px]">
-    
-    <div className="flex items-center gap-3">
-      <Link href="/">
-        <Image
-          src="/peaklyft1.svg"
-          alt="Logo"
-          className="lg:w-[180px] w-[110px]"
-          width={180}
-          height={63}
-        />
-      </Link>
-    </div>
-
-    {/* Desktop Menu */}
-    <DesktopMenu />
-
-   <Link href="/schedule-demo" className="hidden sm:block bg-[#FF802C00] text-[14px] font-medium text-secondary border border-secondary rounded-lg hover:bg-primary hover:text-white hover:border-primary rounded-[4px] py-[8px] px-5">
-    <Button className="hidden sm:block bg-[#FF802C00] text-[14px] font-medium text-secondary hover:bg-primary hover:text-white hover:border-primary rounded-[4px] py-[8px] px-5">
-      Schedule a Demo
-    </Button>
-    </Link>
-
-    <button onClick={() => setOpen(true)} className="sm:hidden">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="22"
-        viewBox="0 0 20 16"
-        fill="none"
+        className={`w-full transition-all duration-300 ${
+          isFixed
+            ? "fixed top-0 left-0 bg-white shadow-md z-50"
+            : "relative bg-transparent"
+        }`}
       >
-        <rect y="7" width="20" height="2" rx="1" fill="#4E5FF5"></rect>
-        <rect y="14" width="20" height="2" rx="1" fill="#4E5FF5"></rect>
-        <rect width="20" height="2" rx="1" fill="#4E5FF5"></rect>
-      </svg>
-    </button>
-  </div>
+        <div className="container flex items-center justify-between p-[10px]">
+          <div className="flex items-center gap-3">
+            <Link href="/">
+              <Image
+                src="/peaklyft1.svg"
+                alt="Logo"
+                className="w-[180px] md:w-[180px]"
+                width={180}
+                height={63}
+              />
+            </Link>
+          </div>
 
-  <MobileMenu open={open} setOpen={setOpen} />
-</header>
+          {/* Desktop Menu */}
+          <DesktopMenu />
 
+          <Link
+            href="/schedule-demo"
+            className="hidden sm:block bg-primary text-[14px] font-medium text-white border border-primary rounded-[4px] hover:bg-primary hover:text-white hover:border-primary py-[8px] px-5"
+          >
+            <Button className="hidden sm:block bg-primary text-[14px] font-medium hover:bg-primary hover:border-primary rounded-[4px] py-[8px] px-5">
+              Schedule a Demo
+            </Button>
+          </Link>
+
+          <button onClick={() => setOpen(true)} className="sm:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 20 16"
+              fill="none"
+            >
+              <rect y="7" width="20" height="2" rx="1" fill="#0a4891"></rect>
+              <rect y="14" width="20" height="2" rx="1" fill="#0a4891"></rect>
+              <rect width="20" height="2" rx="1" fill="#0a4891"></rect>
+            </svg>
+          </button>
+        </div>
+
+        <MobileMenu open={open} setOpen={setOpen} />
+      </header>
     </>
   );
 }

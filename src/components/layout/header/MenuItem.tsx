@@ -24,7 +24,6 @@ export type MenuItemType = {
   sections: MenuSection[];
 };
 
-
 const MenuItem = ({ item }: { item: MenuItemType }) => {
   const [open, setOpen] = useState(false);
 
@@ -45,17 +44,16 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
       {item.type === "mega" && open && (
         <div
           className="
-            fixed left-1/2 top-[100px] -translate-x-1/2 mt-3
+            absolute left-1/2 top-[60px] -translate-x-1/3 mt-3
             bg-white shadow-xl p-8 z-999 
             grid grid-cols-3 gap-15
             animate-fadeIn border-t-6 border-secondary
           "
-           style={{
-            width: isSolution ? 1150 : 900, 
+          style={{
+            width: isSolution ? 1150 : 900,
             // height:isSolution? 750:500
           }}
         >
-        
           {isSolution ? (
             <>
               {item.sections.map((section, index) => (
@@ -71,6 +69,7 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
                       <li key={idx}>
                         <Link
                           href={menu.href}
+                          onClick={() => setOpen(false)}
                           className="flex items-start gap-3 group/item"
                         >
                           <Image
@@ -95,12 +94,9 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
                   </ul>
                 </div>
               ))}
-             
             </>
           ) : (
-           
             <>
-           
               <div className="col-span-2 space-y-5">
                 {item.sections.map((section, index) => (
                   <div key={index}>
@@ -115,6 +111,7 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
                         <li key={idx}>
                           <Link
                             href={menu.href}
+                            onClick={() => setOpen(false)}
                             className="flex items-start gap-3 group/item"
                           >
                             <Image
@@ -141,7 +138,6 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
                 ))}
               </div>
 
-              
               <div className="flex justify-end items-start">
                 <Image
                   src="/icons/ebook.png"
