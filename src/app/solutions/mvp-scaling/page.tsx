@@ -30,7 +30,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore UI/UX Design Offerings"
           tabs={salesAcademyTab4}
-          image="/explore1.jpeg"
+          image="/explore2.jpeg"
         />
          
         

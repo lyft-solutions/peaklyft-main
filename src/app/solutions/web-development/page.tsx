@@ -22,7 +22,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore Web Developement Offerings"
           tabs={salesAcademyTabs}
-          image="/explore1.jpeg"
+          image="/explore2.jpeg"
         />
 
         <WhatsNewCards data={whatsNewDefaultData2} />

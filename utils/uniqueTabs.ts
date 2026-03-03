@@ -2,7 +2,7 @@ export const uniqueTabs = [
   {
     id: 1,
     title: "Architecture-First Engineering",
-    image: "/explore1.jpeg",
+    image: "/explore2.jpeg",
     heading: "Architecture-First Engineering",
     description:
       "Design robust system architectures aligned with business objectives, ensuring scalability, maintainability, and long-term product stability.",
