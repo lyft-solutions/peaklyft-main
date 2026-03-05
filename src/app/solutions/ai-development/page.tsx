@@ -27,7 +27,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore Cloud Engineering Offerings!!"
           tabs={salesAcademyTab5}
-          image="/success.jpeg"
+          image="/explore2.jpeg"
         />
          
         

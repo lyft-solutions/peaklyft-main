@@ -30,7 +30,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore Mobile App Development Offerings"
           tabs={salesAcademyTab}
-          image="/success.jpeg"
+          image="/explore2.jpeg"
         />
          
         
