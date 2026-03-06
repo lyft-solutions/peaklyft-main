@@ -20,7 +20,7 @@ export default function SalesAcademyPage() {
     <>
       <div className="px-2.5">  
         <Hero
-          heroData={ customerSections["sales-academy"]}
+          heroData={ customerSections}
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft

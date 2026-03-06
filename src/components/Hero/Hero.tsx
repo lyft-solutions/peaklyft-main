@@ -1,11 +1,11 @@
-
 import Image from "next/image";
 import { Button } from "../ui/button";
 import BrandSlider from "../common/Slider";
 
 interface ComplexHero {
   type: "complex";
-  topTagline: string;
+  topTagline?: string;
+  badge1?: string;
   title: {
     line1Start: string;
     highlight1: string;
@@ -21,10 +21,10 @@ interface ComplexHero {
 
 interface SimpleHero {
   type: "simple";
-  badge: string;
+  badge?: string;
   simpleTitle: string;
   description: string;
-  buttonText: string;
+  buttonText?: string;
   image: string;
 }
 
@@ -32,7 +32,7 @@ type HeroData = ComplexHero | SimpleHero;
 
 interface HeroProps {
   heroData: HeroData;
-  brandData: {
+  brandData?: {
     title: string;
     brands: { name: string; logo: string }[];
   };
@@ -44,7 +44,6 @@ const Hero: React.FC<HeroProps> = ({
   brandData,
   variant = "default",
 }) => {
-  // ✅ SAFE IMAGE RESOLUTION (LOCAL + URL + FALLBACK)
   const resolvedImage =
     heroData.type === "complex"
       ? heroData.heroImage || "/hero.png"
@@ -64,52 +63,80 @@ const Hero: React.FC<HeroProps> = ({
         <div className="max-w-[1280px] mx-auto flex flex-col sm:flex-row justify-between items-center pt-16 gap-12">
           {/* LEFT */}
           <div className="w-full sm:w-[52%] text-left">
-            {heroData.type === "complex" && (
+            {/* Top tagline — only shown if provided */}
+            {heroData.type === "complex" && heroData.topTagline && (
               <p className="text-[#3D3D3D] underline text-[15px] mb-3">
-                Product Engineering for Modern Businesses
+                {heroData.topTagline}
               </p>
+            )}
+            {heroData.type === "complex" && heroData.badge1 && (
+              <span className="text-2xl font-extrabold text-primary mb-3 italic block merri">
+                {heroData.badge1}
+              </span>
             )}
 
             {heroData.type === "complex" ? (
               <>
                 <h1 className="font-poppins text-black font-bold text-[32px] sm:text-[42px] leading-[42px] sm:leading-[52px] max-w-[590px]">
-                  Build{" "}
-                  <span className="text-secondary">
-                    Scalable
-                  </span>
-                  <br />
-                  <span className="text-secondary">
-                   Digital Products with Peaklyft Solutions
-                  </span>
+                  {heroData.title.line1Start && `${heroData.title.line1Start} `}
+                  {heroData.title.highlight1 && (
+                    <span className="text-secondary">
+                      {heroData.title.highlight1}
+                    </span>
+                  )}
+                  {heroData.title.line1End && ` ${heroData.title.line1End}`}
+
+                  {(heroData.title.line2Start || heroData.title.highlight2) && (
+                    <>
+                      <br />
+                      {heroData.title.line2Start &&
+                        `${heroData.title.line2Start} `}
+                      {heroData.title.highlight2 && (
+                        <span className="text-secondary">
+                          {heroData.title.highlight2}
+                        </span>
+                      )}
+                      {heroData.title.line2End && ` ${heroData.title.line2End}`}
+                    </>
+                  )}
                 </h1>
 
                 <p
                   className="text-[#4A4848] text-[16px] sm:text-[18px] mt-5 max-w-[620px]"
-                  dangerouslySetInnerHTML={{
-                    __html: heroData.description,
-                  }}
+                  dangerouslySetInnerHTML={{ __html: heroData.description }}
                 />
               </>
             ) : (
               <>
+                {/* Badge — only shown if provided */}
+                {heroData.badge && (
+                  <span className="text-2xl font-extrabold text-primary mb-3 italic block merri">
+                    {heroData.badge}
+                  </span>
+                )}
+
                 <h1 className="text-black text-[32px] sm:text-[42px] font-bold max-w-[600px]">
                   {heroData.simpleTitle}
                 </h1>
 
-                <p
-                  className="text-[#4A4848] text-[18px] mt-5 max-w-[620px]"
-                  dangerouslySetInnerHTML={{
-                    __html: heroData.description,
-                  }}
-                />
+                {heroData.description && (
+                  <p
+                    className="text-[#4A4848] text-[18px] mt-5 max-w-[620px]"
+                    dangerouslySetInnerHTML={{ __html: heroData.description }}
+                  />
+                )}
               </>
             )}
 
-            <Button className="mt-7 w-[210px] py-[18px] bg-gradient-to-r from-[#FF802C] to-[#994D1A] text-white">
-              {heroData.type === "complex"
-                ? heroData.button.label
-                : heroData.buttonText}
-            </Button>
+            {/* Button — only shown if label/text is provided */}
+            {((heroData.type === "complex" && heroData.button?.label) ||
+              (heroData.type === "simple" && heroData.buttonText)) && (
+              <Button className="mt-7 w-[210px] py-[18px] bg-gradient-to-r from-[#FF802C] to-[#994D1A] text-white">
+                {heroData.type === "complex"
+                  ? heroData.button.label
+                  : heroData.buttonText}
+              </Button>
+            )}
           </div>
 
           {/* RIGHT IMAGE */}
@@ -126,10 +153,11 @@ const Hero: React.FC<HeroProps> = ({
         </div>
       )}
 
-      <BrandSlider title={brandData.title} brands={brandData.brands} />
+      {brandData && (
+        <BrandSlider title={brandData.title} brands={brandData.brands} />
+      )}
     </section>
   );
 };
 
 export default Hero;
-

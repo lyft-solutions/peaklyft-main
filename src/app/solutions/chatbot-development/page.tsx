@@ -5,13 +5,8 @@ import WhatsNewCards from "@/src/components/common/WhatsNew";
 import Hero from "@/src/components/Hero/Hero";
 import WhyChoosePeaklyft from "@/src/components/whychoosePeaklyft/WhyChoosePeaklyft";
 import { salesAcademyTab3, salesAcademyTabs } from "@/utils/academyTabsData";
-import { expertsData } from "@/utils/expertsData";
 
 import { brandSections, customerSections, heroSections } from "@/utils/Hero";
-import {
-  onboardingSection,
-  onboardingSectionData,
-} from "@/utils/salesSections";
 import { whatsNewDefaultData2 } from "@/utils/utils";
 import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
 
@@ -20,7 +15,7 @@ export default function SalesAcademyPage() {
     <>
       <div className="px-2.5">  
         <Hero
-          heroData={ customerSections["sales-academy"]}
+          heroData={ customerSections }
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft

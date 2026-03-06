@@ -1,11 +1,12 @@
-"use client";
 import Image from "next/image";
 import { Button } from "../../ui/button";
 import BrandSlider from "../../common/Slider";
 
 interface ComplexHero {
   type: "complex";
-  topTagline: string;
+  topTagline?: string;
+  badge?: string;
+
   title: {
     line1Start: string;
     highlight1: string;
@@ -21,10 +22,10 @@ interface ComplexHero {
 
 interface SimpleHero {
   type: "simple";
-  badge: string;
+  badge?: string;
   simpleTitle: string;
   description: string;
-  buttonText: string;
+  buttonText?: string;
   image: string;
 }
 
@@ -32,101 +33,133 @@ type HeroData = ComplexHero | SimpleHero;
 
 interface HeroProps {
   heroData: HeroData;
-  brandData: {
+  brandData?: {
     title: string;
     brands: { name: string; logo: string }[];
   };
+  variant?: "default" | "blog";
 }
 
-const Hero: React.FC<HeroProps> = ({ heroData, brandData }) => {
+const Hero: React.FC<HeroProps> = ({
+  heroData,
+  brandData,
+  variant = "default",
+}) => {
+  const resolvedImage =
+    heroData.type === "complex"
+      ? heroData.heroImage || "/hero.png"
+      : heroData.image || "/hero.png";
+
   return (
     <section
-      className="w-full px-2.5"
+      className="w-full"
       style={{
         background:
-          heroData.type === "simple"
+          variant === "blog" || heroData.type === "simple"
             ? "none"
             : "radial-gradient(at top right, #4E5FF545 0%, #DBDFFF00 10%)",
       }}
     >
-      <div className={`container flex ${heroData.type === "simple" ? "flex-col sm:flex-row" : "flex-col-reverse sm:flex-row"} justify-between items-center pt-5`}>
-        <div className="w-full flex flex-col sm:text-left text-left sm:gap-2.5 mt-[70px] mb-[30px]">
-          {heroData.type === "simple" && (
-            <p className="text-primary font-merriweather sm:text-[24px] text-[20px] font-bold italic sm:leading-[30px]">
-              {heroData.badge}
-            </p>
-          )}
+      {variant !== "blog" && (
+        <div className="max-w-[1280px] mx-auto flex flex-col sm:flex-row justify-between items-center pt-16 gap-12">
+          {/* LEFT */}
+          <div className="w-full sm:w-[52%] text-left">
+            {/* Top tagline — only shown if provided */}
+            {heroData.type === "complex" && heroData.topTagline && (
+              <p className="text-[#3D3D3D] underline text-[15px] mb-3">
+                {heroData.topTagline}
+              </p>
+            )}
+            {/* Badge — only shown if provided */}
+            {heroData.badge && (
+              <span className="text-sm font-medium text-secondary mb-3 block">
+                {heroData.badge}
+              </span>
+            )}
 
-          {heroData.type === "complex" && (
-            <p className="text-[#4A4848] font-poppins sm:text-[14px] text-[12px] font-medium italic underline sm:leading-5">
-              {heroData.topTagline}
-            </p>
-          )}
+            {heroData.type === "complex" ? (
+              <>
+                <h1 className="font-poppins text-black font-bold text-[32px] sm:text-[42px] leading-[42px] sm:leading-[52px] max-w-[590px]">
+                  {heroData.title.line1Start && `${heroData.title.line1Start} `}
+                  {heroData.title.highlight1 && (
+                    <span className="text-secondary">
+                      {heroData.title.highlight1}
+                    </span>
+                  )}
+                  {heroData.title.line1End && ` ${heroData.title.line1End}`}
 
-          {heroData.type === "complex" ? (
-            <h1 className="text-[#1C1C1C] font-poppins sm:text-[40px] text-[26px] font-semibold sm:leading-[60px]">
-              {heroData.title.line1Start}{" "}
-              <span className="text-secondary">
-                {heroData.title.highlight1}
-              </span>{" "}
-              {heroData.title.line1End}
-              <br />
-              {heroData.title.line2Start}{" "}
-              <span className="text-secondary">
-                {heroData.title.highlight2}
-              </span>{" "}
-              {heroData.title.line2End}
-            </h1>
-          ) : (
-            <h1 className="text-[#1C1C1C] font-poppins text-[45px] font-semibold sm:leading-[60px]">
-              {heroData.simpleTitle}
-            </h1>
-          )}
-          {heroData.type === "simple" && (
-            <p
-              className="text-[#4A4848] font-poppins text-[20px] font-medium leading-[27px]"
-              dangerouslySetInnerHTML={{ __html: heroData.description }}
+                  {(heroData.title.line2Start || heroData.title.highlight2) && (
+                    <>
+                      <br />
+                      {heroData.title.line2Start &&
+                        `${heroData.title.line2Start} `}
+                      {heroData.title.highlight2 && (
+                        <span className="text-secondary">
+                          {heroData.title.highlight2}
+                        </span>
+                      )}
+                      {heroData.title.line2End && ` ${heroData.title.line2End}`}
+                    </>
+                  )}
+                </h1>
+
+                <p
+                  className="text-[#4A4848] text-[16px] sm:text-[18px] mt-5 max-w-[620px]"
+                  dangerouslySetInnerHTML={{ __html: heroData.description }}
+                />
+              </>
+            ) : (
+              <>
+                {/* Badge — only shown if provided */}
+                {heroData.badge && (
+                  <span className="text-sm font-medium text-secondary mb-3 block">
+                    {heroData.badge}
+                  </span>
+                )}
+
+                <h1 className="text-black text-[32px] sm:text-[42px] font-bold max-w-[600px]">
+                  {heroData.simpleTitle}
+                </h1>
+
+                {heroData.description && (
+                  <p
+                    className="text-[#4A4848] text-[18px] mt-5 max-w-[620px]"
+                    dangerouslySetInnerHTML={{ __html: heroData.description }}
+                  />
+                )}
+              </>
+            )}
+
+            {/* Button — only shown if label/text is provided */}
+            {((heroData.type === "complex" && heroData.button?.label) ||
+              (heroData.type === "simple" && heroData.buttonText)) && (
+              <Button className="mt-7 w-[210px] py-[18px] bg-linear-to-r from-[#FF802C] to-[#994D1A] text-white">
+                {heroData.type === "complex"
+                  ? heroData.button.label
+                  : heroData.buttonText}
+              </Button>
+            )}
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="w-full sm:w-[48%] flex justify-center sm:justify-end">
+            <Image
+              src={resolvedImage}
+              alt="hero"
+              width={650}
+              height={650}
+              priority
+              className="object-contain w-full max-w-[650px]"
             />
-          )}
-          {heroData.type === "complex" && (
-            <p
-              className="text-[#4A4848] font-poppins sm:text-[18px] text-[14px] font-medium leading-[30px]"
-              dangerouslySetInnerHTML={{ __html: heroData.description }}
-            />
-          )}
-
-          <div className="mt-5">
-            <Button
-              variant="destructive"
-              className="rounded-[4px] mb-[30px] py-[22.5px] shadow-[0px_14.13px_29.01px_0px_rgba(0,0,0,0.18)] text-main font-poppins text-[15px] font-medium leading-[30px] w-[208px] transition-all cursor-pointer bg-gradient-to-r from-[#FF802C] via-[#FF802C] to-[#994D1A] bg-blend-normal hover:bg-secondary hover:bg-blend-multiply"
-            >
-              {heroData.type === "complex"
-                ? heroData.button.label
-                : heroData.buttonText}
-            </Button>
           </div>
         </div>
+      )}
 
-        <div className="flex justify-center w-full md:pl-1.5 pt-[10.5px]">
-          <Image
-            src={
-              heroData.type === "complex" ? heroData.heroImage : heroData.image
-            }
-            alt="hero"
-            width={heroData.type === "simple" ? 552 : 635}
-            height={heroData.type === "simple" ? 399 : 562}
-            className={
-              heroData.type === "simple"
-                ? "w-[335px] h-[242px] sm:w-[552px] sm:h-[399px]"
-                : "sm:w-[635px] sm:h-[562px] w-[335px] h-[296px]"
-            }
-          />
-        </div>
-      </div>
-
-      <BrandSlider title={brandData.title} brands={brandData.brands} />
+      {brandData && (
+        <BrandSlider title={brandData.title} brands={brandData.brands} />
+      )}
     </section>
-
   );
 };
+
 export default Hero;

@@ -12,7 +12,8 @@ export const heroSections = {
       line2End: "",
     },
     description:
-        "Peaklyft Solutions <b>Digital Product Engineering Platform</b> empowers businesses to achieve their goals by delivering scalable, secure, and high-performance software solutions through end-to-end product development.",    button: { label: "Schedule a Demo!" },
+      "Peaklyft Solutions <b>Digital Product Engineering Platform</b> empowers businesses to achieve their goals by delivering scalable, secure, and high-performance software solutions through end-to-end product development.",
+    button: { label: "Schedule a Demo!" },
     heroImage: "/hero.png",
   } as const,
 
@@ -50,7 +51,7 @@ export const heroSections = {
 
   "sales-academy": {
     type: "simple",
-    badge: " Peaklyft Sales Academyd",
+    badge: "Peaklyft Marketing Academy",
     simpleTitle: "Close More Deals, Faster!",
     description:
       "Transform your salesforce with a dedicated Sales Capability Academy that builds skills, drives consistency, and accelerates revenue growth.",
@@ -168,286 +169,130 @@ export const heroSectionsData = {
   } as const,
 } as const;
 
+export const aiSections = {
+  type: "simple",
+  badge: "Peaklyft AI Development",
+  simpleTitle: "Build Intelligent AI-Powered Solutions",
+  description:
+    "Harness the power of Artificial Intelligence to automate processes, unlock insights, and create smarter digital products. We design and develop AI-driven applications, machine learning models, and intelligent systems that help businesses innovate faster and make data-driven decisions.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/ai.png",
+} as const;
+
 export const mobileSections = {
-  default: {
-    type: "complex",
-    topTagline: "Built by McKinsey Alums, Powered by Industry Leaders",
-    title: {
-      line1Start: "Build",
-      highlight1: "Capability Academies",
-      line1End: "",
-      line2Start: "to achieve",
-      highlight2: "Strategic Objectives",
-      line2End: "",
-    },
-    description:
-      " Peaklyft <b>Business Capability Platform</b> empowers your workforce to achieve your business goals by driving organization-wide capability building through end-to-end Capability Academy​",
-    button: { label: "Schedule a Demo!" },
-    heroImage: "/hero.png",
-  } as const,
-
-  growth: {
-    type: "complex",
-    topTagline: "Accelerate Organizational Growth",
-    title: {
-      line1Start: "Elevate Your",
-      highlight1: "Growth Teams",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "High-Impact Academies",
-      line2End: "",
-    },
-    description: "Specialized capability academies designed...",
-    button: { label: "Explore Growth" },
-    heroImage: "/growth-hero.png",
-  } as const,
-
-  people: {
-    type: "complex",
-    topTagline: "Transform Your Workforce",
-    title: {
-      line1Start: "Build Strong",
-      highlight1: "People Leaders",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "Leadership Academies",
-      line2End: "",
-    },
-    description: "Leadership, talent and HR academies built...",
-    button: { label: "Explore People" },
-    heroImage: "/people-hero.png",
-  } as const,
-
-  "sales-academy": {
-    type: "simple",
-    badge: " Peaklyft Sales Academy",
-    simpleTitle: "Build Powerful Mobile Apps  Faster!",
-    description:
-      "Transform your ideas into high-performance mobile applications with our expert Mobile App Development services. We design, develop, and scale secure Android & iOS apps that deliver seamless user experiences and drive business growth.",
-    buttonText: "Schedule a Demo!",
-    image: "/images/mobileapp.png",
-  } as const,
-
-  "marketing-academy": {
-    type: "simple",
-    badge: " Peaklyft Marketing Academy",
-    simpleTitle: "Grow Your Brand, Smarter!",
-    description:
-      "Boost your marketing performance with structured capability building...",
-    buttonText: "Talk to Experts",
-    image: "/images/marketing-academy.png",
-  } as const,
+  type: "simple",
+  badge: " Peaklyft mobile development",
+  simpleTitle: "Build Powerful Mobile Apps  Faster!",
+  description:
+    "Transform your ideas into high-performance mobile applications with our expert Mobile App Development services. We design, develop, and scale secure Android & iOS apps that deliver seamless user experiences and drive business growth.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/mobileapp.png",
 } as const;
 
 export const customerSections = {
-  default: {
-    type: "complex",
-    topTagline: "Built by McKinsey Alums, Powered by Industry Leaders",
-    title: {
-      line1Start: "Build",
-      highlight1: "Capability Academies",
-      line1End: "",
-      line2Start: "to achieve",
-      highlight2: "Strategic Objectives",
-      line2End: "",
-    },
-    description:
-      " Peaklyft <b>Business Capability Platform</b> empowers your workforce to achieve your business goals by driving organization-wide capability building through end-to-end Capability Academy​",
-    button: { label: "Schedule a Demo!" },
-    heroImage: "/hero.png",
-  } as const,
-
-  growth: {
-    type: "complex",
-    topTagline: "Accelerate Organizational Growth",
-    title: {
-      line1Start: "Elevate Your",
-      highlight1: "Growth Teams",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "High-Impact Academies",
-      line2End: "",
-    },
-    description: "Specialized capability academies designed...",
-    button: { label: "Explore Growth" },
-    heroImage: "/growth-hero.png",
-  } as const,
-
-  people: {
-    type: "complex",
-    topTagline: "Transform Your Workforce",
-    title: {
-      line1Start: "Build Strong",
-      highlight1: "People Leaders",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "Leadership Academies",
-      line2End: "",
-    },
-    description: "Leadership, talent and HR academies built...",
-    button: { label: "Explore People" },
-    heroImage: "/people-hero.png",
-  } as const,
-
-  "sales-academy": {
-    type: "simple",
-    badge: " Peaklyft Sales Academy",
-    simpleTitle: "Build Custom Software That Scales!",
-    description:
-      "Transform your business with tailor-made software solutions designed to match your workflows, scale with growth, and deliver long-term value. We build secure, high-performance applications that solve real business challenges.",
-    buttonText: "Schedule a Demo!",
-    image: "/images/customersupport.png",
-  } as const,
-
-  "marketing-academy": {
-    type: "simple",
-    badge: " Peaklyft Marketing Academy",
-    simpleTitle: "Grow Your Brand, Smarter!",
-    description:
-      "Boost your marketing performance with structured capability building...",
-    buttonText: "Talk to Experts",
-    image: "/images/marketing-academy.png",
-  } as const,
+  type: "simple",
+  badge: " Peaklyft Custom Software Development",
+  simpleTitle: "Build Custom Software That Scales!",
+  description:
+    "Transform your business with tailor-made software solutions designed to match your workflows, scale with growth, and deliver long-term value. We build secure, high-performance applications that solve real business challenges.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/customersupport.png",
 } as const;
 
 export const uiSections = {
-  default: {
-    type: "complex",
-    topTagline: "Built by McKinsey Alums, Powered by Industry Leaders",
-    title: {
-      line1Start: "Build",
-      highlight1: "Capability Academies",
-      line1End: "",
-      line2Start: "to achieve",
-      highlight2: "Strategic Objectives",
-      line2End: "",
-    },
-    description:
-      " Peaklyft <b>Business Capability Platform</b> empowers your workforce to achieve your business goals by driving organization-wide capability building through end-to-end Capability Academy​",
-    button: { label: "Schedule a Demo!" },
-    heroImage: "/hero.png",
-  } as const,
-
-  growth: {
-    type: "complex",
-    topTagline: "Accelerate Organizational Growth",
-    title: {
-      line1Start: "Elevate Your",
-      highlight1: "Growth Teams",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "High-Impact Academies",
-      line2End: "",
-    },
-    description: "Specialized capability academies designed...",
-    button: { label: "Explore Growth" },
-    heroImage: "/growth-hero.png",
-  } as const,
-
-  people: {
-    type: "complex",
-    topTagline: "Transform Your Workforce",
-    title: {
-      line1Start: "Build Strong",
-      highlight1: "People Leaders",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "Leadership Academies",
-      line2End: "",
-    },
-    description: "Leadership, talent and HR academies built...",
-    button: { label: "Explore People" },
-    heroImage: "/people-hero.png",
-  } as const,
-
-  "sales-academy": {
-    type: "simple",
-    badge: " Peaklyft Sales Academy",
-    simpleTitle: "Design That Users Remember!",
-    description:
-      "Create intuitive, engaging, and user-centric digital experiences with our UI/UX design services. We blend research, usability, and modern design principles to craft interfaces that improve engagement, boost conversions, and strengthen brand trust.",
-    buttonText: "Schedule a Demo!",
-    image: "/images/uiux.png",
-  } as const,
-
-  "marketing-academy": {
-    type: "simple",
-    badge: " Peaklyft Marketing Academy",
-    simpleTitle: "Grow Your Brand, Smarter!",
-    description:
-      "Boost your marketing performance with structured capability building...",
-    buttonText: "Talk to Experts",
-    image: "/images/marketing-academy.png",
-  } as const,
+  type: "simple",
+  badge: " Peaklyft UI/UX Design",
+  simpleTitle: "Design That Users Remember!",
+  description:
+    "Create intuitive, engaging, and user-centric digital experiences with our UI/UX design services. We blend research, usability, and modern design principles to craft interfaces that improve engagement, boost conversions, and strengthen brand trust.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/uiux.png",
 } as const;
 
 export const cloudSections = {
-  default: {
-    type: "complex",
-    topTagline: "Built by McKinsey Alums, Powered by Industry Leaders",
-    title: {
-      line1Start: "Build",
-      highlight1: "Capability Academies",
-      line1End: "",
-      line2Start: "to achieve",
-      highlight2: "Strategic Objectives",
-      line2End: "",
-    },
-    description:
-      " Peaklyft <b>Business Capability Platform</b> empowers your workforce to achieve your business goals by driving organization-wide capability building through end-to-end Capability Academy​",
-    button: { label: "Schedule a Demo!" },
-    heroImage: "/hero.png",
-  } as const,
+  type: "simple",
+  badge: " Peaklyft Cloud Engineering",
+  simpleTitle: "Build Smarter, Scale Faster with Cloud",
+  description:
+    "Leverage secure, scalable cloud solutions to modernize your infrastructure and accelerate innovation. We design, migrate, and optimize cloud architectures that improve performance, reduce costs, and ensure high availability across your systems.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/cloudeng.png",
+} as const;
 
-  growth: {
-    type: "complex",
-    topTagline: "Accelerate Organizational Growth",
-    title: {
-      line1Start: "Elevate Your",
-      highlight1: "Growth Teams",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "High-Impact Academies",
-      line2End: "",
-    },
-    description: "Specialized capability academies designed...",
-    button: { label: "Explore Growth" },
-    heroImage: "/growth-hero.png",
-  } as const,
+export const blockchainSections = {
+  type: "simple",
+  badge: "Peaklyft Blockchain Development",
+  simpleTitle: "Build Secure & Decentralized Solutions",
+  description:
+    "Unlock the power of blockchain technology to build secure, transparent, and decentralized applications. We develop smart contracts, decentralized platforms, and scalable blockchain solutions that enhance trust, security, and efficiency in digital systems.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/blockchain.png",
+} as const;
 
-  people: {
-    type: "complex",
-    topTagline: "Transform Your Workforce",
-    title: {
-      line1Start: "Build Strong",
-      highlight1: "People Leaders",
-      line1End: "",
-      line2Start: "with",
-      highlight2: "Leadership Academies",
-      line2End: "",
-    },
-    description: "Leadership, talent and HR academies built...",
-    button: { label: "Explore People" },
-    heroImage: "/people-hero.png",
-  } as const,
+export const webSections = {
+  type: "complex",
+  badge1: "Peaklyft Web Development",
 
-  "sales-academy": {
-    type: "simple",
-    badge: " Peaklyft Sales Academy",
-    simpleTitle: "Build Smarter, Scale Faster with Cloud",
-    description:
-      "Leverage secure, scalable cloud solutions to modernize your infrastructure and accelerate innovation. We design, migrate, and optimize cloud architectures that improve performance, reduce costs, and ensure high availability across your systems.",
-    buttonText: "Schedule a Demo!",
-    image: "/images/cloudeng.png",
-  } as const,
+  title: {
+    line1Start: "Build Powerful",
+    highlight1: "Scalable Websites",
+    line1End: "with Peaklyft",
+    line2Start: "Solutions",
+    highlight2: "",
+    line2End: "",
+  },
+  description:
+    "Peaklyft Solutions Web Development Services help businesses establish a strong digital presence by delivering responsive, secure, and high-performance websites through modern technologies and end-to-end development solutions.",
+  button: { label: "Schedule a Demo!" },
+  heroImage: "/images/image.png",
+} as const;
 
-  "marketing-academy": {
-    type: "simple",
-    badge: " Peaklyft Marketing Academy",
-    simpleTitle: "Grow Your Brand, Smarter!",
-    description:
-      "Boost your marketing performance with structured capability building...",
-    buttonText: "Talk to Experts",
-    image: "/images/marketing-academy.png",
-  } as const,
+export const qaSections = {
+  type: "simple",
+  badge: "Peaklyft QA & Testing",
+  simpleTitle: "Ship with Confidence, Every Time!",
+  description:
+    "Ensure flawless software delivery with our comprehensive QA & Testing services. We design and execute manual, automated, and performance testing strategies that catch bugs early, reduce risk, and accelerate your release cycles.",
+  buttonText: "Schedule a Demo!",
+  image: "/hero.png",
+} as const;
+
+export const devopsSections = {
+  type: "simple",
+  badge: "Peaklyft DevOps & Automation",
+  simpleTitle: "Deploy Faster, Scale Smarter!",
+  description:
+    "Streamline your development pipeline with our end-to-end DevOps & Automation services. We build CI/CD pipelines, infrastructure-as-code, and automated workflows that reduce manual effort, eliminate bottlenecks, and accelerate delivery at scale.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/devops.png",
+} as const;
+
+export const mvpSections = {
+  type: "simple",
+  badge: "Peaklyft MVP → Product Scaling",
+  simpleTitle: "From Idea to Scale, Without the Chaos!",
+  description:
+    "Launch your MVP fast and scale it with confidence. We help startups and enterprises validate ideas quickly, ship production-ready products, and build the scalable architecture needed to grow from your first user to your millionth.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/mvp.png",
+} as const;
+
+export const productEngineeringSections = {
+  type: "simple",
+  badge: "Peaklyft Product Engineering",
+  simpleTitle: "Build Scalable Digital Products!",
+  description:
+    "Transform your ideas into powerful digital products with our end-to-end Product Engineering services. We design, develop, and scale secure, high-performance software solutions that help businesses innovate faster and deliver exceptional user experiences.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/productengineering.png",
+} as const;
+
+export const maintenanceSupportSections = {
+  type: "simple",
+  badge: "Peaklyft Maintenance & Support",
+  simpleTitle: "Keep Your Systems Running Smoothly!",
+  description:
+    "Ensure your applications stay secure, reliable, and high-performing with our Maintenance & Support services. We provide continuous monitoring, timely updates, bug fixes, and performance optimization to keep your digital products running without disruptions.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/maintenancesupport.png",
 } as const;
