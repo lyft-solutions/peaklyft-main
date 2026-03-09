@@ -6,7 +6,7 @@ import { salesAcademyTab6 } from "@/utils/academyTabsData";
 
 import { brandSections, mvpSections } from "@/utils/Hero";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
+import { whyChoosePeaklyftMvpScaling } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
   return (
@@ -14,8 +14,9 @@ export default function SalesAcademyPage() {
       <div className="px-2.5">
         <Hero heroData={mvpSections} brandData={brandSections.default} />
         <WhyChoosePeaklyft
-          title={whyChoosePeaklyft.title}
-          description={whyChoosePeaklyft.description}
+          title={whyChoosePeaklyftMvpScaling.title}
+          title2={whyChoosePeaklyftMvpScaling.title2}
+          description={whyChoosePeaklyftMvpScaling.description}
         />
         <AcademyTabs
           title="Explore MVP → Product Scaling Offerings"

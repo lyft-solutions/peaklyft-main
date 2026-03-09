@@ -6,9 +6,8 @@ const Navbar = () => {
     <nav className="w-full bg-[#040829] hidden sm:block">
       <div className="max-w-[1320px] mx-auto flex items-center justify-between p-2.5">
         <p className="font-poppins text-sm font-medium leading-[25px] text-main">
-          Peaklyft C2K Summit 2025 - The Bengaluru Edition || February 20, 2025
-          6:00 PM -{" "}
-          <Link href="#" className="text-primary hover:underline">
+         | Work With Peaklyft | Opportunities for Developers & Innovators | - {" "}
+          <Link href="/schedule-demo" className="text-primary hover:underline">
             Register Now
           </Link>
         </p>

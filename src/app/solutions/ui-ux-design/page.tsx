@@ -6,7 +6,7 @@ import { salesAcademyTab4 } from "@/utils/academyTabsData";
 
 import { brandSections, uiSections } from "@/utils/Hero";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
+import { whyChoosePeaklyft, whyChoosePeaklyftUIUX } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
   return (
@@ -14,8 +14,9 @@ export default function SalesAcademyPage() {
       <div className="px-2.5">
         <Hero heroData={uiSections} brandData={brandSections.default} />
         <WhyChoosePeaklyft
-          title={whyChoosePeaklyft.title}
-          description={whyChoosePeaklyft.description}
+          title={whyChoosePeaklyftUIUX.title}
+          title2={whyChoosePeaklyftUIUX.title2}
+          description={whyChoosePeaklyftUIUX.description}
         />
         <AcademyTabs
           title="Explore UI/UX Design Offerings"

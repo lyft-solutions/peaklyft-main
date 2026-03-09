@@ -15,7 +15,7 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <button className="text-[17px] font-medium hover:text-secondary transition py-6">
+      <button className="text-[17px] font-medium hover:text-secondary transition py-6 cursor-pointer">
         {item.label}
       </button>
 

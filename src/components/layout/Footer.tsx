@@ -32,22 +32,20 @@ const footerData = {
     {
       title:"Emerging Tech",
       links: [
-        { name: "Web Development", href: "E:/solutions/mobile-app" },
-        { name: "Blochain", href: "/solutions/ui-ux-design" },
-        { name: "Chatbot Development", href: "/solutions/cloud-engineering" },
+        { name: "Web Development", href: "/solutions/web-development" },
+        { name: "Blochain", href: "/solutions/blockchain" },
+        { name: "Chatbot Development", href: "/solutions/chatbot-development" },
         
       ],
     },
     {
      title:"Scale With Peaklyft",
       links: [
-        { name: "Product Engineering", href: "/solutions/ui-ux-design" },
-        { name: "MVP->Product Scaling", href: "/solutions/cloud-engineering" },
-        { name: "DevOps & Automation", href: "/solutions/ui-ux-design" },
-        { name: "QA & Testing", href: "/solutions/mobile-app" },
-        { name: "Maintenance & Support", href: "/solutions/web-development" },
-        { name: "Product Engineering", href: "/solutions/ui-ux-design" },
-        { name: "MVP->Product Scaling", href: "/solutions/cloud-engineering" },
+        { name: "DevOps & Automation", href: "/solutions/devops" },
+        { name: "QA & Testing", href: "/solutions/qa-testing" },
+        { name: "Maintenance & Support", href: "/solutions/maintenance-support" },
+        { name: "Product Engineering", href: "/solutions/product-engineering" },
+        { name: "MVP->Product Scaling", href: "/solutions/mvp-scaling" },
        
       
     
@@ -58,14 +56,14 @@ const footerData = {
       title: "Industries",
       links: [
         { name: " FinTech & Financial Services", href: "/industries/saas-it-services" },
-        { name: "E-Commerce & Retail", href: "/industries/saas-it-services" },
-        { name: "Saas & Technology", href: "/industries/saas-it-services" },
+        { name: "E-Commerce & Retail", href: "/industries/ecommerce-retail" },
+        { name: "Saas & IT Technology", href: "/industries/saas-technology" },
       ],
     },
     {
       title: "Why Peaklyft?",
       links: [
-        { name: "About us", href: "/solutions/cloud-engineering" },
+        { name: "About us", href: "/why/about-us" },
         { name: "Technology/ IT Services", href: "/solutions/cloud-engineering" },
        
       ],
@@ -94,7 +92,7 @@ const Footer = () => {
   }}
 >
 
-      <div className="w-full max-w-[1440px] mx-auto">
+      <div className="w-full container mx-auto">
         <div className="flex lg:px-0 px-10 pt-10 pb-8 border-b border-[#11ABEE40]">
           <Button
             variant="default"
@@ -272,10 +270,10 @@ const Footer = () => {
                   ))}
                 </ul>
 
-                <h3 className="text-[#FAA843] font-semibold mb-4">
+                {/* <h3 className="text-[#FAA843] font-semibold mb-4">
                   {footerData.columns[5].title}
-                </h3>
-                <ul className="space-y-2 mb-8 grid grid-cols-2">
+                </h3> */}
+                {/* <ul className="space-y-2 mb-8 grid grid-cols-2">
                   {footerData.columns[5].links.map((link, idx) => (
                     <li key={idx} className="m-0 h-[20.5px]">
                       <Link
@@ -286,7 +284,7 @@ const Footer = () => {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
 
                 <div className="pt-4 border-t border-white/20">
                   <ul className="space-y-2">

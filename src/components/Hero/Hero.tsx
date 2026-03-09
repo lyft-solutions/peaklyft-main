@@ -22,6 +22,7 @@ interface ComplexHero {
 interface SimpleHero {
   type: "simple";
   badge?: string;
+  badge1?: string;
   simpleTitle: string;
   description: string;
   buttonText?: string;
@@ -69,7 +70,7 @@ const Hero: React.FC<HeroProps> = ({
                 {heroData.topTagline}
               </p>
             )}
-            {heroData.type === "complex" && heroData.badge1 && (
+            {heroData.badge1 && (
               <span className="text-2xl font-extrabold text-primary mb-3 italic block merri">
                 {heroData.badge1}
               </span>

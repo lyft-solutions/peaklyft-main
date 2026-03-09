@@ -28,7 +28,7 @@ const IndustrySection: React.FC<IndustryProps> = ({ data }) => {
         }}
       >
         {/* BLUE OVERLAY */}
-        <div className="absolute inset-0 bg-[#4E6FF2]/90 pointer-events-none" />
+        <div className="absolute inset-0 bg-secondary/90 pointer-events-none" />
 
         {/* DOT PATTERN */}
         <div className="absolute inset-0 bg-[url('/dot-bg.png')] opacity-20 pointer-events-none" />
@@ -67,12 +67,12 @@ const IndustrySection: React.FC<IndustryProps> = ({ data }) => {
           {/* BUTTONS */}
           <div className="mt-8 md:mt-10 flex justify-center gap-4 md:gap-6">
             <Link rel="stylesheet" href="/schedule-demo">
-              <button className="bg-primary text-white px-6 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-base">
+              <button className="bg-primary text-white cursor-pointer px-6 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-base">
                 {data.demoBtn}
               </button>
             </Link>
 
-            <button className="border flex items-center gap-1 border-white hover:bg-white hover:text-secondary px-6 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-base transition">
+            <button className="border flex items-center gap-1 cursor-pointer border-white hover:bg-white hover:text-secondary px-6 py-2 md:px-8 md:py-3 rounded-lg text-sm md:text-base transition">
               {data.knowBtn} <ArrowRight size={16} />
             </button>
           </div>

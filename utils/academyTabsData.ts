@@ -605,7 +605,6 @@ export const salesAcademyTab6: AcademyTab[] = [
   },
 ];
 
-
 export const salesAcademyTab7: AcademyTab[] = [
   {
     id: "core-web",
@@ -665,7 +664,8 @@ export const salesAcademyTab7: AcademyTab[] = [
   {
     id: "conversion-design",
     name: "Monitoring, Logging <br/>& Observability",
-    heading: "Full visibility into your systems before problems become outages.",
+    heading:
+      "Full visibility into your systems before problems become outages.",
     description:
       "We implement observability stacks that give your team real-time insight into application health, infrastructure performance, and user impact — with alerting that actually matters.",
     points: [
@@ -699,7 +699,6 @@ export const salesAcademyTab7: AcademyTab[] = [
   },
 ];
 
-
 export const salesAcademyTab8: AcademyTab[] = [
   {
     id: "core-web",
@@ -723,7 +722,8 @@ export const salesAcademyTab8: AcademyTab[] = [
   {
     id: "performance-security",
     name: "UX Design & <br/>Prototyping",
-    heading: "Intuitive, user-centered design that drives engagement and retention.",
+    heading:
+      "Intuitive, user-centered design that drives engagement and retention.",
     description:
       "We craft product experiences grounded in user behavior and business outcomes. From wireframes to high-fidelity prototypes, every design decision is intentional, tested, and built to convert.",
     points: [
@@ -759,7 +759,8 @@ export const salesAcademyTab8: AcademyTab[] = [
   {
     id: "conversion-design",
     name: "Quality Assurance <br/>& Testing",
-    heading: "Ship with confidence through rigorous, automated quality assurance.",
+    heading:
+      "Ship with confidence through rigorous, automated quality assurance.",
     description:
       "We embed quality into every stage of development — not just the end. From unit tests to end-to-end automation, we ensure your product works flawlessly across devices, browsers, and edge cases.",
     points: [
@@ -793,7 +794,6 @@ export const salesAcademyTab8: AcademyTab[] = [
   },
 ];
 
-
 export const salesAcademyTab9: AcademyTab[] = [
   {
     id: "core-web",
@@ -817,7 +817,8 @@ export const salesAcademyTab9: AcademyTab[] = [
   {
     id: "performance-security",
     name: "Performance Monitoring <br/>& Optimization",
-    heading: "Continuously optimize your product's speed, stability, and uptime.",
+    heading:
+      "Continuously optimize your product's speed, stability, and uptime.",
     description:
       "We monitor your application's health in real time and proactively address performance degradation — keeping load times fast, APIs responsive, and infrastructure costs in check.",
     points: [
@@ -835,7 +836,8 @@ export const salesAcademyTab9: AcademyTab[] = [
   {
     id: "ux-excellence",
     name: "Security Patches & <br/>Compliance Updates",
-    heading: "Stay protected with timely security updates and compliance maintenance.",
+    heading:
+      "Stay protected with timely security updates and compliance maintenance.",
     description:
       "We proactively manage vulnerabilities, dependency updates, and compliance requirements — ensuring your product stays secure, up to date, and aligned with evolving industry standards.",
     points: [
@@ -853,7 +855,8 @@ export const salesAcademyTab9: AcademyTab[] = [
   {
     id: "conversion-design",
     name: "Infrastructure & <br/>Cloud Maintenance",
-    heading: "Reliable infrastructure management so your team can focus on building.",
+    heading:
+      "Reliable infrastructure management so your team can focus on building.",
     description:
       "We handle the operational overhead of your cloud infrastructure — routine maintenance, scaling adjustments, cost reviews, and availability checks — so engineering teams stay focused on product.",
     points: [
@@ -871,7 +874,8 @@ export const salesAcademyTab9: AcademyTab[] = [
   {
     id: "analytics",
     name: "Continuous Improvement <br/>& Enhancements",
-    heading: "Evolve your product steadily with managed enhancements and updates.",
+    heading:
+      "Evolve your product steadily with managed enhancements and updates.",
     description:
       "Beyond keeping the lights on, we help you incrementally improve your product — delivering small feature enhancements, UX improvements, and technical upgrades on a predictable, managed cadence.",
     points: [
@@ -1005,7 +1009,6 @@ export const blockchainTab: AcademyTab[] = [
   },
 ];
 
-
 export const aiDevelopmentTabs: AcademyTab[] = [
   {
     id: "core-web",
@@ -1047,7 +1050,8 @@ export const aiDevelopmentTabs: AcademyTab[] = [
   {
     id: "ux-excellence",
     name: "Generative AI & <br/>LLM Applications",
-    heading: "Ship production-grade AI products powered by large language models.",
+    heading:
+      "Ship production-grade AI products powered by large language models.",
     description:
       "We design and build generative AI applications — from intelligent chatbots and copilots to document processing and content generation systems — using the latest LLM techniques and retrieval-augmented architectures.",
     points: [
@@ -1065,7 +1069,8 @@ export const aiDevelopmentTabs: AcademyTab[] = [
   {
     id: "conversion-design",
     name: "MLOps & AI <br/>Infrastructure",
-    heading: "Operationalize AI models with reliable, scalable MLOps pipelines.",
+    heading:
+      "Operationalize AI models with reliable, scalable MLOps pipelines.",
     description:
       "We build the infrastructure to deploy, monitor, and continuously improve AI models in production — bridging the gap between experimentation and real-world reliability at scale.",
     points: [

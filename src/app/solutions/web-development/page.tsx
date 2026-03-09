@@ -14,6 +14,7 @@ export default function SalesAcademyPage() {
         <Hero heroData={webSections} brandData={brandSections.default} />
         <WhyChoosePeaklyft
           title={whyChoosePeaklyft.title}
+          title2={whyChoosePeaklyft.title2}
           description={whyChoosePeaklyft.description}
         />
         <AcademyTabs

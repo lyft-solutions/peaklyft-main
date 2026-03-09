@@ -61,7 +61,7 @@ export default function TeamTabsSection({ teams, leadership, investors }: TeamTa
               onClick={() => setActiveTab(tab)}
               className={`px-6 py-5 rounded-2xl text-left font-medium text-lg transition-all shadow-sm ${
                 activeTab === tab
-                  ? "bg-[#3158D3] text-white shadow-lg"
+                  ? "bg-secondary text-white shadow-lg"
                   : "bg-white hover:bg-gray-100 border text-black"
               }`}
             >

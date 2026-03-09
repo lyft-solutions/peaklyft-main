@@ -33,9 +33,9 @@ export const  onboardingLeft: OnboardingSectionContent1 = {
   variant: "left",
 
   cards: [
-    { id: 1, title: "Advanced Endpoint Security Configuration & Management", description: "", image: "/slider.png" },
-    { id: 2, title: "Advanced Offensive Security: Tools, Techniques, and Patch Management", description: "", image: "/slider.png" },
-    { id: 3, title: "Azure Proficiency for Senior Data Engineers", description: "", image: "/slider.png" },
-    { id: 4, title: "Building Core Skills with ECIH: IAM, Application Security", description: "", image: "/slider.png" },
+    { id: 1, title: "Advanced Endpoint Security Configuration & Management", description: "", image: "/slider1.png" },
+    { id: 2, title: "Advanced Offensive Security: Tools, Techniques, and Patch Management", description: "", image: "/slider1.png" },
+    { id: 3, title: "Azure Proficiency for Senior Data Engineers", description: "", image: "/slider1.png" },
+    { id: 4, title: "Building Core Skills with ECIH: IAM, Application Security", description: "", image: "/slider1.png" },
   ],
 };

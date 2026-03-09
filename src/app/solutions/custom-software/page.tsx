@@ -13,7 +13,7 @@ import {
   onboardingSectionData,
 } from "@/utils/salesSections";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
+import { whyChoosePeaklyft, whyChoosePeaklyftCustomSoftware } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
   return (
@@ -24,8 +24,9 @@ export default function SalesAcademyPage() {
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft
-          title={whyChoosePeaklyft.title}
-          description={whyChoosePeaklyft.description}
+          title={whyChoosePeaklyftCustomSoftware.title}
+          title2={whyChoosePeaklyftCustomSoftware.title2}
+          description={whyChoosePeaklyftCustomSoftware.description}
         />  
         <AcademyTabs
           title="Explore Customer Software Development Offerings!"

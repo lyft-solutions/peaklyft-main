@@ -6,7 +6,7 @@ import { blockchainTab } from "@/utils/academyTabsData";
 
 import { blockchainSections, brandSections } from "@/utils/Hero";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
+import { whyChoosePeaklyftBlockchain } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
   return (
@@ -14,8 +14,9 @@ export default function SalesAcademyPage() {
       <div className="px-2.5">
         <Hero heroData={blockchainSections} brandData={brandSections.default} />
         <WhyChoosePeaklyft
-          title={whyChoosePeaklyft.title}
-          description={whyChoosePeaklyft.description}
+          title={whyChoosePeaklyftBlockchain.title}
+          title2={whyChoosePeaklyftBlockchain.title2}
+          description={whyChoosePeaklyftBlockchain.description}
         />
         <AcademyTabs
           title="Explore Blockchain Engineering Offerings!!"

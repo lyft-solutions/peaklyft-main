@@ -17,8 +17,8 @@ export default function CTABanner() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
             <a
-              href="/contact"
-              className="bg-[#E8640A] text-white px-8 py-3.5 rounded-xl font-bold text-sm text-center"
+              href="/schedule-demo"
+              className="bg-primary text-white px-8 py-3.5 rounded-xl font-bold text-sm text-center"
             >
               Schedule a Demo
             </a>

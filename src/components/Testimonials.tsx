@@ -3,7 +3,7 @@
 import { testimonials } from "@/utils/testimonial";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,12 +18,11 @@ const chunkArray = (arr: any[], size: number) => {
 };
 
 const Testimonials = () => {
-  const slides = chunkArray(testimonials, 2); // 👈 2 cards per slide
+  const slides = chunkArray(testimonials, 1); // 👈 2 cards per slide
 
   return (
     <section className="py-20 bg-gray-50 relative">
       <div className="container mx-auto px-4">
-
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold">
@@ -50,14 +49,13 @@ const Testimonials = () => {
             prevEl: ".prev-btn",
             nextEl: ".next-btn",
           }}
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           spaceBetween={30}
           slidesPerView={1}
         >
           {slides.map((group, index) => (
             <SwiperSlide key={index}>
               <div className="grid lg:grid-cols-2 gap-10 items-center">
-
                 {/* LEFT — VIDEO */}
                 <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg">
                   <video
@@ -72,29 +70,62 @@ const Testimonials = () => {
                   {group.map((item) => (
                     <div
                       key={item.id}
-                      className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition"
+                      className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition h-[350px] flex flex-col justify-between"
                     >
-                      <p className="text-gray-700 leading-relaxed">
-                        “{item.feedback}”
-                      </p>
+                      <div>
+                        {/* Rating */}
+                        <div className="flex items-center gap-1 mb-3">
+                          {Array.from({ length: Math.floor(item.rating) }).map(
+                            (_, i) => (
+                              <span key={i} className="text-yellow-400">
+                                <Star fill="#fdc700" />
+                              </span>
+                            ),
+                          )}
+                          <span className="text-sm text-gray-500 ml-2">
+                            {item.rating}
+                          </span>
+                        </div>
 
-                      <div className="mt-4">
-                        <h4 className="font-semibold text-primary">
+                        {/* Feedback */}
+                        <p className="text-gray-700 leading-relaxed">
+                          “{item.feedback}”
+                        </p>
+
+                        {/* Extra description */}
+                        {item.description && (
+                          <p className="text-gray-500 text-sm mt-2">
+                            {item.description}
+                          </p>
+                        )}
+                      </div>
+
+                      {/* User Info */}
+                      <div className="mt-4 border-t pt-4">
+                        <h4 className="font-semibold text-primary flex items-center gap-2">
                           {item.name}
+                          {item.verified && (
+                            <span className="text-green-600 text-xs font-medium">
+                              ✔ Verified
+                            </span>
+                          )}
                         </h4>
+
                         <p className="text-gray-500 text-sm">
                           {item.role} — {item.company}
+                        </p>
+
+                        <p className="text-gray-400 text-xs mt-1">
+                          {item.location} • {item.date}
                         </p>
                       </div>
                     </div>
                   ))}
                 </div>
-
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );

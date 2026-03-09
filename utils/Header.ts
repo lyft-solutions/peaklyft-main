@@ -109,85 +109,51 @@ export const headerMenu: any[] = [
     ],
   },
 
+  // {
+  //   label: "Industries",
+  //   href: "/industries/saas-it-services",
+  //   sections: [
+  //     {
+  //       items: [
+  //         {
+  //           title: "FinTech & Financial Services",
+  //           description:
+  //             "Digital banking, payment solutions & secure finance platforms.",
+  //           href: "/industries/saas-it-services",
+  //           icon: "fintech",
+  //         },
+  //         {
+  //           title: "E-Commerce & Retail",
+  //           description:
+  //             "Custom e-commerce platforms, multi-vendor solutions & CRM systems.",
+  //           href: "/industries/ecommerce-retail",
+  //           icon: "ecommerce",
+  //         },
+  //         {
+  //           title: "SaaS & IT Technology",
+  //           description:
+  //             "Scalable SaaS products, automation systems & cloud architecture.",
+  //           href: "/industries/saas-technology",
+  //           icon: "saas",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
   {
-    label: "Industries",
-    type: "mega",
-    image: "/icons/ebook.png",
-    sections: [
-      {
-        items: [
-          {
-            title: "FinTech & Financial Services",
-            description:
-              "Digital banking, payment solutions & secure finance platforms.",
-            href: "/industries/saas-it-services",
-            icon: "fintech",
-          },
-          {
-            title: "E-Commerce & Retail",
-            description:
-              "Custom e-commerce platforms, multi-vendor solutions & CRM systems.",
-            href: "/industries/ecommerce-retail",
-            icon: "ecommerce",
-          },
-          {
-            title: "SaaS & Technology",
-            description:
-              "Scalable SaaS products, automation systems & cloud architecture.",
-            href: "/industries/saas-technology",
-            icon: "saas",
-          },
-        ],
-      },
-    ],
+    label: "About Us",
+    href: "/about-us",
+    type: "link",
+  },
+  {
+    label: "Portfolio",
+    href: "/portfolio",
+    type: "link",
   },
 
   {
-    label: "Why Peaklyft?",
-    type: "mega",
-    image: "/icons/ebook.png",
-    sections: [
-      {
-        items: [
-          {
-            title: "About Us",
-            description: "Learn more about our mission to empower workforces",
-            href: "/why/about-us",
-            icon: "about",
-          },
-          {
-            title: "Portfolio",
-            description: "Learn more about our mission to empower workforces",
-            href: "/why/portfolio",
-            icon: "portfolio",
-          },
-        ],
-      },
-    ],
-  },
-
-  {
-    label: "Research Center",
-    type: "mega",
-    image: "/icons/ebook.png",
-    sections: [
-      {
-        items: [
-          {
-            title: "Blog",
-            description: "Success stories from global teams.",
-            href: "/research",
-            icon: "blog",
-          },
-          {
-            title: "Contact Us",
-            description:
-              "Get in touch with our team and discuss your specific needs.",
-            href: "/contact",
-            icon: "contact",
-          },
-        ],
-      },
-    ],
+    label: "Contact Us",
+    type: "link",
+    href: "/contact",
   },
 ];

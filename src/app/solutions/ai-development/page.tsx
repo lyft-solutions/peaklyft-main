@@ -6,7 +6,7 @@ import { aiDevelopmentTabs } from "@/utils/academyTabsData";
 
 import { aiSections, brandSections } from "@/utils/Hero";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
+import { whyChoosePeaklyftAI } from "@/utils/whychoosePeaklyft";
 
 
 export default function SalesAcademyPage() {
@@ -18,8 +18,9 @@ export default function SalesAcademyPage() {
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft
-          title={whyChoosePeaklyft.title}
-          description={whyChoosePeaklyft.description}
+          title={whyChoosePeaklyftAI.title}
+          title2={whyChoosePeaklyftAI.title2}
+          description={whyChoosePeaklyftAI.description}
         />  
         <AcademyTabs
           title="Explore AI Development Offerings!!"

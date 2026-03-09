@@ -8,7 +8,7 @@ import { salesAcademyTab3, salesAcademyTabs } from "@/utils/academyTabsData";
 
 import { brandSections, customerSections, heroSections } from "@/utils/Hero";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
+import { whyChoosePeaklyftChatbotDevelopment } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
   return (
@@ -19,8 +19,9 @@ export default function SalesAcademyPage() {
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft
-          title={whyChoosePeaklyft.title}
-          description={whyChoosePeaklyft.description}
+          title={whyChoosePeaklyftChatbotDevelopment.title}
+          title2={whyChoosePeaklyftChatbotDevelopment.title2}
+          description={whyChoosePeaklyftChatbotDevelopment.description}
         />  
         <AcademyTabs
           title="Explore Customer Software Development Offerings!"

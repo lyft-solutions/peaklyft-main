@@ -1,0 +1,372 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 700" width="1520" height="700" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f0fb;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f5e8e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0e8f5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a4891;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d3a7a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="topNodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5ca8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a3d7a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="subFuncGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e6bb5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a4891;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="rgba(10,72,145,0.25)"/>
+    </filter>
+    <filter id="panelShadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="3" dy="5" stdDeviation="10" flood-color="rgba(0,0,0,0.18)"/>
+    </filter>
+    <!-- Radar chart clip -->
+    <clipPath id="radarClip">
+      <circle cx="1180" cy="360" r="210"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1520" height="700" fill="url(#bgGrad)"/>
+
+  <!-- ===== LEFT TREE SECTION ===== -->
+
+  <!-- Top node: 7 Functions -->
+  <rect x="310" y="18" width="220" height="44" rx="22" fill="url(#topNodeGrad)" filter="url(#cardShadow)"/>
+  <text x="420" y="45" text-anchor="middle" fill="white" font-size="15" font-weight="700">7 - Functions (Peaklyft)</text>
+
+  <!-- Vertical line from top node -->
+  <line x1="420" y1="62" x2="420" y2="98" stroke="#5b9bd5" stroke-width="2"/>
+  <!-- Horizontal line across top functions -->
+  <line x1="68" y1="98" x2="772" y2="98" stroke="#5b9bd5" stroke-width="2"/>
+
+  <!-- Vertical drops to function cards -->
+  <line x1="68"  y1="98" x2="68"  y2="120" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="218" y1="98" x2="218" y2="120" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="368" y1="98" x2="368" y2="120" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="518" y1="98" x2="518" y2="120" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="668" y1="98" x2="668" y2="120" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="772" y1="98" x2="772" y2="120" stroke="#5b9bd5" stroke-width="2"/>
+
+  <!-- Function Cards Row 1 -->
+  <!-- Engineering -->
+  <rect x="8" y="120" width="124" height="64" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="30" cy="138" r="12" fill="#1a6dd4"/>
+  <text x="30" y="142" text-anchor="middle" fill="white" font-size="11" font-weight="bold">⚙</text>
+  <text x="64" y="139" text-anchor="middle" fill="white" font-size="11" font-weight="600">Engineering</text>
+  <text x="64" y="153" text-anchor="middle" fill="#a0c4f0" font-size="9">(Peaklyft)</text>
+  <text x="20" y="174" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan>  PM <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Product Management -->
+  <rect x="158" y="120" width="134" height="64" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="180" cy="138" r="12" fill="#1a6dd4"/>
+  <text x="180" y="142" text-anchor="middle" fill="white" font-size="11" font-weight="bold">⚙</text>
+  <text x="220" y="139" text-anchor="middle" fill="white" font-size="11" font-weight="600">Product</text>
+  <text x="220" y="153" text-anchor="middle" fill="#a0c4f0" font-size="9">Management</text>
+  <text x="170" y="174" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan>  PM <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Data Science -->
+  <rect x="308" y="120" width="134" height="64" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="330" cy="138" r="12" fill="#1a6dd4"/>
+  <text x="330" y="142" text-anchor="middle" fill="white" font-size="11" font-weight="bold">⚙</text>
+  <text x="370" y="144" text-anchor="middle" fill="white" font-size="11" font-weight="600">Data Science</text>
+  <text x="318" y="168" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan>  PM <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Sales -->
+  <rect x="458" y="120" width="134" height="64" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="480" cy="138" r="12" fill="#1a6dd4"/>
+  <text x="480" y="142" text-anchor="middle" fill="white" font-size="11" font-weight="bold">⚙</text>
+  <text x="520" y="144" text-anchor="middle" fill="white" font-size="11" font-weight="600">Sales</text>
+  <text x="468" y="168" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan>  PM <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Marketing (partial) -->
+  <rect x="608" y="120" width="134" height="64" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="630" cy="138" r="12" fill="#1a6dd4"/>
+  <text x="630" y="142" text-anchor="middle" fill="white" font-size="11" font-weight="bold">⚙</text>
+  <text x="670" y="144" text-anchor="middle" fill="white" font-size="11" font-weight="600">Marketing</text>
+  <text x="618" y="168" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan>  PM <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Finance (partial) -->
+  <rect x="718" y="120" width="80" height="64" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)" opacity="0.7"/>
+  <text x="758" y="144" text-anchor="middle" fill="white" font-size="10" font-weight="600">Finance</text>
+  <text x="724" y="168" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Sub-Functions badge -->
+  <rect x="10" y="220" width="140" height="30" rx="15" fill="url(#topNodeGrad)" filter="url(#cardShadow)"/>
+  <text x="80" y="240" text-anchor="middle" fill="white" font-size="13" font-weight="700">Sub-Functions  5</text>
+
+  <!-- Line from Engineering down to sub-functions area -->
+  <line x1="68" y1="184" x2="68" y2="220" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="68" y1="258" x2="618" y2="258" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="68"  y1="249" x2="68"  y2="280" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="218" y1="258" x2="218" y2="280" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="368" y1="258" x2="368" y2="280" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="518" y1="258" x2="518" y2="280" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="618" y1="258" x2="618" y2="280" stroke="#5b9bd5" stroke-width="2"/>
+
+  <!-- Sub-function Cards Row 2 -->
+  <!-- Cybersecurity -->
+  <rect x="8" y="280" width="130" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="28" cy="298" r="12" fill="#1a6dd4"/>
+  <path d="M22 294 Q28 291 34 294 L34 302 Q28 308 22 302 Z" fill="none" stroke="white" stroke-width="1.5"/>
+  <text x="73" y="298" text-anchor="middle" fill="white" font-size="11" font-weight="600">Cybersecurity</text>
+  <text x="15" y="318" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="15" y="330" fill="#7bb8f0" font-size="8">Performance Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Data Science sub -->
+  <rect x="158" y="280" width="130" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="178" cy="298" r="12" fill="#1a6dd4"/>
+  <text x="178" y="302" text-anchor="middle" fill="white" font-size="10">◈</text>
+  <text x="223" y="298" text-anchor="middle" fill="white" font-size="11" font-weight="600">Data Science</text>
+  <text x="165" y="318" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="165" y="330" fill="#7bb8f0" font-size="8">Performance Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Software Engineering (highlighted) -->
+  <rect x="308" y="275" width="130" height="68" rx="10" fill="url(#subFuncGrad)" filter="url(#cardShadow)" stroke="#5b9bd5" stroke-width="2"/>
+  <circle cx="328" cy="293" r="12" fill="#2a7de1"/>
+  <text x="328" y="297" text-anchor="middle" fill="white" font-size="10">◈</text>
+  <text x="373" y="289" text-anchor="middle" fill="white" font-size="10" font-weight="700">Software</text>
+  <text x="373" y="303" text-anchor="middle" fill="white" font-size="10" font-weight="700">Engineering</text>
+  <text x="315" y="323" fill="#a0c4f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="315" y="335" fill="#a0c4f0" font-size="8">Performance Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- IT Infrastructure -->
+  <rect x="458" y="280" width="130" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="478" cy="298" r="12" fill="#1a6dd4"/>
+  <text x="478" y="302" text-anchor="middle" fill="white" font-size="10">◈</text>
+  <text x="523" y="293" text-anchor="middle" fill="white" font-size="10" font-weight="600">IT</text>
+  <text x="523" y="307" text-anchor="middle" fill="white" font-size="10" font-weight="600">Infrastructure</text>
+  <text x="463" y="328" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan>  Perf: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- DevOps (partial) -->
+  <rect x="590" y="280" width="80" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)" opacity="0.7"/>
+  <text x="630" y="313" text-anchor="middle" fill="white" font-size="10" font-weight="600">DevOps</text>
+  <text x="596" y="334" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Roles badge -->
+  <rect x="308" y="374" width="130" height="30" rx="15" fill="url(#topNodeGrad)" filter="url(#cardShadow)"/>
+  <text x="373" y="394" text-anchor="middle" fill="white" font-size="13" font-weight="700">Roles  11</text>
+
+  <!-- Lines from Software Engineering down to roles -->
+  <line x1="373" y1="343" x2="373" y2="375" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="66"  y1="404" x2="673" y2="404" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="68"  y1="404" x2="68"  y2="440" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="218" y1="404" x2="218" y2="440" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="368" y1="404" x2="368" y2="440" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="518" y1="404" x2="518" y2="440" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="668" y1="404" x2="668" y2="440" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="68"  y1="434" x2="68"  y2="450" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="218" y1="434" x2="218" y2="450" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="368" y1="434" x2="368" y2="450" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="518" y1="434" x2="518" y2="450" stroke="#5b9bd5" stroke-width="2"/>
+  <line x1="668" y1="434" x2="668" y2="450" stroke="#5b9bd5" stroke-width="2"/>
+
+  <!-- Role Cards Row 3 -->
+  <!-- SDE 1 -->
+  <rect x="8" y="450" width="120" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="28" cy="468" r="12" fill="#1a6dd4"/>
+  <text x="28" y="472" text-anchor="middle" fill="white" font-size="11">👤</text>
+  <text x="73" y="468" text-anchor="middle" fill="white" font-size="12" font-weight="700">SDE 1</text>
+  <text x="14" y="488" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="14" y="500" fill="#7bb8f0" font-size="8">Perf Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- SDE 2 (highlighted) -->
+  <rect x="158" y="450" width="120" height="68" rx="10" fill="url(#subFuncGrad)" filter="url(#cardShadow)" stroke="#5b9bd5" stroke-width="1.5"/>
+  <circle cx="178" cy="468" r="12" fill="#2a7de1"/>
+  <text x="178" y="472" text-anchor="middle" fill="white" font-size="11">👤</text>
+  <text x="218" y="468" text-anchor="middle" fill="white" font-size="12" font-weight="700">SDE 2</text>
+  <text x="164" y="488" fill="#a0c4f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="164" y="500" fill="#a0c4f0" font-size="8">Perf Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- SDE 3 -->
+  <rect x="308" y="450" width="120" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="328" cy="468" r="12" fill="#1a6dd4"/>
+  <text x="328" y="472" text-anchor="middle" fill="white" font-size="11">👤</text>
+  <text x="368" y="468" text-anchor="middle" fill="white" font-size="12" font-weight="700">SDE 3</text>
+  <text x="314" y="488" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="314" y="500" fill="#7bb8f0" font-size="8">Perf Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Sr. Engineer -->
+  <rect x="458" y="450" width="120" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="478" cy="468" r="12" fill="#1a6dd4"/>
+  <text x="478" y="472" text-anchor="middle" fill="white" font-size="11">👤</text>
+  <text x="518" y="468" text-anchor="middle" fill="white" font-size="12" font-weight="700">Sr. Engineer</text>
+  <text x="464" y="488" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="464" y="500" fill="#7bb8f0" font-size="8">Perf Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- Staff Engineer -->
+  <rect x="608" y="450" width="120" height="68" rx="10" fill="url(#cardGrad)" filter="url(#cardShadow)"/>
+  <circle cx="628" cy="468" r="12" fill="#1a6dd4"/>
+  <text x="628" y="472" text-anchor="middle" fill="white" font-size="11">👤</text>
+  <text x="668" y="468" text-anchor="middle" fill="white" font-size="12" font-weight="700">Staff Eng.</text>
+  <text x="614" y="488" fill="#7bb8f0" font-size="8">CMI: <tspan fill="white" font-weight="bold">59%</tspan></text>
+  <text x="614" y="500" fill="#7bb8f0" font-size="8">Perf Metric: <tspan fill="white" font-weight="bold">59%</tspan></text>
+
+  <!-- ===== RIGHT PANEL: Radar Chart ===== -->
+  <rect x="680" y="30" width="730" height="640" rx="20" fill="white" filter="url(#panelShadow)" opacity="0.97"/>
+
+  <!-- Panel Title -->
+  <text x="900" y="72" fill="#0a2d5e" font-size="20" font-weight="800">Peaklyft Role: SDE2 - Fullstack Engineer</text>
+
+  <!-- Radar Chart Center -->
+  <!-- cx=1185, cy=385, max radius=200 -->
+
+  <!-- Radar grid circles -->
+  <circle cx="1085" cy="385" r="40"  fill="none" stroke="#c8d8f0" stroke-width="1"/>
+  <circle cx="1085" cy="385" r="80"  fill="none" stroke="#c8d8f0" stroke-width="1"/>
+  <circle cx="1085" cy="385" r="120" fill="none" stroke="#c8d8f0" stroke-width="1"/>
+  <circle cx="1085" cy="385" r="160" fill="none" stroke="#c8d8f0" stroke-width="1"/>
+  <circle cx="1085" cy="385" r="200" fill="none" stroke="#c8d8f0" stroke-width="1.5"/>
+
+  <!-- Radar axes (18 skills, every 20 degrees) -->
+  <!-- 0°=top, going clockwise -->
+  <!-- Axis lines -->
+<g stroke="#c8d8f0" stroke-width="1">
+  <!-- 0: top -->   <line x1="1085" y1="385" x2="1085" y2="185"/>
+  <!-- 20 -->       <line x1="1085" y1="385" x2="1153.4" y2="196.2"/>
+  <!-- 40 -->       <line x1="1085" y1="385" x2="1213.6" y2="232.2"/>
+  <!-- 60 -->       <line x1="1085" y1="385" x2="1258.2" y2="285"/>
+  <!-- 80 -->       <line x1="1085" y1="385" x2="1281.5" y2="350.2"/>
+  <!-- 100 -->      <line x1="1085" y1="385" x2="1281.5" y2="419.8"/>
+  <!-- 120 -->      <line x1="1085" y1="385" x2="1258.2" y2="485"/>
+  <!-- 140 -->      <line x1="1085" y1="385" x2="1213.6" y2="537.8"/>
+  <!-- 160 -->      <line x1="1085" y1="385" x2="1153.4" y2="573.8"/>
+  <!-- 180: bottom --> <line x1="1085" y1="385" x2="1085" y2="585"/>
+  <!-- 200 -->      <line x1="1085" y1="385" x2="1016.6" y2="573.8"/>
+  <!-- 220 -->      <line x1="1085" y1="385" x2="956.4" y2="537.8"/>
+  <!-- 240 -->      <line x1="1085" y1="385" x2="911.8" y2="485"/>
+  <!-- 260 -->      <line x1="1085" y1="385" x2="888.5" y2="419.8"/>
+  <!-- 280 -->      <line x1="1085" y1="385" x2="888.5" y2="350.2"/>
+  <!-- 300 -->      <line x1="1085" y1="385" x2="911.8" y2="285"/>
+  <!-- 320 -->      <line x1="1085" y1="385" x2="956.4" y2="232.2"/>
+  <!-- 340 -->      <line x1="1085" y1="385" x2="1016.6" y2="196.2"/>
+</g>
+
+  <!-- Radar filled area (approximate values matching image - mix of A/B/I/N levels) -->
+  <!-- Using radius scale: N=40, B=80, I=120, A=160, S=200 -->
+  <!-- Points: skill levels for each axis, values set to match the shape in image -->
+  <polygon
+    points="
+     1085,265
+1140,213
+1178,253
+1213,297
+1241,350
+1249,407
+1212,460
+1178,510
+1134,545
+1085,540
+1040,552
+994,524
+953,476
+925,424
+924,368
+942,310
+982,244
+1040,213
+    "
+    fill="rgba(160,200,240,0.35)" stroke="#0a4891" stroke-width="2"
+  />
+
+  <!-- Orange dots on each axis tip -->
+<g fill="#e8820a">
+  <circle cx="1085" cy="265" r="5"/>
+  <circle cx="1140" cy="213" r="5"/>
+  <circle cx="1178" cy="253" r="5"/>
+  <circle cx="1213" cy="297" r="5"/>
+  <circle cx="1241" cy="350" r="5"/>
+  <circle cx="1249" cy="407" r="5"/>
+  <circle cx="1212" cy="460" r="5"/>
+  <circle cx="1178" cy="510" r="5"/>
+  <circle cx="1134" cy="545" r="5"/>
+  <circle cx="1085" cy="540" r="5"/>
+  <circle cx="1040" cy="552" r="5"/>
+  <circle cx="994" cy="524" r="5"/>
+  <circle cx="953" cy="476" r="5"/>
+  <circle cx="925" cy="424" r="5"/>
+  <circle cx="924" cy="368" r="5"/>
+  <circle cx="942" cy="310" r="5"/>
+  <circle cx="982" cy="244" r="5"/>
+  <circle cx="1040" cy="213" r="5"/>
+</g>
+
+  <!-- Level labels on vertical axis -->
+  <text x="1089" y="228" fill="#0a2d5e" font-size="11" font-weight="700">A</text>
+  <text x="1089" y="268" fill="#0a2d5e" font-size="11" font-weight="700">A</text>
+  <text x="1089" y="308" fill="#0a2d5e" font-size="11" font-weight="700">I</text>
+  <text x="1089" y="348" fill="#0a2d5e" font-size="11" font-weight="700">B</text>
+  <text x="1089" y="388" fill="#0a2d5e" font-size="11" font-weight="700">N</text>
+
+  <!-- ===== Skill Labels around radar ===== -->
+  <!-- Top: Foundations of DevOps -->
+<text x="1085" y="178" text-anchor="middle" fill="#1a3a6e" font-size="10.5" font-weight="600">Foundations</text>
+<text x="1085" y="190" text-anchor="middle" fill="#1a3a6e" font-size="10.5" font-weight="600">of DevOps</text>
+
+<!-- Top-right: Linux and Scripting -->
+<text x="1168" y="182" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Linux and Scripting</text>
+
+<!-- Right upper: Containerization -->
+<text x="1225" y="222" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Containerization</text>
+<text x="1225" y="234" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Tool-Docker</text>
+
+<!-- Right: Cloud Computing -->
+<text x="1268" y="276" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Cloud Computing</text>
+
+<!-- Right: CI/CD -->
+<text x="1290" y="338" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Continuous</text>
+<text x="1290" y="350" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Integration/CD</text>
+
+<!-- Right lower: Config Mgmt -->
+<text x="1290" y="408" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Configuration</text>
+<text x="1290" y="420" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Management Ansib.</text>
+
+<!-- Right lower: IaC -->
+<text x="1262" y="472" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Infrastructure as</text>
+<text x="1262" y="484" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Code (IaC)</text>
+
+<!-- Right bottom -->
+<text x="1220" y="534" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Cloud Troubleshooting</text>
+
+<!-- Bottom right -->
+<text x="1152" y="574" text-anchor="start" fill="#1a3a6e" font-size="10.5" font-weight="600">Cloud Security - DevOps</text>
+
+<!-- Bottom -->
+<text x="1083" y="630" text-anchor="middle" fill="#1a3a6e" font-size="10.5" font-weight="600">Cloud Deployment</text>
+<text x="1080" y="616" text-anchor="middle" fill="#1a3a6e" font-size="10.5" font-weight="600">Management</text>
+
+<!-- Bottom left -->
+<text x="990" y="596" text-anchor="middle" fill="#1a3a6e" font-size="10.5" font-weight="600">Agile and</text>
+<text x="990" y="608" text-anchor="middle" fill="#1a3a6e" font-size="10.5" font-weight="600">Scrum-Methodologies</text>
+
+<!-- Left lower -->
+<text x="975" y="558" text-anchor="end" fill="#1a3a6e" font-size="10.5" font-weight="600">Project Management</text>
+<text x="975" y="570" text-anchor="end" fill="#1a3a6e" font-size="10.5" font-weight="600">Tools-Jira</text>
+
+<!-- Left: Version Control -->
+<text x="928" y="502" text-anchor="end" fill="#1a3a6e" font-size="10.5" font-weight="600">Version Control</text>
+<text x="928" y="514" text-anchor="end" fill="#1a3a6e" font-size="10.5" font-weight="600">Tools - Git/Co.</text>
+
+<!-- Left: Cloud Architecture -->
+<text x="893" y="444" text-anchor="end" fill="#d47f00" font-size="10.5" font-weight="600">Cloud Architecture</text>
+
+<!-- Left: Security -->
+<text x="893" y="384" text-anchor="end" fill="#d47f00" font-size="10.5" font-weight="600">Security and Compliance</text>
+
+<!-- Left: Communication -->
+<text x="916" y="312" text-anchor="end" fill="#d47f00" font-size="10.5" font-weight="600">Communication</text>
+<text x="916" y="324" text-anchor="end" fill="#d47f00" font-size="10.5" font-weight="600">Excellence- Tech</text>
+
+<!-- Left upper 2 -->
+<text x="993" y="234" text-anchor="end" fill="#d47f00" font-size="10.5" font-weight="600">Data Backed</text>
+<text x="973" y="246" text-anchor="end" fill="#d47f00" font-size="10.5" font-weight="600">Decision Making-SE</text>
+
+<!-- Top left: Critical Thinking -->
+<text x="988" y="178" text-anchor="middle" fill="#d47f00" font-size="10.5" font-weight="600">Critical Thinking &amp;</text>
+<text x="988" y="190" text-anchor="middle" fill="#d47f00" font-size="10.5" font-weight="600">Problem Solving</text>
+
+
+</svg>

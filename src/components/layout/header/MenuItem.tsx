@@ -35,10 +35,19 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      {/* TOP BUTTON */}
-      <button className="text-[17px] font-medium hover:text-secondary transition py-6">
-        {item.label}
-      </button>
+      {/* ✅ If it's a plain link, render <Link> instead of <button> */}
+      {item.type === "link" ? (
+        <Link
+          href={item.href ?? "/"}
+          className="text-[17px] font-medium hover:text-secondary transition py-6 cursor-pointer"
+        >
+          {item.label}
+        </Link>
+      ) : (
+        <button className="text-[17px] font-medium hover:text-secondary transition py-6 cursor-pointer">
+          {item.label}
+        </button>
+      )}
 
       {/* MEGA MENU */}
       {item.type === "mega" && open && (

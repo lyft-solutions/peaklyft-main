@@ -72,7 +72,7 @@ export default function Header() {
             href="/schedule-demo"
             className="hidden sm:block bg-primary text-[14px] font-medium text-white border border-primary rounded-[4px] hover:bg-primary hover:text-white hover:border-primary py-[8px] px-5"
           >
-            <Button className="hidden sm:block bg-primary text-[14px] font-medium hover:bg-primary hover:border-primary rounded-[4px] py-[8px] px-5">
+            <Button className="hidden sm:block bg-primary cursor-pointer text-[14px] font-medium hover:bg-primary hover:border-primary rounded-[4px] py-[8px] px-5">
               Schedule a Demo
             </Button>
           </Link>

@@ -6,7 +6,7 @@ import { platformData } from "@/utils/platformData";
 
 const PlatformSection = () => {
   return (
-    <section className="w-full flex flex-col items-center py-14">
+    <section className="w-full flex flex-col items-center py-14" style={{background:"rgb(248, 250, 255)"}}>
       {/* TOP TITLE */}
       <h2 className="text-center text-[38px] font-merriweather font-semibold max-w-4xl leading-[50px]">
         {platformData.title}
@@ -17,7 +17,7 @@ const PlatformSection = () => {
         <Image
           src={platformData.image}
           alt="Platform Structure"
-          width={1200}
+          width={1250}
           height={500}
           className="rounded-xl shadow-lg"
         />

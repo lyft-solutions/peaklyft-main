@@ -47,7 +47,7 @@ export default function MemberCarousel({ members }: MemberCarouselProps) {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
 
               {/* Blue image section */}
-              <div className="bg-[#2858D3] h-[260px] flex justify-center items-center">
+              <div className="bg-secondary h-[260px] flex justify-center items-center">
                 <Image
                   src={person.img}
                   alt={person.name}
@@ -68,7 +68,7 @@ export default function MemberCarousel({ members }: MemberCarouselProps) {
                 )}
 
                 <div className="flex justify-center mt-4">
-                  <Linkedin className="w-7 h-7 text-blue-700 hover:scale-110 transition" />
+                  <Linkedin className="w-7 h-7 text-secondary hover:scale-110 transition" />
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export default function MemberCarousel({ members }: MemberCarouselProps) {
             key={i}
             onClick={() => setIndex(i)}
             className={`h-3 w-3 rounded-full cursor-pointer transition-all ${
-              index === i ? "bg-orange-500 scale-110" : "bg-gray-400"
+              index === i ? "bg-primary scale-110" : "bg-gray-400"
             }`}
           />
         ))}

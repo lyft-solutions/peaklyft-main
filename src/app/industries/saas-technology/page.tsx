@@ -1,22 +1,16 @@
 "use client";
-import CaseStudies from "@/src/components/common/It-saas-services/CaseStudies";
-import EventsSlider from "@/src/components/common/It-saas-services/EventsSection/EventsSlider";
 import IndustrySection from "@/src/components/common/It-saas-services/IndustrySection";
 import PlatformSection from "@/src/components/common/It-saas-services/PlatformSection";
-import TestimonialHeadings from "@/src/components/common/It-saas-services/TestimonialHeadings";
 import TestimonialSlider from "@/src/components/common/It-saas-services/TestimonialSlider";
 import TrustedBrandsSlider from "@/src/components/common/It-saas-services/TrustedBrandsSlider";
 import OnboardingSection from "@/src/components/common/SalesSection/SalesSection";
 import { trustedBrands } from "@/utils/brandData";
-import { eventsData } from "@/utils/eventData";
-import { brandSections } from "@/utils/Hero";
-import { saasData, testimonialText } from "@/utils/ItData";
+import { saasData } from "@/utils/ItData";
 import { onboardingLeft } from "@/utils/sectionsData";
-import { testimonialRightImage, testimonialsData } from "@/utils/testimonialData";
 
 export default function SaasItServicesPage() {
   return (
-    <div className="px-2.5">
+    <div>
       <IndustrySection data={saasData} />
       <TrustedBrandsSlider title={trustedBrands.title} logos={trustedBrands.logo} />
       <PlatformSection />
@@ -42,19 +36,11 @@ export default function SaasItServicesPage() {
         buttonText={onboardingLeft.buttonText}
         variant="right"
       />
-
-      <TestimonialHeadings
-        heading1={testimonialText.heading1}
-        heading2={testimonialText.heading2}
-      />
-
       <TestimonialSlider
-        testimonials={testimonialsData}
-        rightImage={testimonialRightImage}
       />
 
-      <EventsSlider events={eventsData} />
-      <CaseStudies />
+      {/* <EventsSlider events={eventsData} /> */}
+      {/* <CaseStudies /> */}
     </div>
   );
 }

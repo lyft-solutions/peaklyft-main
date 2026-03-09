@@ -6,7 +6,7 @@ import { salesAcademyTab5 } from "@/utils/academyTabsData";
 
 import { brandSections, cloudSections } from "@/utils/Hero";
 import { whatsNewDefaultData2 } from "@/utils/utils";
-import { whyChoosePeaklyft } from "@/utils/whychoosePeaklyft";
+import { whyChoosePeaklyftCloudEngineering } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
   return (
@@ -14,8 +14,9 @@ export default function SalesAcademyPage() {
       <div className="px-2.5">
         <Hero heroData={cloudSections} brandData={brandSections.default} />
         <WhyChoosePeaklyft
-          title={whyChoosePeaklyft.title}
-          description={whyChoosePeaklyft.description}
+          title={whyChoosePeaklyftCloudEngineering.title}
+          title2={whyChoosePeaklyftCloudEngineering.title2}
+          description={whyChoosePeaklyftCloudEngineering.description}
         />
         <AcademyTabs
           title="Explore Cloud Engineering Offerings!!"
