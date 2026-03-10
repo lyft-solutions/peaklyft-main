@@ -234,7 +234,7 @@ const Footer = () => {
                       </Link>
                     </li>
                   ))}
-                </ul>
+                </ul> 
 
                 <h3 className="text-[#FAA843] font-semibold mb-4 mt-3">
                   {footerData.columns[3].title}
