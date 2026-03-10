@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const footerData = {
   offices: [
-   
     {
       flag: "/india.svg",
       title: "India Corporate Office",
@@ -15,65 +14,56 @@ const footerData = {
       ],
     },
   ],
-  columns:[
-   {
+  columns: [
+    {
       title: "Build With Peaklyft",
       links: [
         { name: "Web Development", href: "/solutions/web-development" },
         { name: "Mobile App Development", href: "/solutions/mobile-app" },
-        { name: "Customer Software Development", href: "/solutions/custom-software" },
+        {
+          name: "Customer Software Development",
+          href: "/solutions/custom-software",
+        },
         { name: "UI/UX Design", href: "/solutions/ui-ux-design" },
         { name: "Cloud Engineering", href: "/solutions/cloud-engineering" },
-        
       ],
     },
-    
-   
+
     {
-      title:"Emerging Tech",
+      title: "Emerging Tech",
       links: [
         { name: "Web Development", href: "/solutions/web-development" },
         { name: "Blochain", href: "/solutions/blockchain" },
         { name: "Chatbot Development", href: "/solutions/chatbot-development" },
-        
       ],
     },
     {
-     title:"Scale With Peaklyft",
+      title: "Scale With Peaklyft",
       links: [
         { name: "DevOps & Automation", href: "/solutions/devops" },
         { name: "QA & Testing", href: "/solutions/qa-testing" },
-        { name: "Maintenance & Support", href: "/solutions/maintenance-support" },
+        {
+          name: "Maintenance & Support",
+          href: "/solutions/maintenance-support",
+        },
         { name: "Product Engineering", href: "/solutions/product-engineering" },
         { name: "MVP->Product Scaling", href: "/solutions/mvp-scaling" },
-       
-      
-    
-
-  ]},
-  {
-  
-      title: "Industries",
-      links: [
-        { name: " FinTech & Financial Services", href: "/industries/saas-it-services" },
-        { name: "E-Commerce & Retail", href: "/industries/ecommerce-retail" },
-        { name: "Saas & IT Technology", href: "/industries/saas-technology" },
       ],
     },
     {
       title: "Why Peaklyft?",
       links: [
         { name: "About us", href: "/why/about-us" },
-        { name: "Technology/ IT Services", href: "/solutions/cloud-engineering" },
-       
+        {
+          name: "Technology/ IT Services",
+          href: "/solutions/cloud-engineering",
+        },
       ],
     },
-    
+
     {
       title: "Resources",
-      links: [
-        { name: "Blogs", href: "#" },
-      ],
+      links: [{ name: "Blogs", href: "#" }],
       bottomLinks: [
         { name: "Terms and conditions", href: "#" },
         { name: "FAQs", href: "#" },
@@ -85,20 +75,22 @@ const footerData = {
 const Footer = () => {
   return (
     <footer
-  className="text-white min-h-[450px] lg:min-h-[550px]"
-  style={{
-    background:
-      "radial-gradient(at center center, #04438bff 0%, #252b5eff 100%)",
-  }}
->
-
+      className="text-white min-h-[450px] lg:min-h-[550px]"
+      style={{
+        background:
+          "radial-gradient(at center center, #04438bff 0%, #252b5eff 100%)",
+      }}
+    >
       <div className="w-full container mx-auto">
         <div className="flex lg:px-0 px-10 pt-10 pb-8 border-b border-[#11ABEE40]">
           <Button
             variant="default"
             className="py-2 bg-transparent hover:bg-transparent lg:justify-end justify-center rounded-md font-medium flex items-center gap-2 transition-colors"
           >
-            <Link href="/contact" className="flex items-center justify-end gap-2">
+            <Link
+              href="/contact"
+              className="flex items-center justify-end gap-2"
+            >
               <Image
                 width={24}
                 height={24}
@@ -180,7 +172,7 @@ const Footer = () => {
               </div>
 
               <p className="text-[15px] font-medium text-white">
-                ©  Peaklyft Inc. All rights reserved
+                © Peaklyft Inc. All rights reserved
               </p>
             </div>
 
@@ -234,7 +226,7 @@ const Footer = () => {
                       </Link>
                     </li>
                   ))}
-                </ul> 
+                </ul>
 
                 <h3 className="text-[#FAA843] font-semibold mb-4 mt-3">
                   {footerData.columns[3].title}
@@ -269,26 +261,9 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
-
-                {/* <h3 className="text-[#FAA843] font-semibold mb-4">
-                  {footerData.columns[5].title}
-                </h3> */}
-                {/* <ul className="space-y-2 mb-8 grid grid-cols-2">
-                  {footerData.columns[5].links.map((link, idx) => (
-                    <li key={idx} className="m-0 h-[20.5px]">
-                      <Link
-                        href={link.href}
-                        className="text-[13px] text-[#D5D8FF] hover:text-primary transition-colors"
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul> */}
-
                 <div className="pt-4 border-t border-white/20">
                   <ul className="space-y-2">
-                    {footerData.columns[5].bottomLinks?.map((link, idx) => (
+                    {footerData.columns[4].bottomLinks?.map((link, idx) => (
                       <li key={idx}>
                         <Link
                           href={link.href}

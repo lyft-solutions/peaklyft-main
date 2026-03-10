@@ -109,41 +109,23 @@ export const headerMenu: any[] = [
     ],
   },
 
-  // {
-  //   label: "Industries",
-  //   href: "/industries/saas-it-services",
-  //   sections: [
-  //     {
-  //       items: [
-  //         {
-  //           title: "FinTech & Financial Services",
-  //           description:
-  //             "Digital banking, payment solutions & secure finance platforms.",
-  //           href: "/industries/saas-it-services",
-  //           icon: "fintech",
-  //         },
-  //         {
-  //           title: "E-Commerce & Retail",
-  //           description:
-  //             "Custom e-commerce platforms, multi-vendor solutions & CRM systems.",
-  //           href: "/industries/ecommerce-retail",
-  //           icon: "ecommerce",
-  //         },
-  //         {
-  //           title: "SaaS & IT Technology",
-  //           description:
-  //             "Scalable SaaS products, automation systems & cloud architecture.",
-  //           href: "/industries/saas-technology",
-  //           icon: "saas",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
   {
-    label: "About Us",
-    href: "/about-us",
-    type: "link",
+    label: "Why Peaklyft",
+    type: "mega",
+    href: "/why/about-us",
+    sections: [
+      {
+        items: [
+          {
+            title: "About Us",
+            description:
+              "Learn about our mission, values, and commitment to innovation.",
+            href: "/why/about-us",
+            icon: "about",
+          },
+        ],
+      },
+    ],
   },
   {
     label: "Portfolio",
