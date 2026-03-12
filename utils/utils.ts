@@ -148,8 +148,6 @@ export const footerData = {
 };
 
 
-
-
 export const whatsNewDefaultContent = {
   title: {
     normalStart: "What's new at",
@@ -162,219 +160,27 @@ export const whatsNewDefaultContent = {
 
 export const whatsNewDefaultData = [
   {
-    image: "/craft.png",
-    tag: "Uncategorized",
-    title: "Key Skills and Capabilities Every DevOps Professional and Business Will Need in 2025",
-    desc: "As businesses accelerate their digital transformation, the DevOps landscape is evolving faster than ever before.",
-    link: "/news/et",
+    image: "/ai&work.png",
+    tag: "AI & Workforce",
+    title: "How AI is Transforming Workforce Capabilities in Modern Organizations",
+    desc: "Organizations are rapidly adopting AI to enhance workforce productivity, automate repetitive tasks, and unlock new levels of efficiency across teams.",
+    link: "/insights/ai-workforce-transformation",
   },
   {
-    image: "/macbook.png",
-    tag: "BFSI",
-    title: "Transformed Collaboration and Customer Experience at a well-known Small Finance Bank",
-    desc: "Frontline Operations Associate Excellence Program",
-    link: "/news/blog",
+    image: "/cloud.png",
+    tag: "Cloud Engineering",
+    title: "Why Cloud-Native Architecture is Essential for Scalable Digital Products",
+    desc: "Cloud-native technologies allow companies to build resilient, scalable, and highly available systems that support rapid innovation and growth.",
+    link: "/insights/cloud-native-architecture",
   },
   {
-    image: "/craft.png",
-    tag: "Uncategorized",
-    title: "Key Skills and Capabilities Every DevOps Professional and Business Will Need in 2025",
-    desc: "As businesses accelerate their digital transformation, the DevOps landscape is evolving faster than ever before.",
-    link: "/news/event",
+    image: "/devops.png",
+    tag: "DevOps",
+    title: "Key DevOps Skills Every Engineering Team Will Need in the AI Era",
+    desc: "As organizations move toward AI-driven platforms, DevOps teams must adapt by mastering automation, infrastructure as code, and intelligent monitoring.",
+    link: "/insights/devops-ai-era",
   },
 ];
-
-
-
-
-
-
-export const whatsNewDefaultContent2 = {
-  title: {
-    normalStart: "What's new at",
-    highlight: " Peaklyft?",
-    normalEnd: "",
-  },
-  subtitle: "Stay Connected, Stay Informed",
-  description: " Peaklyft in news, Blogs, Case Studies, Events",
-};
-
-export const whatsNewDefaultData2 = [
-  {
-    image: "/craft.png",
-    tag: "Uncategorized",
-    title: "Key Skills and Capabilities Every DevOps Professional and Business Will Need in 2025",
-    desc: "As businesses accelerate their digital transformation, the DevOps landscape is evolving faster than ever before.",
-    link: "/news/et",
-  },
-  {
-    image: "/macbook.png",
-    tag: "BFSI",
-    title: "Transformed Collaboration and Customer Experience at a well-known Small Finance Bank",
-    desc: "In today’s dynamic SaaS and X-Tech landscape, organizations face mounting pressure to innovate, scale, and",
-    link: "/news/blog",
-  },
-  {
-    image: "/craft.png",
-    tag: "Uncategorized",
-    title: "Key Skills and Capabilities Every DevOps Professional and Business Will Need in 2025",
-    desc: "As businesses accelerate their digital transformation, the DevOps landscape is evolving faster than ever before.",
-    link: "/news/event",
-  },
-    {
-    image: "/craft.png",
-    tag: "Uncategorized",
-    title: "Key Skills and Capabilities Every DevOps Professional and Business Will Need in 2025",
-    desc: "As businesses accelerate their digital transformation, the DevOps landscape is evolving faster than ever before.",
-    link: "/news/event",
-  },
-];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export const FILTERS = ["All", "FinTech", "HealthTech", "E-Commerce", "SaaS", "DevOps"];
-
-// export const PROJECTS = [
-//   {
-//     id: 1,
-//     category: "FinTech",
-//     title: "FinTrack — Real-Time Financial Analytics Platform",
-//     client: "Leading SME Finance Provider",
-//     description:
-//       "End-to-end financial analytics SaaS platform with real-time dashboards, multi-currency support, automated reporting, and AI-driven cash-flow insights for 500+ SME clients.",
-//     challenge:
-//       "The client relied on manual Excel workflows causing 3-day reporting delays. They needed a secure, scalable platform handling millions of daily transactions.",
-//     solution:
-//       "We architected a cloud-native microservices platform on AWS with event-driven data pipelines, React dashboards with live WebSocket feeds, and a FastAPI backend processing 10M+ transactions/day.",
-//     results: [
-//       { metric: "2×", label: "Faster Reporting" },
-//       { metric: "$1.2M", label: "ARR Achieved" },
-//       { metric: "99.99%", label: "Uptime" },
-//       { metric: "60%", label: "Cost Reduction" },
-//     ],
-//     tech: ["Next.js", "FastAPI", "PostgreSQL", "AWS Lambda", "Stripe", "Redis"],
-//     icon: "💳",
-//     headerBg: "bg-[#1a3564]",
-//   },
-//   {
-//     id: 2,
-//     category: "HealthTech",
-//     title: "MediConnect — Telemedicine & EHR Platform",
-//     client: "National HealthTech Startup",
-//     description:
-//       "Full-stack telemedicine platform connecting 50,000+ patients with doctors via real-time video, integrated EHR management, prescription workflows, and multi-language support.",
-//     challenge:
-//       "Healthcare provider needed to scale from in-clinic appointments to digital-first care during rapid market expansion, with strict HIPAA compliance requirements.",
-//     solution:
-//       "Built a React Native mobile app and web portal with WebRTC video consultation, HL7 FHIR-compliant EHR API integrations, and end-to-end encrypted data storage on Azure.",
-//     results: [
-//       { metric: "50K+", label: "Active Users" },
-//       { metric: "4.8★", label: "App Store Rating" },
-//       { metric: "3×", label: "Patient Throughput" },
-//       { metric: "100%", label: "HIPAA Compliant" },
-//     ],
-//     tech: ["React Native", "Node.js", "MongoDB", "WebRTC", "Azure", "HL7 FHIR"],
-//     icon: "🏥",
-//     headerBg: "bg-[#E8640A]",
-//   },
-//   {
-//     id: 3,
-//     category: "E-Commerce",
-//     title: "RetailX — Headless Commerce Engine",
-//     client: "Multi-Vendor Retail Brand",
-//     description:
-//       "Headless e-commerce platform with AI-powered product recommendations, real-time inventory sync across 12 warehouses, multi-vendor marketplace, and omnichannel order management.",
-//     challenge:
-//       "Legacy monolithic platform couldn't handle peak traffic (Black Friday crashes) and lacked flexibility for rapid expansion into new markets.",
-//     solution:
-//       "Migrated to a headless architecture with Angular storefront, Express microservices, Elasticsearch product search, and Redis-powered cart deployed on GCP with auto-scaling.",
-//     results: [
-//       { metric: "300%", label: "Conversion Lift" },
-//       { metric: "0", label: "Downtime on Peak" },
-//       { metric: "12", label: "Warehouses Synced" },
-//       { metric: "45%", label: "Faster Page Load" },
-//     ],
-//     tech: ["Angular", "Express", "Redis", "Elasticsearch", "GCP", "Stripe"],
-//     icon: "🛒",
-//     headerBg: "bg-[#1a3564]",
-//   },
-//   {
-//     id: 4,
-//     category: "SaaS",
-//     title: "SalesIQ — AI-Powered Sales Enablement Suite",
-//     client: "B2B SaaS Scale-up",
-//     description:
-//       "Intelligent sales enablement platform with competency tracking, AI coaching recommendations, pipeline forecasting, and gamified performance dashboards for enterprise sales teams.",
-//     challenge:
-//       "Sales managers lacked visibility into rep skill gaps and deal risks. Manual coaching didn't scale across 200+ distributed sales reps.",
-//     solution:
-//       "Built a Next.js SaaS platform with ML-powered competency scoring, automated coaching nudges via FastAPI AI engine, Salesforce CRM sync, and real-time leaderboards.",
-//     results: [
-//       { metric: "40%", label: "Revenue Increase" },
-//       { metric: "200+", label: "Reps Managed" },
-//       { metric: "2×", label: "Deal Velocity" },
-//       { metric: "85%", label: "Adoption Rate" },
-//     ],
-//     tech: ["Next.js", "FastAPI", "Python ML", "PostgreSQL", "Salesforce API", "AWS"],
-//     icon: "📈",
-//     headerBg: "bg-[#E8640A]",
-//   },
-//   {
-//     id: 5,
-//     category: "DevOps",
-//     title: "CloudOps Dashboard — Infra Visibility Platform",
-//     client: "Enterprise Technology Company",
-//     description:
-//       "Internal cloud infrastructure monitoring platform providing CI/CD pipeline visibility, Kubernetes cluster management, cost anomaly detection, and one-click rollback capabilities.",
-//     challenge:
-//       "Engineering team of 80+ struggled with fragmented infra tooling across AWS, GCP, and on-prem causing slow incident response and ballooning cloud costs.",
-//     solution:
-//       "Unified monitoring portal with React and Prometheus/Grafana data layers, custom Python alert engine, Kubernetes operators for auto-remediation, and Slack-native incident workflows.",
-//     results: [
-//       { metric: "40%", label: "Infra Cost Cut" },
-//       { metric: "70%", label: "Faster Incidents" },
-//       { metric: "1", label: "Unified Dashboard" },
-//       { metric: "80+", label: "Engineers Enabled" },
-//     ],
-//     tech: ["React", "Python", "Prometheus", "Grafana", "Docker", "Kubernetes"],
-//     icon: "⚙️",
-//     headerBg: "bg-[#1a3564]",
-//   },
-//   {
-//     id: 6,
-//     category: "FinTech",
-//     title: "BlockPay — Blockchain Payment Gateway",
-//     client: "Web3 Fintech Startup",
-//     description:
-//       "Enterprise-grade blockchain payment gateway supporting multi-chain crypto settlements, fiat on/off ramps, KYC/AML compliance workflows, and merchant management portal.",
-//     challenge:
-//       "Client needed to launch a compliant crypto payment product in 6 months while navigating complex regulatory requirements across 5 countries.",
-//     solution:
-//       "Architected a multi-chain integration layer (Ethereum, Polygon, Solana), built a React merchant portal, and integrated KYC/AML providers via Node.js microservices.",
-//     results: [
-//       { metric: "6mo", label: "Time to Launch" },
-//       { metric: "5", label: "Countries Live" },
-//       { metric: "$2M+", label: "Monthly Volume" },
-//       { metric: "100%", label: "AML Compliant" },
-//     ],
-//     tech: ["React", "Node.js", "Solidity", "Ethereum", "Polygon", "MongoDB"],
-//     icon: "🔗",
-//     headerBg: "bg-[#E8640A]",
-//   },
-// ];
 
 export const STATS = [
   { value: "150+", label: "Projects Delivered" },

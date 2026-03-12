@@ -118,7 +118,7 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
         <div
           className="relative md:p-12 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/carouselbg.png')",
+            backgroundImage: "url('/3d-1.jpg')",
             minHeight: "425px",
           }}
         >

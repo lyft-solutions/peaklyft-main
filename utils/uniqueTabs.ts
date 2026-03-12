@@ -10,7 +10,7 @@ export const uniqueTabs = [
   {
     id: 2,
     title: "Performance & Security Focus",
-    image: "/candidate.png",
+    image: "/performance.png",
     heading: "Performance & Security Focus",
     description:
       "Build high-performance applications with optimized code, secure APIs, and hardened infrastructure designed for real-world usage.",
@@ -26,7 +26,7 @@ export const uniqueTabs = [
   {
     id: 4,
     title: "Scalable Cloud Infrastructure",
-    image: "/dashboard.png",
+    image: "/scalable.png",
     heading: "Scalable Cloud Infrastructure",
     description:
       "Deploy cloud-native applications with automated CI/CD pipelines, monitoring systems, and infrastructure built for growth.",
@@ -34,7 +34,7 @@ export const uniqueTabs = [
   {
     id: 5,
     title: "Long-Term Technical Partnership",
-    image: "/customer.png",
+    image: "/long-term.png",
     heading: "Long-Term Technical Partnership",
     description:
       "Ensure smooth launches, proactive system monitoring, and continuous optimization with dedicated engineering support.",

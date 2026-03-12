@@ -7,7 +7,7 @@ import WhyChoosePeaklyft from "@/src/components/whychoosePeaklyft/WhyChoosePeakl
 import { salesAcademyTab3, salesAcademyTabs } from "@/utils/academyTabsData";
 
 import { brandSections, customerSections, heroSections } from "@/utils/Hero";
-import { whatsNewDefaultData2 } from "@/utils/utils";
+import { whatsNewDefaultData } from "@/utils/utils";
 import { whyChoosePeaklyftChatbotDevelopment } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
@@ -59,7 +59,7 @@ export default function SalesAcademyPage() {
         /> */}
                 {/* <ExpertsGrid data={expertsData} /> */}
 
-        <WhatsNewCards data={whatsNewDefaultData2}  />
+        <WhatsNewCards data={whatsNewDefaultData}  />
         
     
       </div>

@@ -12,7 +12,7 @@ import {
   onboardingSection,
   onboardingSectionData,
 } from "@/utils/salesSections";
-import { whatsNewDefaultData2 } from "@/utils/utils";
+import { whatsNewDefaultData } from "@/utils/utils";
 import { whyChoosePeaklyft, whyChoosePeaklyftCustomSoftware } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
@@ -64,7 +64,7 @@ export default function SalesAcademyPage() {
         /> */}
                 {/* <ExpertsGrid data={expertsData} /> */}
 
-        <WhatsNewCards data={whatsNewDefaultData2} />
+        <WhatsNewCards data={whatsNewDefaultData} />
         
     
       </div>

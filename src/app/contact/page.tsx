@@ -401,7 +401,7 @@ const ContactPage = () => {
       <div
         className="w-full py-7 h-[300px] flex"
         style={{
-          background: "url('/contact.png') no-repeat center center/cover",
+          background: "url('/contact1.png') no-repeat center center/cover",
         }}
       >
         <div className="container flex justify-center text-center items-center">

@@ -5,7 +5,7 @@ import WhyChoosePeaklyft from "@/src/components/whychoosePeaklyft/WhyChoosePeakl
 import { salesAcademyTab } from "@/utils/academyTabsData";
 
 import { brandSections, mobileSections } from "@/utils/Hero";
-import { whatsNewDefaultData2 } from "@/utils/utils";
+import { whatsNewDefaultData } from "@/utils/utils";
 import { whyChoosePeaklyftMobile } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
@@ -23,7 +23,7 @@ export default function SalesAcademyPage() {
           tabs={salesAcademyTab}
           image="/explore2.jpeg"
         />
-        <WhatsNewCards data={whatsNewDefaultData2} />
+        <WhatsNewCards data={whatsNewDefaultData} />
       </div>
     </>
   );

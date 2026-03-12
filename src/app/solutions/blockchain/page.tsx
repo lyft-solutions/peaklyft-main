@@ -5,7 +5,7 @@ import WhyChoosePeaklyft from "@/src/components/whychoosePeaklyft/WhyChoosePeakl
 import { blockchainTab } from "@/utils/academyTabsData";
 
 import { blockchainSections, brandSections } from "@/utils/Hero";
-import { whatsNewDefaultData2 } from "@/utils/utils";
+import { whatsNewDefaultData } from "@/utils/utils";
 import { whyChoosePeaklyftBlockchain } from "@/utils/whychoosePeaklyft";
 
 export default function SalesAcademyPage() {
@@ -23,7 +23,7 @@ export default function SalesAcademyPage() {
           tabs={blockchainTab}
           image="/explore2.jpeg"
         />
-        <WhatsNewCards data={whatsNewDefaultData2} />
+        <WhatsNewCards data={whatsNewDefaultData} />
       </div>
     </>
   );

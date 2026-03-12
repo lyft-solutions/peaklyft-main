@@ -5,7 +5,7 @@ import WhyChoosePeaklyft from "@/src/components/whychoosePeaklyft/WhyChoosePeakl
 import { aiDevelopmentTabs } from "@/utils/academyTabsData";
 
 import { aiSections, brandSections } from "@/utils/Hero";
-import { whatsNewDefaultData2 } from "@/utils/utils";
+import { whatsNewDefaultData } from "@/utils/utils";
 import { whyChoosePeaklyftAI } from "@/utils/whychoosePeaklyft";
 
 
@@ -27,7 +27,7 @@ export default function SalesAcademyPage() {
           tabs={aiDevelopmentTabs}
           image="/explore2.jpeg"
         />
-        <WhatsNewCards data={whatsNewDefaultData2} />
+        <WhatsNewCards data={whatsNewDefaultData} />
         
     
       </div>
