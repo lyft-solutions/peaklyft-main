@@ -2,17 +2,17 @@
 export const heroSections = {
   default: {
     type: "complex",
-    topTagline: "Built by McKinsey Alums, Powered by Industry Leaders",
+    topTagline: "We Don’t Just Build Apps — We Build Business-Ready Systems",
     title: {
-      line1Start: "Build",
-      highlight1: "Capability Academies",
-      line1End: "",
-      line2Start: "to achieve",
-      highlight2: "Strategic Objectives",
+      line1Start: "Build,",
+      highlight1: "Launch, and Scale",
+      line1End: "Digital Products",
+      line2Start: "with Confidence",
+      highlight2: "",
       line2End: "",
     },
     description:
-      "Peaklyft Solutions <b>Digital Product Engineering Platform</b> empowers businesses to achieve their goals by delivering scalable, secure, and high-performance software solutions through end-to-end product development.",
+      "Peaklyft Solutions <b>designs and develops scalable web, mobile,</b> and custom software products that help businesses launch faster, operate efficiently, and grow with confidence.",
     button: { label: "Schedule a Demo!" },
     heroImage: "/hero.png",
   } as const,
@@ -106,13 +106,13 @@ export const brandSections = {
 export const heroSectionsData = {
   default: {
     type: "complex",
-    topTagline: "Built by McKinsey Alums, Powered by Industry Leaders",
+    topTagline: "We Don’t Just Build Apps — We Build Business-Ready Systems",
     title: {
-      line1Start: "Build",
-      highlight1: "Capability Academies",
+      line1Start: "Build, Launch",
+      highlight1: "and Scale Digital Products",
       line1End: "",
-      line2Start: "to achieve",
-      highlight2: "Strategic Objectives",
+      line2Start: "with Confidence",
+      highlight2: "",
       line2End: "",
     },
   } as const,
@@ -196,7 +196,7 @@ export const customerSections = {
   description:
     "Transform your business with tailor-made software solutions designed to match your workflows, scale with growth, and deliver long-term value. We build secure, high-performance applications that solve real business challenges.",
   buttonText: "Schedule a Demo!",
-  image: "/images/customersupport.png",
+  image: "/custom.png",
 } as const;
 
 export const uiSections = {
@@ -229,6 +229,16 @@ export const blockchainSections = {
   image: "/images/blockchain.png",
 } as const;
 
+export const chatbotSections = {
+  type: "simple",
+  badge: "Peaklyft Chatbot Development",
+  simpleTitle: "Build Intelligent Chatbot Solutions",
+  description:
+    "Create intelligent, conversational chatbot solutions that enhance customer engagement and streamline operations. We design and develop AI-powered chatbots that provide instant support, automate workflows, and deliver personalized user experiences across web and mobile platforms.",
+  buttonText: "Schedule a Demo!",
+  image: "/images/chatbot.png",
+} as const;
+
 export const webSections = {
   type: "complex",
   badge1: "Peaklyft Web Development",
@@ -254,7 +264,7 @@ export const qaSections = {
   description:
     "Ensure flawless software delivery with our comprehensive QA & Testing services. We design and execute manual, automated, and performance testing strategies that catch bugs early, reduce risk, and accelerate your release cycles.",
   buttonText: "Schedule a Demo!",
-  image: "/hero.png",
+  image: "/images/qa.png",
 } as const;
 
 export const devopsSections = {

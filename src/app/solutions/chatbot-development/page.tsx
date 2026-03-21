@@ -6,7 +6,7 @@ import Hero from "@/src/components/Hero/Hero";
 import WhyChoosePeaklyft from "@/src/components/whychoosePeaklyft/WhyChoosePeaklyft";
 import { salesAcademyTab3, salesAcademyTabs } from "@/utils/academyTabsData";
 
-import { brandSections, customerSections, heroSections } from "@/utils/Hero";
+import { brandSections, chatbotSections, heroSections } from "@/utils/Hero";
 import { whatsNewDefaultData } from "@/utils/utils";
 import { whyChoosePeaklyftChatbotDevelopment } from "@/utils/whychoosePeaklyft";
 
@@ -15,7 +15,7 @@ export default function SalesAcademyPage() {
     <>
       <div className="px-2.5">  
         <Hero
-          heroData={ customerSections }
+          heroData={ chatbotSections }
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft
