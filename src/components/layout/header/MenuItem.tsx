@@ -149,7 +149,7 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
 
               <div className="flex justify-end items-start">
                 <Image
-                  src="/Dropdown.jpg"
+                  src="/dropdown.jpg"
                   alt="Dropdown"
                   width={380}
                   height={480}
