@@ -254,7 +254,7 @@ export const webSections = {
   description:
     "Peaklyft Solutions Web Development Services help businesses establish a strong digital presence by delivering responsive, secure, and high-performance websites through modern technologies and end-to-end development solutions.",
   button: { label: "Schedule a Demo!" },
-  heroImage: "/images/WEB-development.png",
+  heroImage: "/images/WEb-development.png",
 } as const;
 
 export const qaSections = {

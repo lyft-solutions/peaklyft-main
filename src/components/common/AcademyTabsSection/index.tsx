@@ -68,7 +68,7 @@ const AcademyTabs: React.FC<Props> = ({ title, tabs, image }) => {
         <div
           className="w-full relative overflow-hidden flex flex-col md:flex-row p-6 sm:p-8 md:p-10"
           style={{
-            background: "url('/3D-1.png') center center/cover no-repeat",
+            background: "url('/3D-1.jpg') center center/cover no-repeat",
           }}
         >
           <div className="absolute inset-0 bg-[#000000]/60 pointer-events-none"></div>
