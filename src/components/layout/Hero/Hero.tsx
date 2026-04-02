@@ -47,8 +47,8 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   const resolvedImage =
     heroData.type === "complex"
-      ? heroData.heroImage || "/hero.png"
-      : heroData.image || "/hero.png";
+      ? heroData.heroImage || "/Home-Hero.png"
+      : heroData.image || "/Home-Hero.png";
 
   return (
     <section

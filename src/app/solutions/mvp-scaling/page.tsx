@@ -21,7 +21,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore MVP → Product Scaling Offerings"
           tabs={salesAcademyTab6}
-          image="/explore2.jpeg"
+          image="/spider-charts/MVP-Scaling.jpg"
         />
         <WhatsNewCards data={whatsNewDefaultData} />
       </div>

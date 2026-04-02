@@ -94,7 +94,7 @@ const Footer = () => {
               <Image
                 width={24}
                 height={24}
-                src="/contact.svg"
+                src="/contact.jpg"
                 alt="contact"
                 className="w-6 h-6"
               />

@@ -21,7 +21,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore Blockchain Engineering Offerings!!"
           tabs={blockchainTab}
-          image="/explore2.jpeg"
+          image="/spider-charts/Blockchain-Development.jpg"
         />
         <WhatsNewCards data={whatsNewDefaultData} />
       </div>

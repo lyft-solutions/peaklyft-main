@@ -18,23 +18,23 @@ import { whyChoosePeaklyft, whyChoosePeaklyftCustomSoftware } from "@/utils/whyc
 export default function SalesAcademyPage() {
   return (
     <>
-      <div className="px-2.5">  
+      <div className="px-2.5">
         <Hero
-          heroData={ customerSections}
+          heroData={customerSections}
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft
           title={whyChoosePeaklyftCustomSoftware.title}
           title2={whyChoosePeaklyftCustomSoftware.title2}
           description={whyChoosePeaklyftCustomSoftware.description}
-        />  
+        />
         <AcademyTabs
           title="Explore Customer Software Development Offerings!"
           tabs={salesAcademyTab3}
-          image="/explore2.jpeg"
+          image="/spider-charts/Custom-Software-Development.jpg"
         />
-         
-        
+
+
         {/* <OnboardingSection
           title={onboardingSectionData.title}
           subtitle={onboardingSectionData.subtitle}
@@ -62,11 +62,11 @@ export default function SalesAcademyPage() {
           buttonText={onboardingSectionData.buttonText}
           variant="left"
         /> */}
-                {/* <ExpertsGrid data={expertsData} /> */}
+        {/* <ExpertsGrid data={expertsData} /> */}
 
         <WhatsNewCards data={whatsNewDefaultData} />
-        
-    
+
+
       </div>
     </>
   );

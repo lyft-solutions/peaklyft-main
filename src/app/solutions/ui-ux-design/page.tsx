@@ -21,7 +21,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore UI/UX Design Offerings"
           tabs={salesAcademyTab4}
-          image="/explore2.jpeg"
+          image="/spider-charts/UX.jpg"
         />
         <WhatsNewCards data={whatsNewDefaultData} />
       </div>

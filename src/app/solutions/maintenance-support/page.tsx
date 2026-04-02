@@ -24,7 +24,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore Maintenance & Support Services!"
           tabs={salesAcademyTab9}
-          image="/explore2.jpeg"
+          image="/spider-charts/Maintenance-Support.jpg"
         />
         <WhatsNewCards data={whatsNewDefaultData} />
       </div>

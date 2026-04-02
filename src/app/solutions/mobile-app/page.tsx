@@ -21,7 +21,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore Mobile App Development Offerings"
           tabs={salesAcademyTab}
-          image="/explore2.jpeg"
+          image="/spider-charts/Mobile-App.jpg"
         />
         <WhatsNewCards data={whatsNewDefaultData} />
       </div>

@@ -104,13 +104,12 @@ function FloatingInput({
         onBlur={onBlur}
         className="w-full bg-transparent outline-none"
         style={{
-          borderBottom: `1.5px solid ${
-            error
-              ? "rgba(220,80,80,0.7)"
-              : isFocused
+          borderBottom: `1.5px solid ${error
+            ? "rgba(220,80,80,0.7)"
+            : isFocused
               ? "#1B2A4E"
               : "#e5e7eb"
-          }`,
+            }`,
           paddingTop: "13px",
           paddingBottom: "9px",
           fontSize: "14px",
@@ -196,9 +195,8 @@ function FloatingTextarea({
         rows={4}
         className="w-full bg-transparent outline-none leading-relaxed resize-none"
         style={{
-          borderBottom: `1.5px solid ${
-            error ? "rgba(220,80,80,0.7)" : isFocused ? "#1B2A4E" : "#e5e7eb"
-          }`,
+          borderBottom: `1.5px solid ${error ? "rgba(220,80,80,0.7)" : isFocused ? "#1B2A4E" : "#e5e7eb"
+            }`,
           paddingTop: "13px",
           paddingBottom: "9px",
           fontSize: "14px",
@@ -401,7 +399,7 @@ const ContactPage = () => {
       <div
         className="w-full py-7 h-[300px] flex"
         style={{
-          background: "url('/contact1.png') no-repeat center center/cover",
+          background: "url('/contact.jpg') no-repeat center center/cover",
         }}
       >
         <div className="container flex justify-center text-center items-center">

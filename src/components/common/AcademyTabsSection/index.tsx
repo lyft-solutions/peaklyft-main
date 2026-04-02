@@ -39,11 +39,10 @@ const AcademyTabs: React.FC<Props> = ({ title, tabs, image }) => {
               key={tab.id}
               onClick={() => setActive(tab.id)}
               className={`px-[46.67px] h-full text-[18px] rounded-b-none border bg-[#E4E4E4] font-medium w-full sm:w-auto text-center transition-all
-    ${
-      active === tab.id
-        ? "bg-secondary text-white"
-        : "bg-white text-secondary hover:bg-secondary hover:text-white"
-    }`}
+    ${active === tab.id
+                  ? "bg-secondary text-white"
+                  : "bg-white text-secondary hover:bg-secondary hover:text-white"
+                }`}
               dangerouslySetInnerHTML={{ __html: tab.name }}
             />
           ))}
@@ -57,11 +56,10 @@ const AcademyTabs: React.FC<Props> = ({ title, tabs, image }) => {
               key={tab.id}
               onClick={() => setActive(tab.id)}
               className={`px-6 py-4 text-base rounded-lg font-medium w-full text-center transition-all min-h-[56px]
-    ${
-      active === tab.id
-        ? "bg-secondary text-white"
-        : "bg-white text-secondary hover:bg-secondary hover:text-white border-2 border-secondary"
-    }`}
+    ${active === tab.id
+                  ? "bg-secondary text-white"
+                  : "bg-white text-secondary hover:bg-secondary hover:text-white border-2 border-secondary"
+                }`}
               dangerouslySetInnerHTML={{ __html: tab.name.replace(/<br\s*\/?>/gi, ' ') }}
             />
           ))}
@@ -70,11 +68,11 @@ const AcademyTabs: React.FC<Props> = ({ title, tabs, image }) => {
         <div
           className="w-full relative overflow-hidden flex flex-col md:flex-row p-6 sm:p-8 md:p-10"
           style={{
-            background: "url('/3D-1.jpg') center center/cover no-repeat",
+            background: "url('/3D-1.png') center center/cover no-repeat",
           }}
         >
           <div className="absolute inset-0 bg-[#000000]/60 pointer-events-none"></div>
-          
+
           <div className="relative z-10 w-full md:w-1/2 text-white md:pr-6">
             <h3 className="text-2xl sm:text-3xl md:text-3xl font-semibold mb-3 sm:mb-4 md:mb-4">
               {activeData.heading}

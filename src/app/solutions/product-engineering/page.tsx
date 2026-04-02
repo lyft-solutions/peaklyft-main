@@ -11,7 +11,7 @@ import { whyChoosePeaklyftProductEngineering } from "@/utils/whychoosePeaklyft";
 export default function SalesAcademyPage() {
   return (
     <>
-      <div className="px-2.5">  
+      <div className="px-2.5">
         <Hero
           heroData={productEngineeringSections}
           brandData={brandSections.default}
@@ -24,11 +24,11 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Build, Scale, and Innovate with Product Engineering"
           tabs={salesAcademyTab8}
-          image="/explore2.jpeg"
+          image="/spider-charts/Produc-Engineering.jpg"
         />
-        <WhatsNewCards data={whatsNewDefaultData}  />
-        
-    
+        <WhatsNewCards data={whatsNewDefaultData} />
+
+
       </div>
     </>
   );

@@ -12,7 +12,7 @@ import { whyChoosePeaklyftAI } from "@/utils/whychoosePeaklyft";
 export default function SalesAcademyPage() {
   return (
     <>
-      <div className="px-2.5">  
+      <div className="px-2.5">
         <Hero
           heroData={aiSections}
           brandData={brandSections.default}
@@ -21,15 +21,15 @@ export default function SalesAcademyPage() {
           title={whyChoosePeaklyftAI.title}
           title2={whyChoosePeaklyftAI.title2}
           description={whyChoosePeaklyftAI.description}
-        />  
+        />
         <AcademyTabs
           title="Explore AI Development Offerings!!"
           tabs={aiDevelopmentTabs}
-          image="/explore2.jpeg"
+          image="/spider-charts/AI-Development.jpg"
         />
         <WhatsNewCards data={whatsNewDefaultData} />
-        
-    
+
+
       </div>
     </>
   );

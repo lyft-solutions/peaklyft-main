@@ -14,7 +14,7 @@ export const heroSections = {
     description:
       "Peaklyft Solutions <b>designs and develops scalable web, mobile,</b> and custom software products that help businesses launch faster, operate efficiently, and grow with confidence.",
     button: { label: "Schedule a Demo!" },
-    heroImage: "/hero.png",
+    heroImage: "/Home-Hero.png",
   } as const,
 
   growth: {
@@ -30,7 +30,7 @@ export const heroSections = {
     },
     description: "Specialized capability academies designed...",
     button: { label: "Explore Growth" },
-    heroImage: "/growth-hero.png",
+    heroImage: "/growth-Home-Hero.png",
   } as const,
 
   people: {
@@ -46,7 +46,7 @@ export const heroSections = {
     },
     description: "Leadership, talent and HR academies built...",
     button: { label: "Explore People" },
-    heroImage: "/people-hero.png",
+    heroImage: "/people-Home-Hero.png",
   } as const,
 
   "sales-academy": {
@@ -130,7 +130,7 @@ export const heroSectionsData = {
     },
     description: "Specialized capability academies designed...",
     button: { label: "Explore Growth" },
-    heroImage: "/growth-hero.png",
+    heroImage: "/growth-Home-Hero.png",
   } as const,
 
   people: {
@@ -146,7 +146,7 @@ export const heroSectionsData = {
     },
     description: "Leadership, talent and HR academies built...",
     button: { label: "Explore People" },
-    heroImage: "/people-hero.png",
+    heroImage: "/people-Home-Hero.png",
   } as const,
 
   blog: {
@@ -176,7 +176,7 @@ export const aiSections = {
   description:
     "Harness the power of Artificial Intelligence to automate processes, unlock insights, and create smarter digital products. We design and develop AI-driven applications, machine learning models, and intelligent systems that help businesses innovate faster and make data-driven decisions.",
   buttonText: "Schedule a Demo!",
-  image: "/images/ai.png",
+  image: "/images/AI-Development.png",
 } as const;
 
 export const mobileSections = {
@@ -186,7 +186,7 @@ export const mobileSections = {
   description:
     "Transform your ideas into high-performance mobile applications with our expert Mobile App Development services. We design, develop, and scale secure Android & iOS apps that deliver seamless user experiences and drive business growth.",
   buttonText: "Schedule a Demo!",
-  image: "/images/mobileapp.png",
+  image: "/images/mobile-app.png",
 } as const;
 
 export const customerSections = {
@@ -196,7 +196,7 @@ export const customerSections = {
   description:
     "Transform your business with tailor-made software solutions designed to match your workflows, scale with growth, and deliver long-term value. We build secure, high-performance applications that solve real business challenges.",
   buttonText: "Schedule a Demo!",
-  image: "/custom.png",
+  image: "/images/Custom-Software-Development.png",
 } as const;
 
 export const uiSections = {
@@ -206,7 +206,7 @@ export const uiSections = {
   description:
     "Create intuitive, engaging, and user-centric digital experiences with our UI/UX design services. We blend research, usability, and modern design principles to craft interfaces that improve engagement, boost conversions, and strengthen brand trust.",
   buttonText: "Schedule a Demo!",
-  image: "/images/uiux.png",
+  image: "/images/UX-Design.png",
 } as const;
 
 export const cloudSections = {
@@ -216,7 +216,7 @@ export const cloudSections = {
   description:
     "Leverage secure, scalable cloud solutions to modernize your infrastructure and accelerate innovation. We design, migrate, and optimize cloud architectures that improve performance, reduce costs, and ensure high availability across your systems.",
   buttonText: "Schedule a Demo!",
-  image: "/images/cloudeng.png",
+  image: "/images/Cloud-Engineering.png",
 } as const;
 
 export const blockchainSections = {
@@ -226,7 +226,7 @@ export const blockchainSections = {
   description:
     "Unlock the power of blockchain technology to build secure, transparent, and decentralized applications. We develop smart contracts, decentralized platforms, and scalable blockchain solutions that enhance trust, security, and efficiency in digital systems.",
   buttonText: "Schedule a Demo!",
-  image: "/images/blockchain.png",
+  image: "/images/Blockchain1.png",
 } as const;
 
 export const chatbotSections = {
@@ -236,7 +236,7 @@ export const chatbotSections = {
   description:
     "Create intelligent, conversational chatbot solutions that enhance customer engagement and streamline operations. We design and develop AI-powered chatbots that provide instant support, automate workflows, and deliver personalized user experiences across web and mobile platforms.",
   buttonText: "Schedule a Demo!",
-  image: "/images/chatbot.png",
+  image: "/images/Chatbot-section.jpg",
 } as const;
 
 export const webSections = {
@@ -254,7 +254,7 @@ export const webSections = {
   description:
     "Peaklyft Solutions Web Development Services help businesses establish a strong digital presence by delivering responsive, secure, and high-performance websites through modern technologies and end-to-end development solutions.",
   button: { label: "Schedule a Demo!" },
-  heroImage: "/images/image.png",
+  heroImage: "/images/WEB-development.png",
 } as const;
 
 export const qaSections = {
@@ -264,7 +264,7 @@ export const qaSections = {
   description:
     "Ensure flawless software delivery with our comprehensive QA & Testing services. We design and execute manual, automated, and performance testing strategies that catch bugs early, reduce risk, and accelerate your release cycles.",
   buttonText: "Schedule a Demo!",
-  image: "/images/qa.png",
+  image: "/images/QA-&-Testing.jpg",
 } as const;
 
 export const devopsSections = {
@@ -274,7 +274,7 @@ export const devopsSections = {
   description:
     "Streamline your development pipeline with our end-to-end DevOps & Automation services. We build CI/CD pipelines, infrastructure-as-code, and automated workflows that reduce manual effort, eliminate bottlenecks, and accelerate delivery at scale.",
   buttonText: "Schedule a Demo!",
-  image: "/images/devops.png",
+  image: "/images/Devops.jpg",
 } as const;
 
 export const mvpSections = {
@@ -284,7 +284,7 @@ export const mvpSections = {
   description:
     "Launch your MVP fast and scale it with confidence. We help startups and enterprises validate ideas quickly, ship production-ready products, and build the scalable architecture needed to grow from your first user to your millionth.",
   buttonText: "Schedule a Demo!",
-  image: "/images/mvp.png",
+  image: "/images/MVP-Scaling.jpg",
 } as const;
 
 export const productEngineeringSections = {
@@ -294,7 +294,7 @@ export const productEngineeringSections = {
   description:
     "Transform your ideas into powerful digital products with our end-to-end Product Engineering services. We design, develop, and scale secure, high-performance software solutions that help businesses innovate faster and deliver exceptional user experiences.",
   buttonText: "Schedule a Demo!",
-  image: "/images/productengineering.png",
+  image: "/images/Product-Engineering.jpg",
 } as const;
 
 export const maintenanceSupportSections = {
@@ -304,5 +304,5 @@ export const maintenanceSupportSections = {
   description:
     "Ensure your applications stay secure, reliable, and high-performing with our Maintenance & Support services. We provide continuous monitoring, timely updates, bug fixes, and performance optimization to keep your digital products running without disruptions.",
   buttonText: "Schedule a Demo!",
-  image: "/images/maintenancesupport.png",
+  image: "/images/Maintenance-&-Support.jpg",
 } as const;

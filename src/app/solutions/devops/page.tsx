@@ -21,7 +21,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Explore Customer Software Development Offerings!"
           tabs={salesAcademyTab7}
-          image="/explore2.jpeg"
+          image="/spider-charts/Devops.jpg"
         />
 
         <WhatsNewCards data={whatsNewDefaultData} />

@@ -2,7 +2,7 @@ export const uniqueTabs = [
   {
     id: 1,
     title: "Architecture-First Engineering",
-    image: "/explore2.jpeg",
+    image: "/Architecture-First.png",
     heading: "Architecture-First Engineering",
     description:
       "Design robust system architectures aligned with business objectives, ensuring scalability, maintainability, and long-term product stability.",
@@ -10,7 +10,7 @@ export const uniqueTabs = [
   {
     id: 2,
     title: "Performance & Security Focus",
-    image: "/performance.png",
+    image: "/Performance1.png",
     heading: "Performance & Security Focus",
     description:
       "Build high-performance applications with optimized code, secure APIs, and hardened infrastructure designed for real-world usage.",
@@ -18,7 +18,7 @@ export const uniqueTabs = [
   {
     id: 3,
     title: "End-to-End Product Development",
-    image: "/learn.png",
+    image: "/End-to-End.png",
     heading: "End-to-End Product Development",
     description:
       "Deliver complete product lifecycles from discovery and UI/UX design to development, deployment, and continuous improvement.",
@@ -26,7 +26,7 @@ export const uniqueTabs = [
   {
     id: 4,
     title: "Scalable Cloud Infrastructure",
-    image: "/scalable.png",
+    image: "/home-Scalable.png",
     heading: "Scalable Cloud Infrastructure",
     description:
       "Deploy cloud-native applications with automated CI/CD pipelines, monitoring systems, and infrastructure built for growth.",
@@ -34,7 +34,7 @@ export const uniqueTabs = [
   {
     id: 5,
     title: "Long-Term Technical Partnership",
-    image: "/long-term.png",
+    image: "/Long-Term-Partnership.png",
     heading: "Long-Term Technical Partnership",
     description:
       "Ensure smooth launches, proactive system monitoring, and continuous optimization with dedicated engineering support.",

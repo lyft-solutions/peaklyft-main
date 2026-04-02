@@ -4,7 +4,7 @@ import OnboardingSection from "@/src/components/common/SalesSection/SalesSection
 import WhatsNewCards from "@/src/components/common/WhatsNew";
 import Hero from "@/src/components/Hero/Hero";
 import WhyChoosePeaklyft from "@/src/components/whychoosePeaklyft/WhyChoosePeaklyft";
-import { salesAcademyTab3, salesAcademyTabs } from "@/utils/academyTabsData";
+import { salesAcademyTab3 } from "@/utils/academyTabsData";
 
 import { brandSections, chatbotSections, heroSections } from "@/utils/Hero";
 import { whatsNewDefaultData } from "@/utils/utils";
@@ -13,23 +13,23 @@ import { whyChoosePeaklyftChatbotDevelopment } from "@/utils/whychoosePeaklyft";
 export default function SalesAcademyPage() {
   return (
     <>
-      <div className="px-2.5">  
+      <div className="px-2.5">
         <Hero
-          heroData={ chatbotSections }
+          heroData={chatbotSections}
           brandData={brandSections.default}
         />
         <WhyChoosePeaklyft
           title={whyChoosePeaklyftChatbotDevelopment.title}
           title2={whyChoosePeaklyftChatbotDevelopment.title2}
           description={whyChoosePeaklyftChatbotDevelopment.description}
-        />  
+        />
         <AcademyTabs
           title="Explore Customer Software Development Offerings!"
           tabs={salesAcademyTab3}
-          image="/explore2.jpeg"
+          image="/spider-charts/Chatbot-Developments.jpg"
         />
-         
-        
+
+
         {/* <OnboardingSection
           title={onboardingSectionData.title}
           subtitle={onboardingSectionData.subtitle}
@@ -57,11 +57,11 @@ export default function SalesAcademyPage() {
           buttonText={onboardingSectionData.buttonText}
           variant="left"
         /> */}
-                {/* <ExpertsGrid data={expertsData} /> */}
+        {/* <ExpertsGrid data={expertsData} /> */}
 
-        <WhatsNewCards data={whatsNewDefaultData}  />
-        
-    
+        <WhatsNewCards data={whatsNewDefaultData} />
+
+
       </div>
     </>
   );

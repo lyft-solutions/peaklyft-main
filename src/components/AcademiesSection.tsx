@@ -104,10 +104,9 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
                 setCurrentIndex(0);
               }}
               className={`px-6 py-4 w-full lg:h-[62px] border rounded-t-[10px] text-[18px] font-medium transition-all duration-300 lg:mb-[2px] mb-[10px]
-                ${
-                  activeCategory === category.id
-                    ? "bg-secondary text-white"
-                    : "bg-white text-secondary hover:bg-secondary hover:text-main"
+                ${activeCategory === category.id
+                  ? "bg-secondary text-white"
+                  : "bg-white text-secondary hover:bg-secondary hover:text-main"
                 }`}
             >
               {category.name}
@@ -118,7 +117,7 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
         <div
           className="relative md:p-12 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/3d-1.jpg')",
+            backgroundImage: "url('/about.jpg')",
             minHeight: "425px",
           }}
         >

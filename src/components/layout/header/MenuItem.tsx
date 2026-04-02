@@ -149,8 +149,8 @@ const MenuItem = ({ item }: { item: MenuItemType }) => {
 
               <div className="flex justify-end items-start">
                 <Image
-                  src="/icons/ebook.png"
-                  alt="ebook"
+                  src="/Dropdown.jpg"
+                  alt="Dropdown"
                   width={380}
                   height={480}
                   className="object-contain"
