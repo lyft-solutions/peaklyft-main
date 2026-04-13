@@ -185,7 +185,7 @@ export const mobileSections = {
   simpleTitle: "Build Powerful Mobile Apps  Faster!",
   description:
     "Transform your ideas into high-performance mobile applications with our expert Mobile App Development services. We design, develop, and scale secure Android & iOS apps that deliver seamless user experiences and drive business growth.",
-  buttonText: "Schedule a Demo!",
+  buttonText: "Talk to Experts",
   image: "/images/mobile-app.png",
 } as const;
 
