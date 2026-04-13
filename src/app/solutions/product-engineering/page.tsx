@@ -24,7 +24,7 @@ export default function SalesAcademyPage() {
         <AcademyTabs
           title="Build, Scale, and Innovate with Product Engineering"
           tabs={salesAcademyTab8}
-          image="/spider-charts/Produc-Engineering.jpg"
+          image="/spider-charts/Product-Engineering.jpg"
         />
         <WhatsNewCards data={whatsNewDefaultData} />
 
