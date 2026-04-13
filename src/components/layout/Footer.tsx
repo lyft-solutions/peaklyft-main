@@ -6,7 +6,7 @@ import Link from "next/link";
 const footerData = {
   offices: [
     {
-      flag: "/india.svg",
+      flag: "/india.png",
       title: "India Corporate Office",
       lines: [
         " C210B, Phase 8B, Industrial Area, Sector 74, ",
