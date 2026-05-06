@@ -70,10 +70,10 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ item, variant = "default"
           className="absolute inset-0 bg-black/55 flex items-center justify-center transition-opacity duration-300"
           style={{ opacity: hovered ? 1 : 0 }}
         >
-            <div className="border-2 border-white w-[90%] h-[90%] flex justify-center items-center duration-500 transition-all">
-          <div className="text-center px-6">
-            <p className="text-white font-bold text-xl mb-3 drop-shadow">{item.title}</p>
-            {/* <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="border-2 border-white w-[90%] h-[90%] flex justify-center items-center duration-500 transition-all">
+            <div className="text-center px-6">
+              <p className="text-white font-bold text-xl mb-3 drop-shadow">{item.title}</p>
+              {/* <div className="flex flex-wrap items-center justify-center gap-2">
               {item.tags?.map((tag) => (
                 <span
                   key={tag}
@@ -84,8 +84,8 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ item, variant = "default"
                 </span>
               ))}
             </div> */}
+            </div>
           </div>
-        </div>
         </div>
       </div>
 
@@ -122,8 +122,8 @@ const TabButton: React.FC<TabButtonProps> = ({ label, active, onClick }) => (
     className={`
       px-10 py-4 text-sm font-bold tracking-widest uppercase 
       transition-all duration-200 focus:outline-none cursor-pointer
-      ${active 
-        ? "bg-primary text-white" 
+      ${active
+        ? "bg-primary text-white"
         : "bg-gray-100 text-gray-600 hover:bg-primary hover:text-white"}
     `}
   >
@@ -152,7 +152,7 @@ const LatestWork: React.FC<LatestWorkProps> = ({
 
   return (
     <section className="w-full bg-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
 
         {/* Title */}
         {showTitle && (

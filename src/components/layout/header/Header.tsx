@@ -38,19 +38,17 @@ export default function Header() {
   return (
     <>
       <div
-        className={`transition-all duration-300 ${
-          showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
-        }`}
+        className={`transition-all duration-300 ${showNavbar ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5"
+          }`}
       >
         <Navbar />
       </div>
 
       <header
-        className={`w-full transition-all duration-300 ${
-          isFixed
-            ? "fixed top-0 left-0 bg-white shadow-md z-50"
-            : "relative bg-transparent"
-        }`}
+        className={`w-full transition-all duration-300 ${isFixed
+          ? "fixed top-0 left-0 bg-white shadow-md z-50"
+          : "relative bg-transparent"
+          }`}
       >
         <div className="container flex items-center justify-between p-[10px]">
           <div className="flex items-center gap-3">
@@ -70,9 +68,9 @@ export default function Header() {
 
           <Link
             href="/schedule-demo"
-            className="hidden sm:block bg-primary text-[14px] font-medium text-white border border-primary rounded-[4px] hover:bg-primary hover:text-white hover:border-primary py-[8px] px-5"
+            className="hidden sm:block bg-white text-[14px] font-medium text-white rounded-[4px] hover:bg-primary"
           >
-            <Button className="hidden sm:block bg-primary cursor-pointer text-[14px] font-medium hover:bg-primary hover:border-primary rounded-[4px] py-[8px] px-5">
+            <Button className="hidden sm:block bg-white text-secondary hover:text-white border border-[1px] border-secondary hover:border-primary hover:bg-primary cursor-pointer text-[14px] font-medium rounded-[4px] py-[8px] px-6 h-[45px]">
               Schedule a Demo
             </Button>
           </Link>

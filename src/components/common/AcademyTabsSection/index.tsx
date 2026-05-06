@@ -93,7 +93,7 @@ const AcademyTabs: React.FC<Props> = ({ title, tabs, image }) => {
 
             <Button
               variant="default"
-              className="rounded-[4px] py-[22.5px] shadow-[0px_14.13px_29.01px_0px_rgba(0,0,0,0.18)] text-main font-poppins text-[15px] font-medium leading-[30px] transition-all cursor-pointer bg-gradient-to-r from-[#FF802C] via-[#FF802C] to-[#994D1A] bg-blend-normal hover:bg-secondary hover:bg-blend-multiply active:scale-95"
+              className="rounded-[4px] py-[22.5px] shadow-[0px_14.13px_29.01px_0px_rgba(0,0,0,0.18)] text-main font-poppins text-[15px] font-medium leading-[30px] transition-all cursor-pointer bg-primary/80 bg-blend-normal hover:bg-secondary hover:bg-blend-multiply active:scale-95"
               onClick={() => (window.location.href = activeData.buttonLink)}
             >
               {activeData.buttonLabel}

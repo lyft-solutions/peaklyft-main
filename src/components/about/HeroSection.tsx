@@ -28,7 +28,7 @@ export default function HeroSection({ hero }: { hero: any }) {
           {hero.description}
         </p>
 
-        <button className="mt-6 bg-primary px-6 md:px-10 py-3 rounded-lg text-white font-semibold text-base md:text-lg shadow-lg hover:bg-primary/90 transition">
+        <button className="mt-6 px-6 md:px-10 py-3 border border-primary rounded-lg text-primary font-semibold text-base md:text-lg shadow-lg hover:bg-secondary hover:text-white hover:border-secondary transition cursor-pointer">
           {hero.buttonText}
         </button>
       </div>

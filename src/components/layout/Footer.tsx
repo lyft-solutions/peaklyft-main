@@ -134,7 +134,7 @@ const Footer = () => {
                 <p className="text-[#FAA843] font-medium">Let's connect:</p>
                 <div className="flex gap-2.5 py-2.5 pl-2.5">
                   <Link
-                    href="#"
+                    href="mailto:info@peaklyft.com"
                     className="border border-[#FFFFFF25] flex justify-center items-center rounded-full w-[30px] h-[30px]"
                   >
                     <Image src="/mail.svg" alt="mail" width={15} height={15} />

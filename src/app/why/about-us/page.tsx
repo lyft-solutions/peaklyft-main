@@ -15,7 +15,7 @@ export default function AboutPage() {
       <HeroSection hero={heroData} />
       <AboutSection about={aboutData} />
       <CardsSection cards={cardsData} />
-      <EndSection endSectionData={endSectionData} />
+      {/* <EndSection endSectionData={endSectionData} /> */}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import BrandSlider from "../common/Slider";
+import Link from "next/link";
 
 interface ComplexHero {
   type: "complex";
@@ -130,15 +131,17 @@ const Hero: React.FC<HeroProps> = ({
             )}
 
             {/* Button — only shown if label/text is provided */}
+            <Link href="/schedule-demo">
             {((heroData.type === "complex" && heroData.button?.label) ||
               (heroData.type === "simple" && heroData.buttonText)) && (
-              <Button className="mt-7 w-[210px] py-[18px] bg-gradient-to-r from-[#FF802C] to-[#994D1A] text-white">
-                {heroData.type === "complex"
-                  ? heroData.button.label
-                  : heroData.buttonText}
-              </Button>
-            )}
-          </div>
+                <Button className="mt-7 w-[210px] py-[18px] bg-primary hover:bg-secondary text-white cursor-pointer">
+                  {heroData.type === "complex"
+                    ? heroData.button.label
+                    : heroData.buttonText}
+                </Button>
+              )}
+            </Link>
+          </div>``
 
           {/* RIGHT IMAGE */}
           <div className="w-full sm:w-[48%] flex justify-center sm:justify-end">

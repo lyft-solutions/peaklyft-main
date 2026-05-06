@@ -9,7 +9,7 @@ import { academiesData } from "@/utils/AcademiesData";
 import { uniqueSectionContent } from "@/utils/uniqueSection";
 import { uniqueTabs } from "@/utils/uniqueTabs";
 import { comparisonData } from "@/utils/comparisonData";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 
 export default function HomePage() {
   return (
@@ -26,7 +26,7 @@ export default function HomePage() {
       <Methodology />
       <ComparisonTable data={comparisonData} />
       <Trust />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </div>
   );
 }

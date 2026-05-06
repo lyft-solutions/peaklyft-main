@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { demoPageContent } from "@/utils/scheduleDemo.data";
-import { DemoFormData } from "../../components/common/schedule-type/scheduleDemo.types";
 
 export default function ScheduleDemo() {
   const [loading, setLoading] = useState(false);
@@ -18,8 +17,8 @@ export default function ScheduleDemo() {
   };
 
   return (
-<section className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 bg-white rounded-2xl shadow-lg p-8 md:p-12">
+    <section className="py-10 sm:py-16 md:py-24 bg-gray-50 flex items-center justify-center px-4">
+      <div className="max-w-[1280px] mx-auto w-full grid md:grid-cols-2 gap-10 bg-white rounded-2xl shadow-lg p-8 md:p-12">
 
         <div>
           <h1 className="text-4xl font-bold mb-4">

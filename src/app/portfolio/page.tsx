@@ -1,18 +1,34 @@
-"use client"
+import { Metadata } from "next";
+import PortfolioHero from "../../components/portfolio/PortfolioHero";
+import PortfolioSection from "../../components/portfolio/PortfolioSection";
 
-import CTABanner from "@/src/components/common/portfolioPage/CtaBanner";
-import HeroSection from "@/src/components/common/portfolioPage/HeroSection";
-import PortfolioMasonryGrid from "@/src/components/common/portfolioPage/PortfolioSection";
-import TechStackSection from "@/src/components/common/portfolioPage/TechStackSection";
-import { portfolioItems } from "@/utils/portfolioData";
+export const metadata: Metadata = {
+  title: "Portfolio | Peaklyft Solutions",
+  description:
+    "Explore our latest work across Web Development, App Development, Blockchain, and Browser Extensions.",
+  openGraph: {
+    title: "Portfolio | Peaklyft Solutions",
+    description:
+      "Explore our latest work across Web Development, App Development, Blockchain, and Browser Extensions.",
+    url: "https://peaklyft.com/portfolio",
+    siteName: "Peaklyft Solutions",
+    images: [
+      {
+        url: "/images/og-portfolio.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function PortfolioPage() {
   return (
-    <main className="bg-white text-gray-800">
-      <HeroSection />
-      <PortfolioMasonryGrid items={portfolioItems} />
-      <TechStackSection />
-      <CTABanner />
+    <main className="min-h-screen bg-white">
+      <PortfolioHero />
+      <PortfolioSection />
     </main>
   );
 }

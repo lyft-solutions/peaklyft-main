@@ -15,8 +15,8 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row gap-16 items-center">
-        
+      <div className="relative container mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row gap-16 items-center">
+
         {/* Left Content */}
         <div className="flex-1 max-w-2xl z-10">
           {/* Badge */}
@@ -24,7 +24,7 @@ export default function HeroSection() {
             <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
             Our Work & Case Studies
           </div>
-          
+
           {/* Headline */}
           <h1 className="text-5xl lg:text-6xl font-bold text-white leading-[1.1] tracking-tight mb-6">
             Digital Products That Drive{" "}
@@ -33,14 +33,14 @@ export default function HeroSection() {
             </span>{" "}
             Outcomes
           </h1>
-          
+
           {/* Subtext */}
           <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-lg">
             From FinTech SaaS platforms to HealthTech apps — explore how
             Peaklyft Solutions engineers scalable, secure, and high-performance
             digital products for businesses worldwide.
           </p>
-          
+
           {/* Buttons */}
           <div className="flex flex-wrap gap-4">
             <button className="group relative px-8 py-4 bg-[#E8640A] text-white rounded-xl font-semibold text-base overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_-10px_rgba(232,100,10,0.6)] hover:-translate-y-1">
@@ -52,7 +52,7 @@ export default function HeroSection() {
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
-            
+
             <button className="px-8 py-4 border border-slate-600 text-white rounded-xl font-semibold text-base hover:bg-slate-800/50 hover:border-slate-500 transition-all duration-300 hover:-translate-y-1">
               Start a Project
             </button>
@@ -63,13 +63,13 @@ export default function HeroSection() {
         <div className="flex-1 w-full max-w-lg z-10">
           <div className="grid grid-cols-2 gap-4">
             {STATS.map((stat, index) => (
-              <div 
-                key={stat.label} 
+              <div
+                key={stat.label}
                 className="group relative p-6 bg-slate-800/40 backdrop-blur-md border border-slate-700/50 rounded-2xl hover:bg-slate-800/60 hover:border-orange-500/30 transition-all duration-300 hover:-translate-y-2"
               >
                 {/* Hover Accent Line */}
                 <div className="absolute top-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-slate-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                
+
                 <div className="flex flex-col gap-1">
                   <span className="text-4xl lg:text-5xl font-bold text-white group-hover:text-[#E8640A] transition-colors duration-300">
                     {stat.value}

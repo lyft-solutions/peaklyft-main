@@ -133,12 +133,12 @@ const Hero: React.FC<HeroProps> = ({
             {/* Button — only shown if label/text is provided */}
             {((heroData.type === "complex" && heroData.button?.label) ||
               (heroData.type === "simple" && heroData.buttonText)) && (
-              <Button className="mt-7 w-[210px] py-[18px] bg-linear-to-r from-[#FF802C] to-[#994D1A] text-white">
-                {heroData.type === "complex"
-                  ? heroData.button.label
-                  : heroData.buttonText}
-              </Button>
-            )}
+                <Button className="cursor-pointer mt-7 w-[210px] py-[18px] bg-linear-to-r from-[#FF802C] to-[#994D1A] hover:bg-secondary text-white">
+                  {heroData.type === "complex"
+                    ? heroData.button.label
+                    : heroData.buttonText}
+                </Button>
+              )}
           </div>
 
           {/* RIGHT IMAGE */}
