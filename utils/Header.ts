@@ -1,4 +1,9 @@
 export const headerMenu: any[] = [
+    {
+    label: "Home",
+    href: "/",
+    type: "link",
+  },
   {
     label: "Solution",
     type: "mega",

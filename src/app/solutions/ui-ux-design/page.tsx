@@ -23,7 +23,7 @@ export default function SalesAcademyPage() {
           tabs={salesAcademyTab4}
           image="/spider-charts/UX.jpg"
         />
-        <WhatsNewCards data={whatsNewDefaultData} />
+        {/* <WhatsNewCards data={whatsNewDefaultData} /> */}
       </div>
     </>
   );

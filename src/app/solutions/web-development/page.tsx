@@ -23,7 +23,7 @@ export default function SalesAcademyPage() {
           image="/explore2.jpeg"
         />
 
-        <WhatsNewCards data={whatsNewDefaultData} />
+        {/* <WhatsNewCards data={whatsNewDefaultData} /> */}
       </div>
     </>
   );

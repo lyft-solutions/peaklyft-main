@@ -24,7 +24,7 @@ export default function SalesAcademyPage() {
           image="/spider-charts/Devops.jpg"
         />
 
-        <WhatsNewCards data={whatsNewDefaultData} />
+        {/* <WhatsNewCards data={whatsNewDefaultData} /> */}
       </div>
     </>
   );

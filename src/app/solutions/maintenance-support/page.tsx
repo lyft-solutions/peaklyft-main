@@ -26,7 +26,7 @@ export default function SalesAcademyPage() {
           tabs={salesAcademyTab9}
           image="/spider-charts/Maintenance-Support.jpg"
         />
-        <WhatsNewCards data={whatsNewDefaultData} />
+        {/* <WhatsNewCards data={whatsNewDefaultData} /> */}
       </div>
     </>
   );

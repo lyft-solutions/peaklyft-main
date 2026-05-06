@@ -23,7 +23,7 @@ export default function SalesAcademyPage() {
           tabs={blockchainTab}
           image="/spider-charts/Blockchain-Development.jpg"
         />
-        <WhatsNewCards data={whatsNewDefaultData} />
+        {/* <WhatsNewCards data={whatsNewDefaultData} /> */}
       </div>
     </>
   );

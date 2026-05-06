@@ -23,7 +23,7 @@ export default function SalesAcademyPage() {
           tabs={salesAcademyTab6}
           image="/spider-charts/MVP-Scaling.jpg"
         />
-        <WhatsNewCards data={whatsNewDefaultData} />
+        {/* <WhatsNewCards data={whatsNewDefaultData} /> */}
       </div>
     </>
   );

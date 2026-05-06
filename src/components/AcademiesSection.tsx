@@ -117,7 +117,7 @@ const AcademiesSection: React.FC<Props> = ({ data, defaultCategory }) => {
         <div
           className="relative md:p-12 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/about.jpg')",
+            backgroundImage: "url('/Build.png')",
             minHeight: "425px",
           }}
         >

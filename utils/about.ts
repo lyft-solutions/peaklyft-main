@@ -14,7 +14,7 @@ export const endSectionData = {
 };
 
 export const aboutData: AboutData = {
-  image: "/image2.png",
+  image: "/3d-1.png",
   title: "About Peaklyft",
   description1:
   "Peaklyft envisions a future where individuals are evaluated based on their ability to perform, fostering equality and meritocracy. We believe in recognizing and nurturing talent purely based on performance and capability. By choosing Peaklyft, you are committing to building an organization that values people for their true potential and their contributions to achieving business goals."
