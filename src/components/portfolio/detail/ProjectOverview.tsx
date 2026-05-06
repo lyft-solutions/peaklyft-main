@@ -22,7 +22,7 @@ export default function ProjectOverview({
           </div>
 
           {/* Right column: Quick Info */}
-          <div className="lg:col-span-1">
+          {/* <div className="lg:col-span-1">
             <div className="bg-[#F8FAFC] rounded-2xl p-8 border border-[#E2E8F0] shadow-sm sticky top-24">
               <h3 className="text-xl font-bold text-[#0F172A] mb-6">
                 Quick Details
@@ -83,7 +83,7 @@ export default function ProjectOverview({
                 </div>
               )}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
