@@ -17,7 +17,7 @@ export const portfolioProjects: PortfolioProject[] = [
     shortDescription:
       "A headless ecommerce platform designed for high-growth D2C brands. It delivers lightning-fast performance and seamless integrations.",
     overview:
-      "NexaCommerce is an innovative, headless B2B and B2C ecommerce solution. We engineered the platform from the ground up to support massive scale, flexible storefronts, and seamless integration with existing ERP and CRM systems. This project revolutionized how mid-market brands handle high-volume sales events without downtime.",
+      "NexaCommerce is an innovative, headless B2B and B2C ecommerce solution. We engineered the platform from the ground up to support massive scale, flexible storefronts, and seamless integration with existing ERP and CRM systems. This project revolutionized how mid-market brands handle high-volume sales events without downtime.NexaCommerce is an innovative, headless B2B and B2C ecommerce solution. We engineered the platform from the ground up to support massive scale, flexible storefronts, and seamless integration with existing ERP and CRM systems. This project revolutionized how mid-market brands handle high-volume sales events without downtime.NexaCommerce is an innovative, headless B2B and B2C ecommerce solution. We engineered the platform from the ground up to support massive scale, flexible storefronts, and seamless integration with existing ERP and CRM systems. This project revolutionized how mid-market brands handle high-volume sales events without downtime.",
     thumbnailImage: "/Long-term.png",
     mockupImage: "/Long-term.png",
     images: [
@@ -160,16 +160,21 @@ export const portfolioProjects: PortfolioProject[] = [
     shortDescription:
       "HIPAA-compliant patient portal for telemedicine and medical record management. Ensures data privacy and accessibility.",
     overview:
-      "MedVault bridges the gap between healthcare providers and patients. It offers a secure platform for scheduling virtual appointments, accessing lab results, and managing prescriptions. Our primary focus was adhering strictly to healthcare compliance standards while delivering a modern UI.",
+      "MedVault bridges the gap between healthcare providers and patients. It offers a secure platform for scheduling virtual appointments, accessing lab results, and managing prescriptions. Our primary focus was adhering strictly to healthcare compliance standards while delivering a modern UI. MedVault bridges the gap between healthcare providers and patients. It offers a secure platform for scheduling virtual appointments, accessing lab results, and managing prescriptions. Our primary focus was adhering strictly to healthcare compliance standards while delivering a modern UI. MedVault bridges the gap between healthcare providers and patients. It offers a secure platform for scheduling virtual appointments, accessing lab results, and managing prescriptions. Our primary focus was adhering strictly to healthcare compliance standards while delivering a modern UI.",
     thumbnailImage: "/3D-1.jpg",
     mockupImage: "/3D-1.jpg",
     images: [
-      { src: "/3D-1.jpg", alt: "MedVault Portal Home" },
+      { src: "/image1.png", alt: "MedVault Portal Home" },
       {
-        src: "/3D-1.jpg",
+        src: "/image.png",
         alt: "MedVault Appointments",
       },
-      { src: "/3D-1.jpg", alt: "MedVault Records" },
+      { src: "/image1.png",
+         alt: "MedVault Records"
+       },
+       { src: "/image.png",
+         alt: "MedVault Records"
+       }
     ],
     techStack: [
       { name: "Vue.js" },

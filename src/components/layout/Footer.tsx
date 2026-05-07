@@ -28,15 +28,6 @@ const footerData = {
         { name: "Cloud Engineering", href: "/solutions/cloud-engineering" },
       ],
     },
-
-    {
-      title: "Emerging Tech",
-      links: [
-        { name: "Web Development", href: "/solutions/web-development" },
-        { name: "Blochain", href: "/solutions/blockchain" },
-        { name: "Chatbot Development", href: "/solutions/chatbot-development" },
-      ],
-    },
     {
       title: "Scale With Peaklyft",
       links: [
@@ -51,22 +42,21 @@ const footerData = {
       ],
     },
     {
+      title: "Emerging Tech",
+      links: [
+        { name: "Web Development", href: "/solutions/web-development" },
+        { name: "Blockchain", href: "/solutions/blockchain" },
+        { name: "Chatbot Development", href: "/solutions/chatbot-development" },
+      ],
+    },
+    {
       title: "Why Peaklyft?",
       links: [
         { name: "About us", href: "/why/about-us" },
-        {
-          name: "Technology/ IT Services",
-          href: "/solutions/cloud-engineering",
-        },
-      ],
-    },
-
-    {
-      title: "Resources",
-      links: [{ name: "Blogs", href: "#" }],
-      bottomLinks: [
-        { name: "Terms and conditions", href: "#" },
-        { name: "FAQs", href: "#" },
+        // {
+        //   name: "Technology/ IT Services",
+        //   href: "/solutions/cloud-engineering",
+        // },
       ],
     },
   ],
@@ -75,7 +65,7 @@ const footerData = {
 const Footer = () => {
   return (
     <footer
-      className="text-white min-h-[450px] lg:min-h-[550px]"
+      className="text-white min-h-[350px] lg:min-h-[450px]"
       style={{
         background:
           "radial-gradient(at center center, #04438bff 0%, #252b5eff 100%)",
@@ -116,7 +106,6 @@ const Footer = () => {
                       alt="flag"
                       className="w-[35px] h-[23.33px] object-contain"
                     />
-
                     {office.title}
                   </h3>
                   {office.lines.map((line, j) => (
@@ -177,6 +166,7 @@ const Footer = () => {
             </div>
 
             <div className="flex-1 flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-8 md:gap-4 lg:gap-2 lg:pl-2">
+              {/* Build With Peaklyft */}
               <div className="flex-1 lg:pr-8 lg:border-r lg:border-white/20">
                 <h3 className="text-[#FAA843] font-semibold mb-4">
                   {footerData.columns[0].title}
@@ -193,11 +183,14 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
+              </div>
 
-                <h3 className="text-[#FAA843] font-semibold mb-2 mt-5">
+              {/* Scale With Peaklyft */}
+              <div className="flex-1 lg:min-w-[200px] lg:px-2.5 lg:border-r lg:border-white/20">
+                <h3 className="text-[#FAA843] font-semibold mb-4">
                   {footerData.columns[1].title}
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-2">
                   {footerData.columns[1].links.map((link, idx) => (
                     <li key={idx} className="m-0 h-[20.5px]">
                       <Link
@@ -211,11 +204,12 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="flex-1 lg:min-w-[200px] lg:px-2.5 lg:border-r lg:border-white/20">
+              {/* Emerging Tech + Why Peaklyft? */}
+              <div className="flex-1 lg:min-w-[200px] lg:pl-2.5">
                 <h3 className="text-[#FAA843] font-semibold mb-4">
                   {footerData.columns[2].title}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-6">
                   {footerData.columns[2].links.map((link, idx) => (
                     <li key={idx} className="m-0 h-[20.5px]">
                       <Link
@@ -243,38 +237,6 @@ const Footer = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div className="flex-1 lg:min-w-[200px] lg:pl-2.5">
-                <h3 className="text-[#FAA843] font-semibold mb-4">
-                  {footerData.columns[4].title}
-                </h3>
-                <ul className="space-y-2 mb-8">
-                  {footerData.columns[4].links.map((link, idx) => (
-                    <li key={idx} className="m-0 h-[20.5px]">
-                      <Link
-                        href={link.href}
-                        className="text-[13px] text-[#D5D8FF] hover:text-primary transition-colors"
-                      >
-                        {link.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <div className="pt-4 border-t border-white/20">
-                  <ul className="space-y-2">
-                    {footerData.columns[4].bottomLinks?.map((link, idx) => (
-                      <li key={idx}>
-                        <Link
-                          href={link.href}
-                          className="text-[14px] text-[#D5D8FF] hover:text-primary transition-colors"
-                        >
-                          {link.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </div>
           </div>

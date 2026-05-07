@@ -246,11 +246,35 @@ function ContactForm() {
   const handleFocus = (key: FieldKey) => () => setFocused((f) => ({ ...f, [key]: true }));
   const handleBlur = (key: FieldKey) => () => setFocused((f) => ({ ...f, [key]: false }));
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const errs = validate(fields);
     if (Object.keys(errs).length) { setErrors(errs); return; }
+
     setStatus("sending");
-    setTimeout(() => setStatus("success"), 1800);
+
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "contact",
+          name: fields.name,
+          email: fields.email,
+          phone: fields.phone,
+          comment: fields.comment,
+        }),
+      });
+
+      if (res.ok) {
+        setStatus("success");
+      } else {
+        setStatus("idle");
+        alert("Something went wrong. Please try again.");
+      }
+    } catch {
+      setStatus("idle");
+      alert("Network error. Please try again.");
+    }
   };
 
   if (status === "success") {

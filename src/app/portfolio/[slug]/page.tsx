@@ -2,10 +2,10 @@ import { notFound } from "next/navigation";
 import { portfolioProjects } from "../../../data/portfolio";
 import ProjectHero from "../../../components/portfolio/detail/ProjectHero";
 import ProjectOverview from "../../../components/portfolio/detail/ProjectOverview";
-import TechStackCarousel from "../../../components/portfolio/detail/TechStackCarousel";
+// import TechStackCarousel from "../../../components/portfolio/detail/TechStackCarousel";
 import ProjectGallery from "../../../components/portfolio/detail/ProjectGallery";
-import KeyFeaturesSection from "../../../components/portfolio/detail/KeyFeaturesSection";
-import ChallengesSection from "../../../components/portfolio/detail/ChallengesSection";
+// import KeyFeaturesSection from "../../../components/portfolio/detail/KeyFeaturesSection";
+// import ChallengesSection from "../../../components/portfolio/detail/ChallengesSection";
 import { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -44,15 +44,21 @@ export default async function ProjectDetail({ params }: Props) {
       <ProjectHero project={project} />
 
       {/* Top back button for desktop */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 hidden md:block">
-        <Link
-          href="/portfolio"
-          className="inline-flex items-center text-[#64748B] hover:text-[#F97316] font-medium transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Portfolio
-        </Link>
+      <div className="bg-[#F8FAFC]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-8 hidden md:block">
+          <Link
+            href="/portfolio"
+            className="inline-flex items-center text-[#64748B] hover:text-secondary font-medium transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Portfolio
+          </Link>
+        </div>
       </div>
+
+      {project.images && project.images.length > 0 && (
+        <ProjectGallery images={project.images} />
+      )}
 
       <ProjectOverview project={project} />
 
@@ -60,13 +66,9 @@ export default async function ProjectDetail({ params }: Props) {
         <TechStackCarousel techStack={project.techStack} />
       )} */}
 
-      {project.images && project.images.length > 0 && (
-        <ProjectGallery images={project.images} />
-      )}
-
-      {project.keyFeatures && project.keyFeatures.length > 0 && (
+      {/* {project.keyFeatures && project.keyFeatures.length > 0 && (
         <KeyFeaturesSection features={project.keyFeatures} />
-      )}
+      )} */}
 
       {/* {project.challenges && project.challenges.length > 0 && (
         <ChallengesSection challenges={project.challenges} />
