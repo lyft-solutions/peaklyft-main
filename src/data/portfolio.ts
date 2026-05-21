@@ -18,19 +18,19 @@ export const portfolioProjects: PortfolioProject[] = [
       "A headless ecommerce platform designed for high-growth D2C brands. It delivers lightning-fast performance and seamless integrations.",
     overview:
       "NexaCommerce is an innovative, headless B2B and B2C ecommerce solution. We engineered the platform from the ground up to support massive scale, flexible storefronts, and seamless integration with existing ERP and CRM systems. This project revolutionized how mid-market brands handle high-volume sales events without downtime.NexaCommerce is an innovative, headless B2B and B2C ecommerce solution. We engineered the platform from the ground up to support massive scale, flexible storefronts, and seamless integration with existing ERP and CRM systems. This project revolutionized how mid-market brands handle high-volume sales events without downtime.NexaCommerce is an innovative, headless B2B and B2C ecommerce solution. We engineered the platform from the ground up to support massive scale, flexible storefronts, and seamless integration with existing ERP and CRM systems. This project revolutionized how mid-market brands handle high-volume sales events without downtime.",
-    thumbnailImage: "/Long-term.png",
-    mockupImage: "/Long-term.png",
+    thumbnailImage: "/portfolio/image.png",
+    mockupImage: "/portfolio/image.png",
     images: [
       {
-        src: "/Long-term.png",
+        src: "/portfolio/image.png",
         alt: "NexaCommerce Storefront",
       },
       {
-        src: "/Long-term.png",
+        src: "/portfolio/image.png",
         alt: "NexaCommerce Dashboard",
       },
       {
-        src: "/Long-term.png",
+        src: "/portfolio/image.png",
         alt: "NexaCommerce Checkout",
       },
     ],
@@ -94,16 +94,16 @@ export const portfolioProjects: PortfolioProject[] = [
       "Modern HR management system automating onboarding, payroll, and performance reviews. Designed for remote-first teams.",
     overview:
       "FlowHR simplifies human resources for distributed teams. The platform provides a centralized hub for employee data, automated workflows for onboarding, and a comprehensive suite for performance tracking. We focused on creating an intuitive user experience that reduces administrative overhead.",
-    thumbnailImage: "/saas.png",
-    mockupImage: "/saas.png",
+    thumbnailImage: "/portfolio/image2.png",
+    mockupImage: "/portfolio/image2.png",
     images: [
-      { src: "/saas.png", alt: "FlowHR Dashboard" },
+      { src: "/portfolio/image2.png", alt: "FlowHR Dashboard" },
       {
-        src: "/saas.png",
+        src: "/portfolio/image2.png",
         alt: "FlowHR Employee Profile",
       },
       {
-        src: "/saas.png",
+        src: "/portfolio/image2.png",
         alt: "FlowHR Payroll Module",
       },
     ],
@@ -161,18 +161,18 @@ export const portfolioProjects: PortfolioProject[] = [
       "HIPAA-compliant patient portal for telemedicine and medical record management. Ensures data privacy and accessibility.",
     overview:
       "MedVault bridges the gap between healthcare providers and patients. It offers a secure platform for scheduling virtual appointments, accessing lab results, and managing prescriptions. Our primary focus was adhering strictly to healthcare compliance standards while delivering a modern UI. MedVault bridges the gap between healthcare providers and patients. It offers a secure platform for scheduling virtual appointments, accessing lab results, and managing prescriptions. Our primary focus was adhering strictly to healthcare compliance standards while delivering a modern UI. MedVault bridges the gap between healthcare providers and patients. It offers a secure platform for scheduling virtual appointments, accessing lab results, and managing prescriptions. Our primary focus was adhering strictly to healthcare compliance standards while delivering a modern UI.",
-    thumbnailImage: "/3D-1.jpg",
-    mockupImage: "/3D-1.jpg",
+    thumbnailImage: "/portfolio/image4.png",
+    mockupImage: "/portfolio/image4.png",
     images: [
-      { src: "/image1.png", alt: "MedVault Portal Home" },
+      { src: "/portfolio/image4.png", alt: "MedVault Portal Home" },
       {
-        src: "/image.png",
+        src: "/portfolio/image4.png",
         alt: "MedVault Appointments",
       },
-      { src: "/image1.png",
+      { src: "/portfolio/image4.png",
          alt: "MedVault Records"
        },
-       { src: "/image.png",
+       { src: "/portfolio/image4.png",
          alt: "MedVault Records"
        }
     ],
@@ -231,16 +231,16 @@ export const portfolioProjects: PortfolioProject[] = [
       "Townbolt is a comprehensive platform designed to streamline the process of submitting planning applications to local government authorities. It provides a user-friendly interface for applicants to upload necessary documents, track the status of their applications, and communicate with planning officers, while offering robust tools for council staff to manage, review, and process these applications efficiently.",
     overview:
       "Townbolt streamlines the planning application process for both applicants and local government authorities. It provides a user-friendly interface for applicants to upload necessary documents, track the status of their applications, and communicate with planning officers, while offering robust tools for council staff to manage, review, and process these applications efficiently.",
-    thumbnailImage: "/custom.png",
-    mockupImage: "/custom.png",
+    thumbnailImage: "/portfolio/image5.png",
+    mockupImage: "/portfolio/image5.png",
     images: [
-      { src: "/custom.png", alt: "FlowHR Dashboard" },
+      { src: "/portfolio/image5.png", alt: "FlowHR Dashboard" },
       {
-        src: "/custom.png",
+        src: "/portfolio/image5.png",
         alt: "FlowHR Employee Profile",
       },
       {
-        src: "/custom.png",
+        src: "/portfolio/image5.png",
         alt: "FlowHR Payroll Module",
       },
     ],
@@ -300,13 +300,13 @@ export const portfolioProjects: PortfolioProject[] = [
       "Urban mobility app for electric scooter sharing. Features real-time tracking, secure payments, and smart routing.",
     overview:
       "SwiftRide is revolutionizing last-mile transportation in metropolitan areas. The mobile application allows users to locate, unlock, and pay for electric scooters seamlessly. We developed native-like performance to ensure a snappy user experience even in poor network conditions.",
-    thumbnailImage: "/image2.png",
-    mockupImage: "/image2.png",
+    thumbnailImage: "/portfolio/image6.png",
+    mockupImage: "/portfolio/image6.png",
     images: [
-      { src: "/image2.png", alt: "SwiftRide Map View" },
-      { src: "/image2.png", alt: "SwiftRide Scanner" },
+      { src: "/portfolio/image6.png", alt: "SwiftRide Map View" },
+      { src: "/portfolio/image6.png", alt: "SwiftRide Scanner" },
       {
-        src: "/image2.png",
+        src: "/portfolio/image6.png",
         alt: "SwiftRide Ride History",
       },
     ],
@@ -364,15 +364,15 @@ export const portfolioProjects: PortfolioProject[] = [
       "AI-driven personalized nutrition and fitness tracker. Analyzes dietary habits to provide actionable health insights.",
     overview:
       "NutriTrack helps users achieve their health goals through smart tracking. The app leverages machine learning to analyze food photos, track macronutrients, and suggest personalized meal plans. We created a visually engaging interface to keep users motivated and consistent.",
-    thumbnailImage: "/images/ai.png",
-    mockupImage: "/images/ai.png",
+    thumbnailImage: "/portfolio/image7.png",
+    mockupImage: "/portfolio/image7.png",
     images: [
-      { src: "/images/ai.png", alt: "NutriTrack Dashboard" },
+      { src: "/portfolio/image7.png", alt: "NutriTrack Dashboard" },
       {
-        src: "/images/ai.png",
+        src: "/portfolio/image7.png",
         alt: "NutriTrack Food Scanner",
       },
-      { src: "/images/ai.png", alt: "NutriTrack Progress" },
+      { src: "/portfolio/image7.png", alt: "NutriTrack Progress" },
     ],
     techStack: [
       { name: "Flutter" },
@@ -429,16 +429,16 @@ export const portfolioProjects: PortfolioProject[] = [
       "Mental wellness app offering guided meditations, mood tracking, and cognitive behavioral therapy exercises.",
     overview:
       "MindEase provides a sanctuary for mental well-being in the digital world. The app features a library of audio meditations, daily mood check-ins, and interactive CBT exercises. The design focuses on calming aesthetics, using soft colors and fluid animations to create a relaxing environment.",
-    thumbnailImage: "/images/qa.png",
-    mockupImage: "/images/qa.png",
+    thumbnailImage: "/portfolio/image8.png",
+    mockupImage: "/portfolio/image8.png",
     images: [
-      { src: "/images/qa.png", alt: "MindEase Home" },
+      { src: "/portfolio/image8.png", alt: "MindEase Home" },
       {
-        src: "/images/qa.png",
+        src: "/portfolio/image8.png",
         alt: "MindEase Audio Player",
       },
       {
-        src: "/images/qa.png",
+        src: "/portfolio/image8.png",
         alt: "MindEase Mood Journal",
       },
     ],
@@ -498,18 +498,18 @@ export const portfolioProjects: PortfolioProject[] = [
       "Decentralized payment gateway enabling merchants to accept cryptocurrency with instant fiat conversion.",
     overview:
       "ChainPay bridges the gap between traditional commerce and Web3. It allows businesses to seamlessly integrate crypto payments without exposure to volatility. We built a robust smart contract infrastructure backed by a sleek merchant dashboard for comprehensive transaction management.",
-    thumbnailImage: "/3D-1.jpg",
-    mockupImage: "/3D-1.jpg",
+    thumbnailImage: "/portfolio/image3.png",
+    mockupImage: "/portfolio/image3.png",
     images: [
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image3.png",
         alt: "ChainPay Merchant Dashboard",
       },
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image3.png",
         alt: "ChainPay Checkout Widget",
       },
-      { src: "/3D-1.jpg", alt: "ChainPay Analytics" },
+      { src: "/portfolio/image3.png", alt: "ChainPay Analytics" },
     ],
     techStack: [
       { name: "Solidity" },
@@ -566,15 +566,15 @@ export const portfolioProjects: PortfolioProject[] = [
       "Premium marketplace and portfolio tracker for high-value digital collectibles and generative art.",
     overview:
       "NFTVault caters to serious collectors in the digital art space. The platform offers a curated marketplace, advanced portfolio valuation tools, and secure escrow services. We focused on delivering a visually stunning interface that highlights the art while ensuring rock-solid security.",
-    thumbnailImage: "/3D-1.jpg",
-    mockupImage: "/3D-1.jpg",
+    thumbnailImage: "/portfolio/image9.png",
+    mockupImage: "/portfolio/image9.png",
     images: [
-      { src: "/3D-1.jpg", alt: "NFTVault Marketplace" },
+      { src: "/portfolio/image9.png", alt: "NFTVault Marketplace" },
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image9.png",
         alt: "NFTVault Asset Details",
       },
-      { src: "/3D-1.jpg", alt: "NFTVault Portfolio" },
+      { src: "/portfolio/image9.png", alt: "NFTVault Portfolio" },
     ],
     techStack: [
       { name: "Next.js" },
@@ -631,15 +631,15 @@ export const portfolioProjects: PortfolioProject[] = [
       "Algorithmic money market protocol allowing users to lend and borrow digital assets with dynamic interest rates.",
     overview:
       "DeFiLend is a decentralized finance protocol designed for capital efficiency. Users can supply assets to earn passive yield or borrow against their collateral. We prioritized security through rigorous smart contract auditing and created a transparent, user-friendly frontend interface.",
-    thumbnailImage: "/3D-1.jpg",
-    mockupImage: "/3D-1.jpg",
+    thumbnailImage: "/portfolio/image3.png",
+    mockupImage: "/portfolio/image3.png",
     images: [
-      { src: "/3D-1.jpg", alt: "DeFiLend Markets" },
+      { src: "/portfolio/image3.png", alt: "DeFiLend Markets" },
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image3.png",
         alt: "DeFiLend Borrow Dashboard",
       },
-      { src: "/3D-1.jpg", alt: "DeFiLend Governance" },
+      { src: "/portfolio/image3.png", alt: "DeFiLend Governance" },
     ],
     techStack: [
       { name: "Solidity" },
@@ -702,15 +702,15 @@ export const portfolioProjects: PortfolioProject[] = [
       "Intelligent browser workspace manager that groups, saves, and suspends tabs to optimize memory usage.",
     overview:
       "TabFlow solves the modern problem of tab overload. This browser extension intelligently categorizes tabs into workspaces, automatically suspends inactive pages to save RAM, and provides a powerful search interface. We focused on lightweight performance and seamless browser integration.",
-    thumbnailImage: "/3D-1.jpg",
-    mockupImage: "/3D-1.jpg",
+    thumbnailImage: "/portfolio/image3.png",
+    mockupImage: "/portfolio/image3.png",
     images: [
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image3.png",
         alt: "TabFlow Workspace View",
       },
-      { src: "/3D-1.jpg", alt: "TabFlow Search Bar" },
-      { src: "/3D-1.jpg", alt: "TabFlow Settings" },
+      { src: "/portfolio/image3.png", alt: "TabFlow Search Bar" },
+      { src: "/portfolio/image3.png", alt: "TabFlow Settings" },
     ],
     techStack: [
       { name: "JavaScript" },
@@ -768,16 +768,16 @@ export const portfolioProjects: PortfolioProject[] = [
       "Developer tool extension for real-time CSS inspection, layout debugging, and accessibility auditing.",
     overview:
       "PageLens is an essential tool for frontend developers and designers. It provides an overlay interface to inspect DOM elements, visualize spacing/margins, and simulate different color vision deficiencies. We built it to be instantly responsive and visually unobtrusive.",
-    thumbnailImage: "/3D-1.jpg",
-    mockupImage: "/3D-1.jpg",
+    thumbnailImage: "/portfolio/image3.png",
+    mockupImage: "/portfolio/image3.png",
     images: [
-      { src: "/3D-1.jpg", alt: "PageLens Inspector" },
+      { src: "/portfolio/image3.png", alt: "PageLens Inspector" },
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image3.png",
         alt: "PageLens Accessibility Mode",
       },
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image3.png",
         alt: "PageLens Typography Tools",
       },
     ],
@@ -833,15 +833,15 @@ export const portfolioProjects: PortfolioProject[] = [
       "Secure AI assistant for automating repetitive form filling, data extraction, and CRM data entry.",
     overview:
       "FormFill increases productivity for sales and recruiting teams. The extension uses natural language processing to extract relevant information from text and automatically populate complex web forms or CRM databases. Security and data privacy were our top priorities during development.",
-    thumbnailImage: "/3D-1.jpg",
-    mockupImage: "/3D-1.jpg",
+    thumbnailImage: "/portfolio/image3.png",
+    mockupImage: "/portfolio/image3.png",
     images: [
-      { src: "/3D-1.jpg", alt: "FormFill Extraction" },
+      { src: "/portfolio/image3.png", alt: "FormFill Extraction" },
       {
-        src: "/3D-1.jpg",
+        src: "/portfolio/image3.png",
         alt: "FormFill Auto-populate",
       },
-      { src: "/3D-1.jpg", alt: "FormFill Mappings" },
+      { src: "/portfolio/image3.png", alt: "FormFill Mappings" },
     ],
     techStack: [
       { name: "Vue.js" },
