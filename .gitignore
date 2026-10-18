@@ -44,5 +44,3 @@ config.bat
 branch_structure.json
 
 
-.env
-.env.local
